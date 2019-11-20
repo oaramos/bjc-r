@@ -233,9 +233,9 @@ llab.selectors = {};
 llab.fragments = {};
 // These are common strings that need not be build and should be reused!
 llab.strings = {};
-llab.strings.goMain = 'Go to Table of Contents';
+llab.strings.goMain = 'Ir a la Tabla de Contenidos';
 // &#8230; is ellipsis
-llab.strings.clickNav = 'Click here to navigate&nbsp;&nbsp;';
+llab.strings.clickNav = 'Haz click aquí para navegar&nbsp;&nbsp;';
 //
 llab.fragments.bootstrapSep = '<li class="divider list_item" role="presentation"></li>';
 llab.fragments.bootstrapCaret = '<span class="caret"></span>';
