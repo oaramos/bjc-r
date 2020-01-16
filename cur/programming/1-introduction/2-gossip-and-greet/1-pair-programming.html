@@ -6,25 +6,25 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unit 1 Lab 2: Gossip, Page 1</title>
+		<title>Unidad 1 Lab 2: Gossip, Página 1</title>
 	</head>
 
 	<body>
-		<h2>Pair Programming</h2>        
+		<h2>Programación por Pares</h2>        
 		
         <div class="learn">
-            <p><strong>On this page,</strong> you will learn about collaborating by using pair programming.</p>
+            <p><strong>En esta página,</strong> aprenderemos sobre colaboración utilizando el concepto de programación por pares.</p>
         </div>
         
         <div class="todo">
             Brian, Mary and June have to decide whether or not to phrase these bullets as "don't" or "do." --MF, 8/16/19
         </div>
 
-		<p>In the early days of computers, programming was something you did alone. You planned the program in your head, and then you sat down and wrote the code.</p>
-		<p>The programs people write these days are far too complicated for that. Graphical user interfaces, interacting with servers on the Internet, internationalization, security against malware attacks, and many more requirements are part of a serious software development effort, and a program is likely to have <em>hundreds</em> of authors.</p>
-		<p>This means that <em>collaboration skills</em> are as important as coding skills today.  Even if you don't end up working as a programmer, collaboration is part of most jobs.</p>
+		<p>En los primeros días de las computadoras, programar era una tarea individual. Tú pensabas el programa en tu cabeza, y luego era el momento de sentarse y escribir código.</p>
+		<p>Los programas que se hacen hoy en día son mucho más complicados. Las interfaces gráficas de usuarios, interacción con servidores en Internet, internacionalización, seguridad contra ataques de malware, y muchos requerimientos más son parte de un esfuerzo de desarrollo de software serio, es por ello que un programa probablemente tendrá <em>cientos</em> de autores.</p>
+		<p>Esto significa que hoy <em>las habilidades de colaboración</em> son tan importantes como las habilidades de programación. Incluso si no terminas trabajando como programador, la colaboración es parte de la mayoría de trabajos.</p>
         <div class="comment">CRD-1.B.2</div>
-        <p>There are several ways to organize a collaboration.  In this course, you'll use a collaboration technique called <a href="http://en.wikipedia.org/wiki/Pair_programming" title="Wikipedia: Pair programming" target="_blank"><em>pair programming</em></a>&mdash;writing computer programs in teams of two. One partner, the <em>driver,</em> controls the computer. The other, the <em>navigator</em>, helps catch errors and keeps track of how the code being written fits into the overall plan.  The navigator is also in charge of reading the lab pages out loud.  Aim for equal time in each role, switching about every five minutes.</p>
+        <p>Hay diversas formas de organizar la colaboración. En este curso, utilizaremos una técnica llamada <a href="http://en.wikipedia.org/wiki/Pair_programming" title="Wikipedia: Pair programming" target="_blank"><em>programación por pares</em></a>&mdash;escribiendo programas pra computadoras en equipos de dos personas. Uno de los miembros del equipo, el <em>conductor,</em> controla la computadora. El otro, el <em>navegador</em>, ayuda a identificar los errores y llevar el control sobre como el código que se está escribiendo se ajusta al plan general.  El navegador o co-piloto está encargado de leer las instrucciones que aparecen en la página del Laboratorio en voz alta.  Buscaremos un tiempo equitativo para cada rol, cambiando las funciones cada cinco minutos.</p>
 
 		<!--<div class="forYouToDo">
 		<ol>
@@ -42,47 +42,46 @@
 		</div>-->
 
         <div class="takeNote">
-			<h4><strong>How <em>not</em> to do pair programming:</strong></h4>
-			<p>The biggest mistake in pair programming is for the navigator to tune out and let the driver do all the work.  The navigator  has to be paying attention; otherwise you're just taking turns doing the entire work instead of making use of the benefits of having two people.</p>
+			<h4><strong>Cómo <em>no</em> hacer programación por pares:</strong></h4>
+			<p>Uno de los grandes errores en la programación por pares es que el navegador o co-piloto se aparte y deje que el conductor haga todo el trabajo.  El navegador debe estar poniendo atención, de lo contrario solo se alternan los turnos para hacer el trabajo en lugar de aprovechar el beneficio del trabajo en pareja.</p>
 		</div>
         <div class="forYouToDo">
             <ol>
-                <li>If you haven't swapped yet, swap now. (The new navigator should finish reading the page.) <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap"></li>
+                <li>Si aún no han intercambiado los roles, es el momento de hacerlo. (El nuevo navegador debe finalizar la lectura de la página.) <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Intercambio de roles" title="Intercambio de roles"></li>
             </ol>
         </div>
 
-		<h4>How to collaborate in pair programming</h4>
+		<h4>Cómo colaborar en la programación por pares</h4>
         <div class="comment">
             CRD-1.C.1:
             <ul>
-                <li>communication - Keep talking, Listen</li>
-                <li>consensus building - Don't bargain</li>
-                <li>conflict resolution - Don't get defensive, Don't be afraid of conflict</li>
-                <li>negotiation - Don't bargain</li>
+                <li>comunicación activa - Sigue conversando, Escucha</li>
+                <li>construcción de consenso - Evita regatear o quedar en la salida fácil</li>
+                <li>resolución de conflictos - No actuar a la defensiva, No tener miedo a discutir los puntos de vista</li>
+                <li>negociación - Evita regatear</li>
             </ul>
         </div>
         <p>
             <ul>
-                <li><strong>Keep talking.</strong>  The driver should constantly explain the reason for using each block.  The navigator should interrupt with questions: What about doing it this other way? How does this program avoid such-and-such bug?  Don't we have to deal with this requirement and that requirement at the same time?  We're pretty much repeating this other piece of code over there; could we hide that code in a block and use the same block in both places?  And so on.</li>
-                <li><strong>Listen.</strong>  Try to understand each other's thinking before you disagree.</li>
-                <li><strong>Don't get defensive.</strong>  Nobody's code is perfect right away.  It's the navigator's <em>job</em> to find problems in the driver's code, and when you switch places, the new navigator will repay the favor.  You're a team, not a competition.</li>
-                <li><strong>Don't bargain.</strong>  If you have disagreements about how something should be done, don't say "well, you can do this your way if I can have this other thing my way."  Both partners should listen to each other's <em>reasons,</em> and work together to find a solution that meets both needs.</li>
-                <li><strong>Don't be afraid of conflict.</strong>  That doesn't mean you should <em>try</em> to disagree, but if you do, you can still be friends.  Work out the conflict by listening and understanding each other, rather than by giving in just to end the argument.</li>
-                <li><strong>Don't let the more experienced programmer bully the other partner.</strong>  Make sure both partners are comfortable contributing, in either role. A group is almost always better at problem-solving than any of the people in the group is alone.</li>
+                <li><strong>Comunicación activa.</strong>  El conductor debe explicar constantemente la razón por la que se utiliza cada uno de los bloques.  El navegador debe interrumpir con preguntas como las siguientes: ¿Qué tal si lo hacemos de una forma diferente? ¿Cómo este programa puede evitar este u otro error? ¿No deberíamos atender este requerimiento y este otro al mismo tiempo? Estamos repitiendo mucho esta secuencia de código, ¿Podríamos colocar el código en un bloque de instrucciones y luego utilizar ese bloque en distintos lugares?, debes conversar sobre este y otro tipo de preguntas.</li>
+                <li><strong>Escucha.</strong>  Debes intentar entender que piensa tu compañero antes de refutar.</li>
+                <li><strong>No actues a la defensiva.</strong>  Evita pensar que tu código es perfecto. El <em>trabajo</em> del navegador es encontrar problemas en el código del conductor, y en el momento de intercambiar los roles, el nuevo navegador realizará la misma tarea.  Recuerda que trabajan como equipo, no una competencia entre ambos.</li>
+                <li><strong>Evita regatear.</strong>  Si tienes una opinión diferente sobre la forma en que se resuelve una tarea, no digas "bueno, lo puedes hacer a tu manera, solo sí me dejas resolver este otro problema a mi manera." Ambos integrantes deben escuchar los <em>razonamientos</em> del otro compañero y trabajar en conjunto para encontrar una solución que satisfaga a ambos.</li>
+                <li><strong>No tengas miedo al conflicto.</strong>  Esto no significa que deberías <em>intentar</em>  estar en desacuerdo todo el tiempo, pero si lo haces, aún pueden ser amigos.  Trabaja el conflicto escuchando y entendiendo a nuestro compañero, en lugar de simplemente discutir o ceder únicamente por finalizar el conflicto.</li>
+                <li><strong>Eviten en todo momento que el programador más experimentado moleste innecesariamente al otro compañero.</strong>  Asegúrense que los pares se encuentres cómodos contribuyendo, en cada uno de los roles. Un grupo es casi siempre mejor para resolver un problema por el intercambio de ideas, a diferencia de la resolución de problemas por cada integrante de forma individual.</li>
             </ul>
         </p>
 
         <p>
-            In the first unit, we'll use these symbols to remind you to switch roles at specific points in the lab.  After this unit, you're on your own to be sure to switch about every five minutes.<br />
-            <img class="indent" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap">
-            <img class="indent" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap">
+            En esta primera unidad vamos a utilizar estos símbolos como referencia para recordarles cuando deben intercambiar roles en un momento específico del laboratorio. Después de esta unidad, deben recordar intercambiar roles cada cinco minutos.<br />
+            <img class="indent" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Intercambio programación por pares" title="Intercambio programación por pares">
+            <img class="indent" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Intercambio programación por pares" title="Intercambio programación por pares">
 		</p>
 
 		<div class="forYouToDo">
 			<div class="comment">CRD-1.C</div>
 			 <ol start="2">
-                <li>Your teacher will hand out instructions for
-			the Lost on the Moon game.</li>
+                <li>Tu profesor te entregará las instrucciones para el juego: Perdidos en la Luna.</li>
 			<div class="todo">For TG: This is specifically non-optional because it satisfies an LO, which requires an activity.<p>Why does this go in the TG? I see no reason to explain that. --MF, 7/21/19</p><p>Oh, I get it: because this has nothing to do with computer science. Let's cut this, and add the card sorting activity in the appropriate place. --MF, 7/21/19</p></div>
             </ol>
         </div>
