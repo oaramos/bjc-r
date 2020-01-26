@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
 		<script type="text/javascript">window.onload = function() {Gifffer();}</script>
@@ -10,9 +11,10 @@
 	</head>
     
 	<body>
-        <h2>Disease Spread Project</h2>
+        <h2>Proyecto de propagaci&oacute;n de enfermedades</h2>
 		<div class="todo">
-            <h3><p>Need to rework the solutions so it is a reporter and actually answers the new exercises. Also page is no longer optional. --MF, 8/30/19</p></h3>
+            <h3>
+<p>Need to rework the solutions so it is a reporter and actually answers the new exercises. Also page is no longer optional. --MF, 8/30/19</p></h3>
         </div>
         <div class="todo">
             <p>Brian wants to do something with a real example (like weather modeling). --MF, 2/20/18</p>
@@ -20,69 +22,71 @@
         </div>
     
 		<div class="learn">
-            <p><strong>On this page,</strong> you will model the spread of a disease in a population.</p>
-            <img class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif" height="300" alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected."/>
+            <p><strong>En esta p&aacute;gina,</strong> modelar&aacute;s la propagaci&oacute;n de una enfermedad en una poblaci&oacute;n.</p>
+            <img class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif" alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." height="300">
         </div>
-        <p>Suppose you are a medical researcher at the Centers for Disease Control (CDC) and would like to understand the factors that contribute to the spread of a new disease. In particular, you want to know the effect of population size on the time it takes for everyone to be infected.</p>
+        <p>Supongamos que eres un investigador m&eacute;dico de los Centros para el Control de Enfermedades (CCE) y quisieras entender los factores que contribuyen a la propagaci&oacute;n de una nueva enfermedad. En particular, deseas saber el efecto del tama&ntilde;o de la poblaci&oacute;n en el tiempo que le toma a cada uno ser infectado.</p>
         
         <div class="forYouToDo" id="first">
             <ol>
-            	<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What would be a sensible hypothesis on how population size affects the elapsed time?</li>
-                <li>What if the space the people lived in (in the simulation, the size of the Snap<em>!</em> stage) was twice as big?</li>
+            	<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> &iquest;Cu&aacute;l ser&iacute;a una hip&oacute;tesis sensata sobre c&oacute;mo el tama&ntilde;o de la poblaci&oacute;n afecta al tiempo transcurrido?</li>
+                <li>&iquest;Y si el espacio en el que viv&iacute;a la gente (en la simulaci&oacute;n, el tama&ntilde;o del escenario de Snap<em>!</em>) era el doble de grande?</li>
             </ol>
         </div>
         
-        <p>You may not have enough data from actual outbreaks to test your hypothesis and make any meaningful conclusions, and it would be unethical to induce the disease in a population just to gather new data. In this situation, a simulation would be the best option to generate data to test your hypotheses without the constraints of time, cost, and ethics.</p>
-        <p>In this project, you will simulate the spread of a disease within a small population and explore the effects of variables such as population size and speed of human interaction on the spread of disease.</p>
+        <p>Es posible que no tengas suficientes datos de los brotes reales para probar tu hip&oacute;tesis y sacar conclusiones significativas, y no ser&iacute;a &eacute;tico inducir la enfermedad en una poblaci&oacute;n s&oacute;lo para recoger nuevos datos. En esta situaci&oacute;n, una simulaci&oacute;n ser&iacute;a la mejor opci&oacute;n para generar datos para probar tu hip&oacute;tesis sin las limitaciones de tiempo, costo y &eacute;tica.</p>
+        <p>En este proyecto, simular&aacute;s la propagaci&oacute;n de una enfermedad dentro de una peque&ntilde;a poblaci&oacute;n y explorar&aacute;s los efectos de variables como el tama&ntilde;o de la poblaci&oacute;n y la velocidad de la interacci&oacute;n humana en la propagaci&oacute;n de la enfermedad.</p>
         
         <div class="forYouToDo" id="second">
             <ol start="3">
                 <li>
-                    Write a simulation that will:<br />
+                    Escribe una simulaci&oacute;n que:<br>
 					<ul>
-                        <div class="sidenoteBig">How do you make a collection of identical sprites? Create a single person sprite, and use the <code>create a clone of myself</code> block. You learned how to clone a sprite in <a href="/bjc-r/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.</div>
-                        <li>Take 3 inputs: the population size, the percentage of the population initially infected, and the speed at which the simulated people should be moving around.</li>
-                        <li>Infect a healthy person when they touch a sick person.</li>
-                        <li>When the entire population becomes sick, stop the animation and report the duration of the outbreak.</li>
+                        <div class="sidenoteBig">&iquest;C&oacute;mo se hace una colecci&oacute;n de sprites id&eacute;nticos? Crea un sprite de una sola persona, y utiliza el bloque&nbsp; <code>crear un clon de mi mismo</code>. Aprendiste a crear el clon de un sprite en&nbsp; <a href="/bjc-r/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unidad 3 Laboratorio 1 P&aacute;gina 5: Construyendo un tablero Tic-Tac-Toe</a>.</div>
+                        <li>Toma 3 entradas: el tama&ntilde;o de la poblaci&oacute;n, el porcentaje de la poblaci&oacute;n inicialmente infectada y la velocidad a la que las personas simuladas deben desplazarse.</li>
+                        <li>Infectar a una persona sana cuando tocan a una persona enferma.</li>
+                        <li>Cuando toda la poblaci&oacute;n se enferme, det&eacute;n la animaci&oacute;n e informa de la duraci&oacute;n del brote.</li>
 					</ul>
 				</li>
             </ol>
         </div>
         
-        <div class="endnote">Using clones is a form of parallelism. But as you learned on the <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/8-sequential.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 5 Lab 1 Page 8: Parallelism">Unit 5 Lab 1 Page 8: Parallelism</a>, because the clones are all running on one processor, cloning doesn't give you any speedup.</div>
+        <div class="endnote">El uso de clones es una forma de paralelismo. Pero como aprendiste en la <a href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/8-sequential.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 5 Lab 1 Page 8: Parallelism">Unidad 5 Laboratorio 1 P&aacute;gina 8: Paralelismo</a>, porque los clones se ejecutan en un solo procesador, la clonaci&oacute;n no te da ninguna velocidad..</div>
         
         <div class="forYouToDo">
 			<ol start="4">
-				<li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss how your simulation may be similar to and different from a real-life disease outbreak. Identify the <em>simplifying assumptions</em> you made in this simulation.</li>
+				<li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Discute c&oacute;mo tu simulaci&oacute;n puede ser similar y diferente a un brote de enfermedad de la vida real. Identifica la <em>simplificaci&oacute;n de supuestos</em> que hiciste en la simulaci&oacute;n.</li>
                 <li>
                     <div class="comment">AAP-3.F.8</div>
-                    You want to know the effect of population size on the time elapsed. Because there is some randomness in the simulation, you are going to get some variation in the reported time. (This isn't a bug; in real life, random events affect the elapsed time.) Write a function in Snap<em>!</em> that runs the simulation 10 times while keeping the percent initially infected at 10 and the speed of infection at 2, and reports the average time elapsed.<br />
-                    <img class="indent" src="/bjc-r/img/5-algorithms/average-of-disease-spread.png" alt="average time for disease spread with population size: ()" title="average time for disease spread with population size: ()" />
+                    Quieres saber el efecto del tama&ntilde;o de la poblaci&oacute;n en el tiempo transcurrido. Debido a que hay algo de aleatoriedad en la simulaci&oacute;n, vas a obtener alguna variaci&oacute;n en el tiempo reportado. (Esto no es un error; en la vida real, los eventos aleatorios afectan al tiempo transcurrido.) Escribe una funci&oacute;n en Snap<em>!</em> que ejecute la simulaci&oacute;n 10 veces mientras mantiene el porcentaje de infectados inicialmente en 10 y la velocidad de infecci&oacute;n en 2, e informa del tiempo promedio transcurrido.<br>
+                    <img class="indent" src="/bjc-r/img/5-algorithms/average-of-disease-spread.png" alt="average time for disease spread with population size: ()" title="average time for disease spread with population size: ()">
                 </li>
                 <div class="comment">AAP-3.F.7</div>
-                <li>Call this function four times with different populations (50, 100, 150, and 200), and write down the results. Create a refined hypothesis about the relationship between population size and time for the entire population to be infected.</li>
-                <li>In real disease scenarios, not everyone ends up getting sick. How would you decide if the simplifications you used in a simulation invalidate the conclusions you might draw?</li>
+                <li>Llama a esta funci&oacute;n cuatro veces con diferentes poblaciones (50, 100, 150 y 200) y anota los resultados. Crea una hip&oacute;tesis refinada sobre la relaci&oacute;n entre el tama&ntilde;o de la poblaci&oacute;n y el tiempo para toda la poblaci&oacute;n que se va a infectar.</li>
+                <li>En los escenarios de enfermedades reales, no todo el mundo acaba enfermando. &iquest;C&oacute;mo decidir&iacute;as si las simplificaciones que utilizaste en una simulaci&oacute;n invalidan las conclusiones que podr&iacute;as obtener?</li>
 			</ol>
         </div>
-        <p>This is a simplified model. There are many things you could do to make the model more realistic. For example, you could make the infected people heal over time, or you could add doctor sprites who can heal sick sprites, but you will always have to make some simplifications.</p>
+        <p>Este es un modelo simplificado. Hay muchas cosas que puedes hacer para que el modelo sea m&aacute;s realista. Por ejemplo, podr&iacute;as hacer que las personas infectadas se curen con el tiempo, o podr&iacute;as a&ntilde;adir sprites m&eacute;dicos que puedan curar a los sprites enfermos, pero siempre tendr&aacute;s que hacer alguna simplificaci&oacute;n.</p>
         <div class="takeItFurther">
             <ol type="A">
-                <li>Now conduct a similar experiment holding population size constant and varying the percent initially infected. Come up with a hypothesis for this relationship.</li>
-                <li>Then conduct an other experiment by varying movement speed and keeping population size and percent initially infected constant, and create a third hypothesis.</li>
-                <li>Add some more inputs to the simulation block. We've suggested people getting better after time or getting healed by doctors, but there are many more you could think of.</li>
-                <li>You have hypotheses for changing only one variable, but what if you change two things? Do they affect the result independently, or is there a cross effect (for example, if sick people heal quickly, does that change the relationship between population size and time elapsed)? Run experiments to find out.</li>
-                <li>Design and implement a predator-prey simulation in Snap<em>!</em>. For example, you could model an environment with wolf and deer populations where the wolf prey on the deer. What are some parameters you need to incorporate into your model so you can simulate realistic fluctuations in the populations of predator and prey?</li>
+                <li>Ahora realiza un experimento similar manteniendo constante el tama&ntilde;o de la poblaci&oacute;n y variando el porcentaje inicialmente infectado. Plantea una hip&oacute;tesis para esta relaci&oacute;n.</li>
+                <li>A continuaci&oacute;n, realiza otro experimento variando la velocidad de movimiento y manteniendo constantes el tama&ntilde;o y el porcentaje de la poblaci&oacute;n inicialmente infectada, y crea una tercera hip&oacute;tesis.</li>
+                <li>Agrega algunas entradas m&aacute;s al bloque de simulaci&oacute;n. Hemos sugerido que la gente mejore despu&eacute;s de un tiempo o que se cure por los m&eacute;dicos, pero hay muchas m&aacute;s que podr&iacute;as pensar.</li>
+                <li>Tienes hip&oacute;tesis para cambiar s&oacute;lo una variable, pero &iquest;qu&eacute; pasa si cambias dos cosas? &iquest;Afectan al resultado de forma independiente, o hay un efecto cruzado (por ejemplo, si las personas enfermas se curan r&aacute;pidamente, &iquest;cambia esto la relaci&oacute;n entre el tama&ntilde;o de la poblaci&oacute;n y el tiempo transcurrido)? Ejecuta experimentos para averiguarlo.</li>
+                <li>Dise&ntilde;a e implementa una simulaci&oacute;n de predador-presa en Snap<em>!</em>. Por ejemplo, podr&iacute;as modelar un ambiente con poblaciones de lobos y ciervos donde el lobo se alimenta de los ciervos. &iquest;Cu&aacute;les son algunos de los par&aacute;metros que necesitas incorporar en tu modelo para poder simular fluctuaciones realistas en las poblaciones de depredadores y presas?</li>
                 <li>
-                    Imagine you work at a bank that wants to minimize customer wait times in line. The bank is considering two alternatives: 
-                    <ul>
-                        <li>a single line where the customers stand in arrival order and wait for the next available teller, or</li>
-                        <li>separate lines for each teller. </li>
+                    Imagina que trabajas en un banco que quiere minimizar los tiempos de espera de los clientes en la cola. El banco est&aacute; considerando dos alternativas: 
+                    
+<ul>
+                        <li>una sola l&iacute;nea donde los clientes se paran en orden de llegada y esperan al siguiente cajero disponible, o</li>
+                        <li>l&iacute;neas separadas para cada cajero. </li>
                     </ul>
-                     Design and implement two simulations in Snap<em>!</em> <!--like the following linked examples (<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6SingleQueue_Teacher&hideControls" target="_blank">option 1</a>, <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6MultipleQueues_Teacher&hideControls" target="_blank">option 2</a>)--> to help the bank determine the <em>average wait time</em> for customers in each scenario in order to choose the best option.<br />
-                    <img class="indent" src="/bjc-r/img/5-algorithms/img_disease-spread/single-queue.png"  height="180" alt="Single queue" title="Single queue"/><img src="/bjc-r/img/5-algorithms/img_disease-spread/multiple-queues.png" height="180" alt="Multiple queues" title="Multiple queues"/>
+                     Dise&ntilde;a e implementa dos simulaciones en Snap<em>!</em> <!--like the following linked examples (<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6SingleQueue_Teacher&hideControls" target="_blank">option 1</a>, <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6MultipleQueues_Teacher&hideControls" target="_blank">option 2</a>)--> para ayudar al banco a determinar <em>promedio de tiempo de espera</em> para los clientes en cada escenario con el fin de elegir la mejor opci&oacute;n.<br>
+                    <img class="indent" src="/bjc-r/img/5-algorithms/img_disease-spread/single-queue.png" alt="Single queue" title="Single queue" height="180"><img src="/bjc-r/img/5-algorithms/img_disease-spread/multiple-queues.png" alt="Multiple queues" title="Multiple queues" height="180">
                 </li>
             </ol>
 		</div>
     
-    </body>
-</html>
+    
+
+</body></html>
