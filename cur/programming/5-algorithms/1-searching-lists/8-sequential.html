@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 5 Lab 1: Search Algorithms and Efficiency, Page 8</title>
     </head>
 
 	
     <body>
-		<h2>Parallelism</h2>
+		<h2>Paralelismo</h2>
         <div class="learn">
-            <p><strong>On this page,</strong> you will learn how running multiple scripts in parallel can reduce the total time it takes to run an algorithm.</p>
+            <p><strong>En esta p&aacute;gina,</strong> aprender&aacute;s c&oacute;mo la ejecuci&oacute;n de m&uacute;ltiples scripts en paralelo puede reducir el tiempo total que se tarda en ejecutar un algoritmo.</p>
         </div>
-        <p>In Snap<em>!</em>, you are accustomed to seeing a bunch of scripts that all run independently, which may or may not be associated with different sprites. This is kind of like <em>parallel computing</em>. So, if we had a different computer for each sprite, that would be true parallelism. As it is, there is only one computer, and it divides its attention among the processes by running a little bit of one and then running a little bit of the next one. Specifically, it switches at the bottom of loops (<code>forever</code>, <code>repeat</code>, etc.).</p>
-        
-        <div class="vocabFullWidth">: <strong>Sequential</strong> and <strong>Parallel Computing</strong>
-            <div class="comment">CSN-2.A.1, CSN-2.A.2</div>
-            <p>
-                This section covers two computational models:
-                <ul>
-                    <li>In <strong>sequential computing</strong>, operations are performed in order one at a time.</li>
-                    <li>In <strong>parallel computing</strong>, the program is broken into smaller steps, some of which are performed at the same time. Modern computers have multiple processors (2, 4, or 8) in a single computer, so you can do small-scale parallel processing on the machine on your desk.</li>
+        <p>En Snap<em>!</em>, est&aacute;s acostumbrado a ver un mont&oacute;n de scripts que se ejecutan de forma independiente, que pueden o no estar asociados con diferentes sprites. Esto es una especie de <em>computaci&oacute;n en paralelo</em>. As&iacute; que, si tuvi&eacute;ramos un ordenador diferente para cada sprite, eso ser&iacute;a el verdadero paralelismo. Tal como es, s&oacute;lo hay un ordenador, y divide su atenci&oacute;n entre los procesos ejecutando un poco de uno y luego ejecutando un poco del siguiente. Espec&iacute;ficamente, cambia en la parte inferior de los bucles (<code>por siempre</code>, <code>repetir</code>, etc.).</p><strong>Vocabulario: Computaci&oacute;n secuencial y paralela</strong> <strong></strong>
+            <div class="vocabFullWidth">
+<div class="comment">CSN-2.A.1, CSN-2.A.2</div>
+            <p>&nbsp;
+                Esta secci&oacute;n cubre dos modelos de computaci&oacute;n:
+                </p>
+<ul>
+                    <li>En <strong>computaci&oacute;n secuencial</strong>, las operaciones se realizan en orden de una en una..</li>
+                    <li>En <strong>computaci&oacute;n en paralelo</strong>, el programa se divide en pasos m&aacute;s peque&ntilde;os, algunos de los cuales se realizan al mismo tiempo. Las computadoras modernas tienen m&uacute;ltiples procesadores (2, 4, u 8) en una sola computadora, para que puedas hacer un procesamiento paralelo a peque&ntilde;a escala en la m&aacute;quina de tu escritorio.</li>
                 </ul>
-            </p>
+            <p></p>
         </div>
         
         <div class="comment">CSN-2.A.4</div>
-        <p>You can compare the efficiency of two different algorithmic solutions to a problem by comparing the time it takes them to perform the same task.</p>
+        <p>Puedes comparar la eficiencia de dos soluciones algor&iacute;tmicas diferentes a un problema comparando el tiempo que les lleva realizar la misma tarea.</p>
         
         <div class="forYouToDo" id="first">
 			<ol>
                 <li>
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="How long will this sequential script take to run?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
+                    <div class="assessment-data" type="multiplechoice" identifier="How long will this sequential script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true">
                         <div class="prompt">
                             <div class="comment">CSN-2.A part b, CSN-2.A.5</div>
-                            How long will this  <em>sequential</em> program take to run?<br />
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)" />
-                        </div>
+                            &iquest;Cu&aacute;nto tiempo tardar&aacute; este programa <em>secuencial</em> en ejecutarse?<br>
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)">
+                        </div></div></li><li>
+<div class="assessment-data" type="multiplechoice" identifier="How long will this sequential script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true">
                         <div class="choice" identifier="c1">
                             <div class="text">18</div>
-                            <div class="feedback">Correct!</div>
+                            <div class="feedback">&iexcl;Correcto!</div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text">8</div>
-                            <div class="feedback">A sequential solution takes as long as the sum of the run times of all of its steps.</div>
+                            <div class="feedback">Una soluci&oacute;n secuencial toma tanto tiempo como la suma de los tiempos de ejecuci&oacute;n de todos sus pasos.</div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text">4</div>
-                            <div class="feedback">A sequential solution takes as long as the sum of the run times of all of its steps.</div>
+                            <div class="feedback">Una soluci&oacute;n secuencial toma tanto tiempo como la suma de los tiempos de ejecuci&oacute;n de todos sus pasos.</div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text">6</div>
-                            <div class="feedback">A sequential solution takes as long as the sum of the run times of all of its steps.</div>
+                            <div class="feedback">Una soluci&oacute;n secuencial toma tanto tiempo como la suma de los tiempos de ejecuci&oacute;n de todos sus pasos.</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c1"></div>
@@ -64,43 +65,42 @@
         </div>
     
         <div class="comment">CSN-2.A.5</div>
-        <p>The run time of a sequential algorithm is the sum of the run times of all its steps.</p>
+        <p>El tiempo de ejecuci&oacute;n de un algoritmo secuencial es la suma de los tiempos de ejecuci&oacute;n de todos sus pasos.</p>
     
         <div class="forYouToDo">
 			<ol start="2">
 				<li>
                     <!-- Question 2 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="How long will this parallel script take to run?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
+                    <div class="assessment-data" type="multiplechoice" identifier="How long will this parallel script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true">
                   <div class="prompt">
                             <div class="comment">CSN-2.A part b, CSN-2.A.6</div>
-                            How long will this <em>parallel</em> program take to run?<br />
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs" />
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs" />
-                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs" />
+                            &iquest;Cu&aacute;nto tiempo tardar&aacute; este programa <em>paralelo</em> en ejecutarse?<br>
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
+                            <img class="indent" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
                     </div>
                         <div class="choice" identifier="c1">
                             <div class="text">18</div>
                             <div class="feedback">
-                                The two <code>when I receive</code> tasks happen in parallel, not one after the other.
+                                Las dos tareas <code>cuando yo recibo</code> ocurren en paralelo, no una despu&eacute;s de la otra.
                             </div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text">8</div>
                             <div class="feedback">
-                                The longest parallel time does matter, but it's not the only thing that contributes to the total time.
+                                El tiempo paralelo m&aacute;s largo importa, pero no es lo &uacute;nico que contribuye al tiempo total.
                             </div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text">6</div>
                             <div class="feedback">
-                                <code>Broadcast and wait</code> waits until all the tasks that it started have finished.
+                                <code>Transmitir y esperar</code>&nbsp; hasta que todas las tareas que comenzaron han terminado.
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text">14</div>
                             <div class="feedback">
-                                Correct!
+                                &iexcl;Correcto!
                             </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
@@ -114,92 +114,94 @@
         <div class="comment">CSN-2.B.1, CSN-2.B.2, CSN-2.B.3, CSN-2.B.4</div>
         <div class="vocabBig">
             <div class="todo">CSN-2.A.3</div>
-            <p><strong>Distributed computing</strong> is a form of parallel computing that uses multiple computers (perhaps even spread out around the world).</p>
+            <p><strong>Computaci&oacute;n distribuida </strong>es una forma de computaci&oacute;n paralela que utiliza m&uacute;ltiples computadoras (tal vez incluso se extienda por todo el mundo).</p>
         </div>
-        <p>Writing a program that does nothing but wait is, of course, unrealistic, but what <em>is</em> realistic is that in most problems, there isn't a solution that's purely parallel. Some part of the computation has to be done sequentially. In the previous question, the sequential part is modeled by <code>wait 6 secs</code>. Parallelization with this silly example feels trivial, but imagine you work for Google. Millions of search queries and web page edits have happened today, and it's your job to have to process them. If they didn't have huge server farms with thousands of computers in each building, they couldn't keep up at all. Distributed computing lets you <em>scale</em> to very large problems.</p>
+        <p>Escribir un programa que no hace nada m&aacute;s que esperar es, por supuesto, poco realista, pero lo que <em>es</em> real&iacute;stico es que en la mayor&iacute;a de los problemas, no hay una soluci&oacute;n que sea puramente paralela. Alguna parte de la computaci&oacute;n tiene que hacerse de forma secuencial. En la pregunta previa,&nbsp; la parte secuencial es modelada por <code>esperar 6 segs</code>. El paralelismo con este tonto ejemplo se siente trivial, pero imagina que trabajas para Google. Millones de consultas de b&uacute;squeda y ediciones de p&aacute;ginas web han ocurrido hoy en d&iacute;a, y es tu trabajo tener que procesarlos. Si no tuvieran enormes instalaciones de servidores con miles de computadoras en cada edificio, no podr&iacute;an seguir el ritmo en absoluto. La inform&aacute;tica distribuida te permite <em>escalar</em> a problemas muy grandes.</p>
         <div class="comment">CSN-2.A.6</div>
         <p>
-            <img class="noshadow imageRight" src="/bjc-r/img/5-algorithms/sequential-parallel-parts.png" alt="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" title="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" style="background: white;"/>
-            As a more specific example, suppose you want to know the average word length in list of 100,000 words. You can divide the task among several computers (one for each starting letter). Each computer adds the lengths of all the words assigned to it (all the "A" words, all the "B" words, etc). Then one computer has to add the 26 partial results and divide by the total number of words to find the average. To calculate the run time of this parallel solution, you would add the run time of the longest parallel portion (the run time for the letter with the most words) to the run time of the sequential portion (adding the 26 partial results and dividing the sum by the total number of words).
+            <img class="noshadow imageRight" src="/bjc-r/img/5-algorithms/sequential-parallel-parts.png" alt="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" title="diagram of algorithm for finding the average word length in list of 100,000 words: the first two steps (Divide up the wordlist, Send tasks to each other computer) are labeled 'sequential'; then arrows indicate branching off into multiple tasks (Count all the 'A' words, Count all the 'B' words, ..., Count all the 'Z' words) that are labeled 'parallel'; finally, arrows indicate rejoining these results back into a single thread of three steps (Add the 26 partial results, Divide that sum by the total number of words, Report that average) labeled 'sequential'" style="background: white;">Como un ejemplo m&aacute;s espec&iacute;fico, supongamos que quieres saber la longitud media de las palabras de una lista de 100.000 palabras. Puedes dividir la tarea entre varios ordenadores (uno para cada letra de inicio). Cada computadora suma las longitudes de todas las palabras que se le asignan (todas las palabras "A", todas las palabras "B", etc). Luego una computadora tiene que sumar los 26 resultados parciales y dividirlos por el n&uacute;mero total de palabras para encontrar el promedio. Para calcular el tiempo de ejecuci&oacute;n de esta soluci&oacute;n paralela, a&ntilde;adir&iacute;as el tiempo de ejecuci&oacute;n de la parte paralela m&aacute;s larga (el tiempo de ejecuci&oacute;n de la letra con m&aacute;s palabras) al tiempo de ejecuci&oacute;n de la parte secuencial (sumando los 26 resultados parciales y dividiendo la suma por el n&uacute;mero total de palabras).
         </p>
     
         
         <div class="forYouToDo" style="clear: right;">
-            <p>Because every computation includes a sequential portion, there is a limit to how much you can speed up a task by adding <em>processors</em>.</p>
+            <p>Debido a que cada c&oacute;mputo incluye una porci&oacute;n secuencial, hay un l&iacute;mite de cu&aacute;nto puede acelerar una tarea al agregar <em>procesadores</em>.</p>
             <div class="vocab">
-                <p>A <strong>processor</strong> is a piece of circuitry inside a computer that processes the instructions from computer programs.</p> 
-                <p class="center"><img src="/bjc-r/img/6-computers/Hardware_img/CPU_small.jpg" alt="CPU" title="CPU"/></p>
-                <p><small>Image credit: Wikipedia user Solipsist</small></p>
+                <p>Un <strong>procesador</strong> es una pieza de circuitos dentro de una computadora que procesa las instrucciones de los programas de computaci&oacute;n.</p> 
+                <p class="center"><img src="/bjc-r/img/6-computers/Hardware_img/CPU_small.jpg" alt="CPU" title="CPU"></p>
+                <p><small>Cr&eacute;ditos de la imagen: Wikipedia usuario Solipsist</small></p>
             </div>
 			<ol start="3">
                 <div class="comment">CSN-2.A parts a and b, CSN-2.A.4, CSN-2.B.5</div>
 				<li>
-                    Suppose a task includes one minute of sequential steps and a parallelizable portion that would take an hour if done sequentially.  Fill in this table:
-                    <table class="bordered standard nowrap center" summary="Table of number of processors vs. total program running time">
-                        <tr>
-                            <th scope="col">Number of Processors</th>
-                            <th scope="col">Total Time Required</th>
-                            <th scope="col">Solution Type</th>
+                    Supongamos que una tarea incluye un minuto de pasos secuenciales y una porci&oacute;n paralelizable que tomar&iacute;a una hora si se hace de manera secuencial. Completa esta tabla:
+                    
+<table class="bordered standard nowrap center" summary="Table of number of processors vs. total program running time">
+                        <tbody>
+<tr>
+                            <th scope="col">N&uacute;mero de procesadores</th>
+                            <th scope="col">Tiempo total requerido</th>
+                            <th scope="col">Tipo de soluci&oacute;n</th>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>61 minutes (1 hr + 1 min)</td>
-                            <td>sequential solution</td>
+                            <td>61 minutos (1 hr + 1 min)</td>
+                            <td>soluci&oacute;n secuencial</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>31 minutes (30 min + 1 min)</td>
-                            <td rowspan="10">parallel solutions</td>
+                            <td>31 minutos (30 min + 1 min)</td>
+                            <td rowspan="10">soluciones paralelas</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>10</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>20</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>30</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>60</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>120</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>240</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>480</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </li>
                 <div class="comment">CSN-2.B.5</div>
-                <li>Consider the law of diminishing returns:
-                    <ol>
-                        <li>If you have one processor and you add one more, how much time do you save?</li>
-                        <li>If you have 240 processors and you add 240 more, how much time do you save?</li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> How many processors do you think are worth having for this problem?</li>
+                <li>Considere la ley de los rendimientos decrecientes:
+                    
+<ol>
+                        <li>Si tienes un procesador y a&ntilde;ades uno m&aacute;s, &iquest;cu&aacute;nto tiempo te ahorras?</li>
+                        <li>Si tienes 240 procesadores y a&ntilde;ades 240 m&aacute;s, &iquest;cu&aacute;nto tiempo te ahorras?</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner">&iquest;Cu&aacute;ntos procesadores crees que vale la pena tener para este problema?</li>
                     </ol>
                 </li>
                 <div class="endnote">
-                    <a href="#hint-diminishing" data-toggle="collapse" title="What is the law of diminishing returns?">What is the law of diminishing returns?</a>
-                    <div id="hint-diminishing" class="collapse">The law of diminishing returns is an idea from economics that basically says that after a certain point, more is not better. For example, if you got five birthday presents, you might be happier than if you got only one, but getting more presents isn't necessarily better. Imagine you received a hundred  presents. You'd get bored opening them and probably feel overwhelmed. And getting a thousand or a million presents wouldn't make your birthday any happier. The same rule applies to birthday cake!</div>
+                    <a href="#hint-diminishing" data-toggle="collapse" title="What is the law of diminishing returns?">&iquest;Qu&eacute; es la ley de rendimientos decrecientes?</a>
+                    <div id="hint-diminishing" class="collapse">La ley de los rendimientos decrecientes es una idea de la econom&iacute;a que b&aacute;sicamente dice que despu&eacute;s de cierto punto, m&aacute;s no es mejor. Por ejemplo, si recibiste cinco regalos de cumplea&ntilde;os, puede que seas m&aacute;s feliz que si s&oacute;lo recibiste uno, pero recibir m&aacute;s regalos no es necesariamente mejor. Imagina que recibes cien regalos. Te aburrir&iacute;as abri&eacute;ndolos y probablemente te sentir&iacute;as abrumado. Y recibir mil o un mill&oacute;n de regalos no har&iacute;a m&aacute;s feliz tu cumplea&ntilde;os. La misma regla al &iexcl;pastel de cumplea&ntilde;os!</div>
                 </div>
 			</ol>
 		</div>
@@ -207,72 +209,74 @@
         <div class="vocabFullWidth">
             <div class="comment">CSN-2.A.7</div>
             <p>
-                Programmers refer to the <strong>speedup</strong> of parallel solution to describe how many times as fast the parallel solution is compared to the sequential solution:<br />
-            <span class="katex indent">\text{speedup} = \frac{\text{sequential time}}{\text{parallel time}}</span>
+                Los programadores se refieren a la <strong>aceleraci&oacute;n</strong> de la soluci&oacute;n paralela para describir cu&aacute;ntas veces m&aacute;s r&aacute;pido se compara la soluci&oacute;n paralela con la soluci&oacute;n secuencial:<br>
+            <span class="katex indent">\text{aceleraci&oacute;n} = \frac{\text{tiempo secuencial}}{\text{tiemo paralelo}}</span>
             </p>
         </div>
     
-        <p>Computer hardware is very reliable; it's rare for the hardware to break down while you're running a program. But in distributed computing with tens of thousands of computers working on the same problem, it's <em>likely</em> that one of them will fail. (If the probability of one computer failing during a program run is 0.0001, and you use 10,000 computers, then the probability of one of them failing is about 0.368&mdash;about a third of the time!) So software has to compensate by checking that the machines are running and reassigning the tasks of a failed computer to a working one.</p>
-        <p>Also, when you are doing things in parallel, the parallel processes can interfere with each other.
-            <div class="endnote">
-                <a href="#hint-banking" data-toggle="collapse" title="An example of interfering processes with banking...">An example of interfering processes with banking...</a>
+        <p>El hardware del ordenador es muy fiable;es raro que el hardware se aver&iacute;e mientras est&aacute;s ejecutando un programa. Pero en la computaci&oacute;n distribuida con decenas de miles de ordenadores trabajando en el mismo problema, es <em>probable</em> que uno de ellos falle. (Si la probabilidad de que un ordenador falle durante la ejecuci&oacute;n de un programa es de 0,0001, y utilizas 10.000 ordenadores, entonces la probabilidad de que uno de ellos falle es de alrededor de 0,368, aproximadamente &iexcl;un tercio de las veces!) Por lo tanto, el software tiene que compensar comprobando que las m&aacute;quinas est&aacute;n funcionando y reasignando las tareas de un ordenador que ha fallado a uno que funciona.</p>
+        <p>Adem&aacute;s, cuando se hacen las cosas en paralelo, los procesos paralelos pueden interferir entre s&iacute;.
+            </p>
+<div class="endnote">
+                <a href="#hint-banking" data-toggle="collapse" title="An example of interfering processes with banking...">Un ejemplo de interferencia de procesos con la banca...</a>
                 <div id="hint-banking" class="collapse">
                     <p>
-                        If one person withdraws money from an ATM at the same time as someone at a different ATM withdraws money from the same account, you could run into a situation like this:
-                        <table class="bordered standard nowrap center" summary="Possible sequence of events when two ATM transactions happen in parallel">
-                        <tr>
-                            <td rowspan="9" style="vertical-align: middle; border-left: 0; border-top: 0; border-bottom: 0;"><img class="inline noshadow" src="/bjc-r/img/5-algorithms/time-arrow.png" alt="downward pointing arrow labeled 'time'" title="downward pointing arrow labeled 'time'" /></td>
-                            <th scope="col">ATM 1</th>
-                            <th scope="col">ATM 2</th>
+                        Si una persona retira dinero de un cajero autom&aacute;tico al mismo tiempo que otra persona en un cajero autom&aacute;tico diferente retira dinero de la misma cuenta, podr&iacute;as encontrarte con una situaci&oacute;n como la siguiente:
+                        </p>
+<table class="bordered standard nowrap center" summary="Possible sequence of events when two ATM transactions happen in parallel">
+                        <tbody>
+<tr>
+                            <td rowspan="9" style="vertical-align: middle; border-left: 0; border-top: 0; border-bottom: 0;"><img class="inline noshadow" src="/bjc-r/img/5-algorithms/time-arrow.png" alt="downward pointing arrow labeled 'time'" title="downward pointing arrow labeled 'time'"></td>
+                            <th scope="col">Cajero autom&aacute;tico 1</th>
+                            <th scope="col">Cajero autom&aacute;tico 2</th>
                         </tr>
                         <tr>
-                            <td>looks up the balance ($100)</td>
-                            <td></td>
+                            <td>Busca el saldo ($100)</td>
+                            <td><br></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>looks up the balance ($100)</td>
+                            <td><br></td>
+                            <td>Busca el saldo ($100)</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>checks if the amount requested ($40) is available</td>
+                            <td><br></td>
+                            <td>Revisa si la cantidad requerida ($40) est&aacute; disponible</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>adjusts the balance ($60)</td>
+                            <td><br></td>
+                            <td>Ajusta el saldo ($60)</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>dispenses the money</td>
+                            <td><br></td>
+                            <td>Reparte el dinero</td>
                         </tr>
                         <tr>
-                            <td>check if the amount requested ($20) is available</td>
-                            <td></td>
+                            <td>Revisa si la catnidad requerida ($20) est&aacute; disponible</td>
+                            <td><br></td>
                         </tr>
                         <tr>
-                            <td>adjusts the balance ($80)</td>
-                            <td></td>
+                            <td>Ajusta el saldo ($80)</td>
+                            <td><br></td>
                         </tr>
                         <tr>
-                            <td>dispenses the money</td>
-                            <td></td>
+                            <td>Reparte el dinero</td>
+                            <td><br></td>
                         </tr>
-                    </table>
-                    </p>
-                    <p>Because ATM 2 changed the account balance after ATM 1 looked up the balance, ATM 1 didn't know that the balance had been changed. The bank account ended up a balance of $80 even though it started at $100 and a total of $60 was withdrawn.</p>
+                    </tbody></table>
+                    <p></p>
+                    <p>Debido a que el cajero autom&aacute;tico 2 cambi&oacute; el saldo de la cuenta despu&eacute;s de que el cajero autom&aacute;tico 1 busc&oacute; el saldo, el cajero autom&aacute;tico 1 no sab&iacute;a que el saldo hab&iacute;a sido cambiado. La cuenta bancaria termin&oacute; con un saldo de 80 d&oacute;lares, aunque empez&oacute; con 100 d&oacute;lares y se retir&oacute; un total de 60 d&oacute;lares.</p>
                 </div>
             </div>
-        </p>
-        <p>For these reasons and others, a parallel program is harder to write and debug than a sequential program.</p>
+        <p></p>
+        <p>Por estas y otras razones, un programa paralelo es m&aacute;s dif&iacute;cil de escribir y depurar que un programa secuencial.</p>
 
     
         <div class="forYouToDo">
 			<ol start="5">
 				<div class="comment">CSN-2.B</div>
                 <li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                    Identify some benefits and potential challenges of parallel and distributed computing.
-                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" />
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Identifica algunos beneficios y desaf&iacute;os potenciales de la computaci&oacute;n paralela y distribuida.
+                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts">
                 </li>
 			</ol>
 		</div>
@@ -281,42 +285,41 @@
 			<ol start="6">
 				<li>
                     <!-- Question 3 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="What is the speedup for this parallel solution when compared to the sequential solution?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="true">
+                    <div class="assessment-data" type="multiplechoice" identifier="What is the speedup for this parallel solution when compared to the sequential solution?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true">
                         <div class="prompt">
-                            What is the <em>speedup</em> for this parallel solution when compared to the sequential solution?<br />
+                            &iquest;Cu&aacute;l es la <em>aceleraci&oacute;n</em> para esta soluci&oacute;n paralela en comparaci&oacute;n con la soluci&oacute;n secuencial?<br>
                             <ul>
-                                <li>Sequential solution: <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)" /></li>
+                                <li>Soluci&oacute;n secuencial: <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-sequential.png" alt="wait (6), wait (4), wait (8)" title="wait (6), wait (4), wait (8)"></li>
                                 <li>
-                                    Parallel solution:
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs" />
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs" />
-                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs" />
+                                    Soluci&oacute;n paralela:
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-1.png" alt="broadcast (go) and wait, wait (6) secs" title="broadcast (go) and wait, wait (6) secs">
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-2.png" alt="when I receive (go): wait (4) secs" title="when I receive (go): wait (4) secs">
+                                    <img class="inline" src="/bjc-r/img/5-algorithms/quizlet-parallel-3.png" alt="when I receive (go): wait (8) secs" title="when I receive (go): wait (8) secs">
                                 </li>
                             </ul>
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text"><span class="katex">\frac{18}{14}</span></div>
                             <div class="feedback">
-                                Correct!
+                                &iexcl;Correcto!
                             </div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text"><span class="katex">\frac{14}{18}</span></div>
                             <div class="feedback">
-                                Speedup is calculated by dividing the sequential time by the parallel time.
+                                La aceleraci&oacute;n se calcula dividiendo el tiempo secuencial por el tiempo paralelo.
                             </div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text"><span class="katex">\frac{18}{6}</span></div>
                             <div class="feedback">
-                                <code>Broadcast and wait</code> waits until all the tasks that it started have finished.
+                                <code>Transmitir y esperar</code> espera hasta que todas las tareas que comenz&oacute; han terminado.
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text"><span class="katex">\frac{18}{8}</span></div>
                             <div class="feedback">
-                                The longest parallel time does matter, but it's not the only thing that contributes to the total parallel time.
+                                El tiempo paralelo m&aacute;s largo s&iacute; importa, pero no es lo &uacute;nico que contribuye al tiempo paralelo total.
                             </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri3">
@@ -328,5 +331,5 @@
 		</div>
         
         
-    </body>
-</html>
+    
+</body></html>
