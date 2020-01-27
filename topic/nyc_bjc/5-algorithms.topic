@@ -4,7 +4,7 @@ title: Unidad 5: Algoritmos y Simulaciones
 heading: Lab 1: Algoritmos de búsqueda y eficiencia
     raw-html: <img class="imageRight" src="/bjc-r/img/5-algorithms/position-of-number-12-in-unsorted-list-reporting-2.png" alt="Encontrar un número en una lista sin orden" title="Encontrar un número en una lista sin orden" />
 	resource: Adivina mi número [/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html]
-    resource: Cuántas palabras de cinco letras hay? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-how-many-five-letter-words.html]
+    resource: ¿Cuántas palabras de cinco letras hay? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-how-many-five-letter-words.html]
     quiz: ¿"Separar" está escrito correctamente? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-spell-checker.html]
     resource: ¿Exactamente cuánto más rápida es la búsqueda binaria? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/4-efficiency.html]
     quiz: Categorizando algoritmos [/bjc-r/cur/programming/5-algorithms/1-searching-lists/5-categorizing-algorithms.html]
