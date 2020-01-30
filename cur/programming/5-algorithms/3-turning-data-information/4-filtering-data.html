@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+
+		
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
         <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
@@ -10,84 +14,85 @@
     </head>
 
     <body>
-        <h2>Analyzing Data</h2>
+        <h2>Analizando los datos</h2>
         <div class="learn">
-            <p><strong>On this page</strong>, you will ask and answer more demanding questions about your dataset and learn new tools.</p>
+            <p><strong>En esta p&aacute;gina</strong>, har&aacute;s y responder&aacute;s preguntas m&aacute;s exigentes sobre tu conjunto de datos y aprender&aacute;s nuevas herramientas.</p>
         </div>
         
         <p>
-            <div class="comment">DAT-2.D.4</div>
-            You can ask questions about a specific subset of your data by <em>filtering</em> the data using <code>keep</code>. Filtering is a powerful technique for finding information and recognizing patterns in data. For example, filtering can help you answer questions like "What the average city MPG <em>for just the Subarus</em> in this dataset?"<br />
-            <img class="indent" src="/bjc-r/img/5-algorithms/average-mpg-of-subarus-reporting.png" alt="average of (column (1) of table (keep items (field (12) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.49..." title="average of (column (1) of table (keep items (field (12) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.49..." /><br />
-            Column 12 is the "Make" of the vehicle, so we <code>keep</code> all the items from <var>cars</var> where the 12<sup>th</sup> item is Subaru. Then, we take column 1 of that (the "City MPG") and take the average of those values.
-        </p>
+            </p><div class="comment">DAT-2.D.4</div>
+            Puedes hacer preguntas acerca de un subconjunto espec&iacute;fico de tus datos mediante el <em>filtro </em>de datos utilizando <code>mantener</code>. El filtro es una poderosa t&eacute;cnica para encontrar informaci&oacute;n y reconocer patrones en los datos. Por ejemplo, te puede ayudar a responder preguntas como "&iquest;C&uacute;al es el promedio de MPG&nbsp; <em>solamente para el Subarus</em> en esta base de datos?"<br>
+            <img class="indent" src="/bjc-r/img/5-algorithms/average-mpg-of-subarus-reporting.png" alt="average of (column (1) of table (keep items (field (12) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.49..." title="average of (column (1) of table (keep items (field (12) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.49..."><br>
+            Columna 12 es la "Marca" del auto, as&iacute; que <code>mantenemos</code> todos los elementos de los <var>autos</var> donde el 12 elemento sea el Subaru. Luego, tomamos la columna 1 de eso (la "MPG de la ciudad") y tomamos el promedio de esos valores.
+        <p></p>
         <div class="endnote">
-            <p>Notice that there are many digits in the answer above.  How many digits are in each car's MPG?  An important rule in data science is not to claim more precision in a result than is warranted by the given data, so this answer should be rounded to 19.</p>
-            <p>You might find expressions with many nested function calls easier to build by using <code>pipe</code>. <a href="#hint-pipe" data-toggle="collapse" title="What would this look like using pipe?">What would this look like using <code>pipe</code>?</a>
-                <div id="hint-pipe" class="collapse">
+            <p>Nota que hay muchos d&iacute;gitos en la respuesta anterior. &iquest;Cu&aacute;ntos d&iacute;gitos hay en la MPG de cada auto? Una regla importante en la ciencia de los datos es no reclamar m&aacute;s precisi&oacute;n en un resultado que la que se garantiza con los datos dados, por lo que esta respuesta debe redondearse a 19.</p>
+            <p>Puedes encontrar expresiones con muchas llamadas a funciones integradas m&aacute;s f&aacute;ciles de construir usando <code>pipe</code>. <a href="#hint-pipe" data-toggle="collapse" title="What would this look like using pipe?">&iquest;C&oacute;mo se ver&iacute;a esto usando <code>pipe</code>?</a>
+                </p><div id="hint-pipe" class="collapse">
                     <p>
-                        You can use the <code>pipe</code> function from the "Frequency Distribution Analysis" library to work through your data analysis one function at at time:<br />
-                        <div class="comment">BH, please review revised alt/title text on this image. --MF, 6/27/19</div>
-                        <img class="indent" src="/bjc-r/img/5-algorithms/pipe-cars-reporting.png" alt="pipe (data of table (cars)) → (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..." title="pipe (data of table (cars)) → (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..." /><br />
-                        The <code>pipe</code> function sends the <code>data from table (</code><var>cars</var><code>)</code> through <code>keep</code> to filter it for just the Subarus, through <code>column (1) of table</code> to get just the "City MPG" for those Subarus, and finally through <code>average</code> to get the average of those Subaru MPG values.  
-                    </p>
-                    <p>Recall that the empty input slots in each function are filled by the output of the previous function (or the starting dataset in the case of the first function): the empty slots in the <code>keep</code> function are both filled by <code>data from table (</code><var>cars</var><code>)</code>; the empty slot in <code>column (1) of table</code> is filled by the output of <code>keep</code>; and the empty slot in <code>average</code> is filled by the output of <code>column (1) of table</code>. It's like a pipe of made of pieces connected together; the data goes in one end and works through each function, computing a new value at each step.</p>
+                        Puedes utilizar esta funci&oacute;n de <code>pipe</code> en la biblioteca "An&aacute;lisis de distribuci&oacute;n de frecuencia" para trabajar a trav&eacute;s de su an&aacute;lisis de datos una funci&oacute;n a la vez:<br>
+                        </p><div class="comment">BH, please review revised alt/title text on this image. --MF, 6/27/19</div>
+                        <img class="indent" src="/bjc-r/img/5-algorithms/pipe-cars-reporting.png" alt="pipe (data of table (cars)) &rarr; (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..." title="pipe (data of table (cars)) &rarr; (keep items (field (12) of record 'list input slot' = Subaru) from 'list input slot') (column (1) of table ()) (average of ()) reporting 19.49..."><br>
+                        La funci&oacute;n <code>pipe</code> env&iacute;a los <code>datos de la tabla (</code><var>autos</var><code>)</code> a trav&eacute;s del filtro <code>mantener</code> para filtrarlo s&oacute;lo para el Subarus, en la <code>columna (1) de la table</code> para conseguir s&oacute;lo la "MPG de la ciudad" para esos Subarus, y finalmente a trav&eacute;s de<code><span style="font-family: serif;"> </span>promedio</code> obtener el promedio de los valores de MPG de Subaru.  
+                    <p></p>
+                    <p>Recuerda que los espacios de entrada vac&iacute;os en cada funci&oacute;n se llenan con la salida de la funci&oacute;n anterior (o el conjunto de datos de inicio en el caso de la primera funci&oacute;n): Las ranuras vac&iacute;as de la funci&oacute;n <code>mantener</code>&nbsp; est&aacute;n completadas con <code>datos de la tabla (</code><var><span style="font-family: monospace;">autos</span></var><code>)</code>; la ranura vac&iacute;a en <code>columna (1) de la tabla</code> est&aacute; completada con la salida de <code>mantener</code>; y la ranura vac&iacute;a en&nbsp; <code>promedio</code> est&aacute; completada con la salida de <code>columna (1) de la tabla</code>. Es como un tubo de piezas conectadas entre s&iacute;; los datos van en un extremo y funcionan a trav&eacute;s de cada funci&oacute;n, procesando un nuevo valor en cada paso..</p>
                 </div>
-            </p>
+            <p></p>
         </div>
 
         <div class="forYouToDo">
 			<ol>
-				<li>Open your U3L4-Data-Processing project if it isn't open already.</li>
-                <li>Load the "Frequency Distribution Analysis" from the Libraries... option in the Snap<em>!</em> File menu (<img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button" title="File button"/>).</li>
+				<li>Abre tu proyecto U3L4-procesando-datos si a&uacute;n no est&aacute; abierto.</li>
+                <li>Descarga el "An&aacute;lisis de distribuci&oacute;n de frecuencia" de la biblioteca... opci&oacute;n en Snap<em>!</em> Archivo men&uacute; (<img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button" title="File button">).</li>
                 <div class="comment">DAT-2.D</div>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Determine one question you can answer by <strong>looking at a single column of a <em>portion</em> </strong> of your data set, and then build code to answer that question. You can nest your function or use <code>pipe</code>. (Or try both!)</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Determina una pregunta que puedes responder <strong>mira una sola columna de una <em>porc&iacute;on</em> </strong>de tu base de datos, y luego construye el c&oacute;digo para responder a esa pregunta. Puedes agrupar tu funci&oacute;n o utilizar <code>pipe</code>. (&iexcl;o intenta ambos!)</li>
 				<div class="endnote">
-                    <a href="#hint-portion" data-toggle="collapse" title="Click for example questions to ask about a portion of a single column.">Click for example questions to ask about a portion of a single column.</a>
+                    <a href="#hint-portion" data-toggle="collapse" title="Click for example questions to ask about a portion of a single column.">Da clic para ver preguntas de ejemplo para preguntar sobre una parte de una sola columna.</a>
                     <div id="hint-portion" class="collapse">
                         <ul>
-                            <li>What's the average MPG that <em>Volvos</em> in this database get in the city? (You'd need <code>average</code>.)</li>
-                            <li>What's the year of the oldest <em>Honda</em> in this dataset? (You'd need <code>minimum</code>.)</li>
-                            <li>How many <em>2009</em> cars in this dataset have manual transmission? </li>
+                            <li>&iquest;Cu&aacute;l es el promedio de MPG que los <em>Volvos</em> en esta base de datos obtienen en la ciudad? (Necesitas <code>promedio</code>.)</li>
+                            <li>&iquest;Cu&aacute;l es el a&ntilde;o del <em>Honda</em> m&aacute;s antiguo en esta base de datos? (Necesitas <code>min&iacute;mo</code>.)</li>
+                            <li>&iquest;Cu&aacute;ntos autos del a&ntilde;o <em>2009</em> en esta base de datos tienen transmisi&oacute;n manual? </li>
                         </ul>
-                        <p>Notice that the column you use to filter the data (such as year) doesn't have to be the column you are asking about (such as transmission).</p>
-                        <p>You built <code>average</code> on <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 4 Page 3: Other Mathematical Reporters">Unit 2 Lab 4 Page 3: Other Mathematical Reporters</a>.</p>
+                        <p>Observa que la columna que usas para filtrar los datos (como el a&ntilde;o) no tiene que ser la columna sobre la que est&aacute;s preguntando (como la transmisi&oacute;n).</p>
+                        <p>Contruiste <code>promedio</code> en <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 4 Page 3: Other Mathematical Reporters">Unidad 2 Laboratorio 4 P&aacute;gina 3: Otros reportes matem&aacute;ticos</a>.</p>
                     </div>
                 </div>
 			</ol>
 		</div>
         <p>
-            Sometimes, you want to keep a subset of your data (such as "Which cars were made in 2010?"), but other times, you just want one item that matches your requirement (such as "What's a car that was made in 2010?"). Snap<em>!</em> has a higher order function <img class="inline nopadtb" src="/bjc-r/img/blocks/find-first.png" alt="find first item () in 'list input slot'" title="find first item () in 'list input slot'" /> that works similarly to <code>keep</code>, but it reports only the first item that's found. 
+            Algunas veces, quieres mantener un subconjunto de tus datos (como "&iquest;Qu&eacute; autos fueron hechos en el 2010?"), pero otras veces, s&oacute;lo quieres un elemento que coincida con tus requerimientos (como "&iquest;Qu&eacute; auto fue hecho en 2010?"). Snap<em>!</em> tiene una funci&oacute;n de orden superior <img class="inline nopadtb" src="/bjc-r/img/blocks/find-first.png" alt="find first item () in 'list input slot'" title="find first item () in 'list input slot'">que funciona similar a <code>mantener</code>, pero s&oacute;lo informa el primer elemento que encuentra. 
         </p>
-        <div class="endnote">
-            <p><code>Find first</code> is a higher order function like <code>keep</code>, <code>map</code>, and <code>combine</code>, because it takes a function (a predicate) as input. (<code>Find first</code> is like <code>item (1) of (keep)</code>.)</p>
-            <div class="todo">Images need alt/title text. --MF, 6/27/19</div>
+        <div class="endnote"><br>
+<div class="todo">Images need alt/title text. --MF, 6/27/19</div>
             <p>
-                <a href="#hint-findfirst" data-toggle="collapse" title="Click for an example of keep vs. find first.">Click for an example of <code>keep</code> vs. <code>find first</code>.</a>
-                <div id="hint-findfirst" class="collapse">
-                    <img class="inline" src="/bjc-r/img/5-algorithms/keep-cars-2010.png" alt="" title="" />
-                    <img class="inline" src="/bjc-r/img/5-algorithms/find-first-car-2010.png" alt="" title="" />
+                <a href="#hint-findfirst" data-toggle="collapse" title="Click for an example of keep vs. find first.">Da clic para ver un ejemplo de <code>mantener</code> vs. <code>encontrar primero</code>.</a>
+                </p><div id="hint-findfirst" class="collapse">
+                    <img class="inline" src="/bjc-r/img/5-algorithms/keep-cars-2010.png" alt="" title="">
+                    <img class="inline" src="/bjc-r/img/5-algorithms/find-first-car-2010.png" alt="" title="">
                 </div>
-            </p>
+            <p></p>
         </div>
     
         <div class="comment">DAT-2.D.6</div>
-        <p>You can access or change data to create new information by using:
-            <ul>
-                <li><code>Map</code> to transform every element of a data set (such as doubling every element in a list, or extracting the parent’s email from every student record)</li>
-                <li><code>Keep</code> or <code>find first</code> to filter a data set (such as keeping only the positive numbers from a list, or keeping only students who signed up for band from a record of all the student)</li>
-                <li><code>Combine</code> to combine or comparing data in some way (such as adding up a list of numbers, or finding the student who has the highest GPA) </li>
-                <li>Visualization tools to present the data set in a chart, graph, or other visual representation (such as by using <code>histogram</code>, which you will learn on the next page)</li>
+        <p>Puedes acceder o modificar a los datos para crear nueva informaci&oacute;n utilizando:
+            </p>
+<ul>
+                <li><code>Mapear</code> para transformar cada elemento de una base de datos (por ejemplo, duplicar cada elemento de una lista, o extraer el correo electr&oacute;nico de los padres de cada registro del estudiante)</li>
+                <li><code>Mantener</code> o <code>encontrar primeroind</code> para filtrar la base de datos (por ejemplo, mantener s&oacute;lo los n&uacute;meros positivos de una lista, o mantener s&oacute;lo los estudiantes que se inscribieron en la orquesta dentro de un registro de todos los estudiantes)</li>
+                <li><code>Combinar<span style="font-family: serif;"></span></code> para combinar o comparar datos de alguna manera (por ejemplo, sumando una lista de n&uacute;meros, o encontrando al estudiante que tiene el mayor promedio de notas) </li>
+                <li>Herramientas de visualizaci&oacute;n para presentar el conjunto de datos en un diagrama, gr&aacute;fico u otra representaci&oacute;n visual (por ejemplo utilizando un <code>histograma</code>, el cual aprender&aacute;s en la siguiente p&aacute;gina)</li>
             </ul>
-        </p>
+        <p></p>
             
         <div class="forYouToDo">
 			<ol start="4">
                 <div class="comment">DAT-2.D</div>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Ask and answer a question that you can answer by looking at a single column of a portion of your data set and <strong>examining just the first item</strong>. Build code to answer your question.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Pregunta y responde a una consulta que puedes resolver mirando una sola columna de una parte de tu base de datos y <strong>examinando solo el primer elemento</strong>. Crea el c&oacute;digo para responder a tu pregunta.</li>
 			</ol>
 		</div>
 
         
-    </body>
-</html>
+    
+
+</body></html>
