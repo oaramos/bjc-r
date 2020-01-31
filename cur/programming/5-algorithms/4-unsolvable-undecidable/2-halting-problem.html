@@ -31,7 +31,7 @@
         <h4><strong>Haciendo la suposición</strong></h4>
         <p>
 			<div class="sidenote">No podemos mostrar el código dentro de <code>detener?</code>; estamos demostrando que no se puede escribir en absoluto, sin importar qué código lo implemente.</div>
-            Primero, <em>asumimos</em> que existe una función llamada <code>detener?</code> que determina si un bloque reportar dado reportará un valor en un tiempo finito. (Si es así, decimos que el bloque reportar <em>se detiene.</em>) Se necesitan dos entradas: una función y un valor de entrada para esa función. Este reporta <code>verdadero</code> si la función reportaria un valor cuando se le da esa entrada; y reporta <code>falso</code> si la función se ejecutaría para siempre (en un bucle infinito).<br />
+            Primero, <em>asumimos</em> que existe una función llamada <code>detener?</code> que determina si dado un reportador reportará un valor en un tiempo finito. (Si es así, decimos que el reportador <em>se detiene.</em>) Se necesitan dos entradas: una función y un valor de entrada para esa función. Este reporta <code>verdadero</code> si la función reportaria un valor cuando se le da esa entrada; y reporta <code>falso</code> si la función se ejecutaría para siempre (en un bucle infinito).<br />
             <img class="indent" src="/bjc-r/img/5-algorithms/halts.png" alt="detener? (función) (entrada)" title="detener? (función) (entrada)" />
         </p>
         
@@ -91,71 +91,71 @@
 		<p>
             Para demostrar que no puede existir tal función, necesitamos crear una contradicción. Necesitamos demostrar que tiene que haber al menos una función y una entrada a esa función para la cual <code>detener?</code> no funciona de la manera que asumimos. Por lo tanto, podemos hacer un bloque, <code>probar</code>, específicamente con el propósito de romper <code>detener?</code>:<br />
             <div class="sidenoteBig">
-                Al igual que los símbolos <code>#</code> y <code>⋮</code> para las entradas declaradas como <em>números</em> o <em>listas</em>, el <code>&lambda;</code> no forma parte del nombre de la entrada, pero es una <strong>sugerencia de tipo</strong> que se creó al seleccionar el tipo de entrada <em>reportar</em>:<br />  
-                <img class="indent" src="/bjc-r/img/5-algorithms/input-type-reporter.png" alt="seleccionar el tipo de entrada de Reportar" title="seleccionar el tipo de entrada de Reportar"/><br />
-                Recuerde que seleccionar un tipo de entrada cambia la apariencia de la ranura de entrada para que indique qué tipo de entrada se espera. La ranura de entrada para <code>probar</code> tendrá un anillo gris redondeado para indicar que la entrada debe ser un reportar: <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/tester().png" alt="probar ()" title="probar ()" />
+                Al igual que los símbolos <code>#</code> y <code>⋮</code> para las entradas declaradas como <em>números</em> o <em>listas</em>, el <code>&lambda;</code> no forma parte del nombre de la entrada, pero es una <strong>sugerencia de tipo</strong> que se creó al seleccionar el tipo de entrada <em>reportador</em>:<br />
+                <img class="indent" src="/bjc-r/img/5-algorithms/input-type-reporter.png" alt="seleccionar el tipo de entrada de Reportador" title="seleccionar el tipo de entrada de Reportador"/><br />
+                Recuerde que seleccionar un tipo de entrada cambia la apariencia de la ranura de entrada para que indique qué tipo de entrada se espera. La ranura de entrada para <code>probar</code> tendrá un anillo gris redondeado para indicar que la entrada debe ser un reportador: <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/tester().png" alt="probar ()" title="probar ()" />
             </div>
-            <img class="indent" src="/bjc-r/img/5-algorithms/tester-halting.png" alt="probar(reportar){si(detener?(reportar)(reportar){por siempre{}}sino{reportar(No importa qué valor es reportado.)}}" title="probar(reportar){si(detener?(reportar)(reportar){por siempre{}}sino{reportar(No importa qué valor es reportado.)}}">
+            <img class="indent" src="/bjc-r/img/5-algorithms/tester-halting.png" alt="probar(reportador){si(detener?(reportador)(reportador){por siempre{}}sino{reportar(No importa qué valor es reportado.)}}" title="probar(reportador){si(detener?(reportador)(reportador){por siempre{}}sino{reportar(No importa qué valor es reportado.)}}">
         </p>
-        <p>The <code>forever</code> block in this script creates an infinite loop. If the <code>tester</code> code ends up in this part of the <code>if</code> statement, it will never report anything. So whether <code>tester</code> <em>itself</em> will halt depends on the output of the <code>halts?</code> predicate in the <code>if</code> statement inside it.</p>
-        <p>The expression <img class="inline" src="/bjc-r/img/5-algorithms/halts-reporter-reporter.png" alt="halts? (reporter) (reporter)" title="halts? (reporter) (reporter)" /> asks what will happen if we call the input function (<var>reporter</var>) with <em>itself</em> as its own input. This is similar to when Betsy made a statement about the statement she was making, when she said, "The statement I'm making <em>right now</em> is false."</p>
+        <p>El bloque <code>por siempre</code> en este script crea un bucle infinito. Si el código de <code>prueba</code> termina en esta parte de la declaración <code>si</code>, nunca reportara nada. Entonces, entonces si <code>prueba</code> se detendrá <em>el mismo</em> depende de la salida del predicado <code>detener?</code> en la declaración <code>si</code> dentro de él.</p>
+        <p>La expresion <img class="inline" src="/bjc-r/img/5-algorithms/halts-reporter-reporter.png" alt="detener? (reportador) (reportador)" title="detener? (reportador) (reportador)" /> pregunta qué sucederá si llamamos a la función de entrada (<var>reportar</var>) con <em>el mismo</em> como su propia entrada. Esto es similar a cuando Betsy hizo una declaración sobre la declaración que estaba haciendo, cuando dijo: "La declaración que estoy haciendo <em>en este momento</em> es falsa". </p>
         
         <div class="endnote">
-            <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
-            This <em>is</em> challenging. Stick with it! We are <em>creating a contradiction</em> to prove that the <code>halts?</code> function called inside <code>tester</code> can't exist. 
+            <img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Cosas difíciles" title="Cosas difíciles" />
+            Este <em>es</em> desafiante. ¡Quedate con eso! Estamos <em>creando una contradicción</em> para demostrar que la función <code>detener?</code> llamada dentro de <code>prueba</code> no puede existir.
         </div>
         
-        <h4><strong>Using Self-Reference to Lead to Contradiction</strong></h4>
+        <h4><strong>Utilizando autorreferencia para conducir a la contradicción</strong></h4>
         <p>
-            To make the situation <em>exactly</em> like what Betsy said ("The statement I'm making <em>right now </em>is false."), we'll call <code>tester</code> on <em>itself</em>:<br />
-            <img class="indent" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /><br />
-            Now, the <code>if</code> statement inside the <code>tester</code> block will ask if <code>tester</code> will halt (not run forever) if it's called with <code>tester</code> as its input. The predicate in the <code>if</code> statement will become <code>halts? (tester) (tester)</code>.<br />
+            Para hacer que la situación sea <em>exactamente</em> como lo que dijo Betsy ("La declaración que estoy haciendo <em>en este momento</em> es falsa"), llamaremos a <code>prueba</code> dentro de <em>sí mismo</em>:<br />
+            <img class="indent" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" /><br />
+            Ahora, la instrucción <code>si</code> dentro del bloque <code>probar</code> preguntará si <code>probar</code> se detendrá (no se ejecutará para siempre) si se llama con <code>probar</code> como su entrada. El predicado en la instrucción <code>si</code> se convertirá en <code>detener? (prueba) (prueba)</code>.<br />
 <div class="todo">I took out class="indent" on this picture so that it'd fit in the window.  If you don't like that, figure out how to shrink the picture without fuzzing it up. -bh<br />OK, leaving this comment here to remind me for another day. --MF, 2/1/18</div>
-            <img src="/bjc-r/img/5-algorithms/tt-t-htt.png" alt="tester(tester) -&gt; reporter input in tester definition -&gt; halts? (tester) (tester)" title="tester(tester) -&gt; reporter input in tester definition -&gt; halts? (tester) (tester)">
+            <img src="/bjc-r/img/5-algorithms/tt-t-htt.png" alt="prueba(prueba) -&gt; entrada reportador en la definicio de prueba -&gt; detener? (prueba) (prueba)" title="prueba(prueba) -&gt; entrada reportador en la definicio de prueba -&gt; detener? (prueba) (prueba)">
         </p>
-        <p>So, just as in the examples above,</p>
-        <p class="indent"><img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="halts (tester) (tester) reporting true" title="halts (tester) (tester) reporting true" /> would mean that <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> returns a value.</p>
-        <p class="indent"><img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="halts (tester) (tester) reporting false" title="halts (tester) (tester) reporting false" /> would mean that <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> loops infinitely.</p>
+        <p>Entonces, al igual que en los ejemplos anteriores,</p>
+        <p class="indent"><img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="detener (prueba) (prueba) reportando verdadero" title="detener (prueba) (prueba) reportando verdadero" /> significaría que <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="prueba(prueba())" /> devuelve un valor.</p>
+        <p class="indent"><img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="detener (prueba) (prueba) reportando falso" title="detener (prueba) (prueba) reportando falso" /> significaría que <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" /> bucles infinitamente.</p>
                 
-        <h4><strong>Understanding the Contradiction</strong></h4>
+        <h4><strong>Entendiendo la contradicción</strong></h4>
         <p>
-        	When we call <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" />, we run into the contradiction. To see how, look back at the <code>tester</code> definition:<br />
-            <img class="indent" src="/bjc-r/img/5-algorithms/tester-halting.png" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}">
+            Cuando llamamos <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" />, nos encontramos con la contradicción. Para ver cómo, mire hacia atrás en la definición de <code>prueba</code>:<br />
+            <img class="indent" src="/bjc-r/img/5-algorithms/tester-halting.png" alt="prueba(reportador){si(detener?(reportador)(reportador){por siempre{}}sino{reportar(true)}}" title="prueba(reportador){si(detener?(reportador)(reportador){por siempre{}}sino{reportar(true)}}">
         </p>
         <p>
-            Showing that <strong>the result has to be wrong</strong> involves a <em>case analysis</em> like the ones used to solve the logic puzzles on page 1. Consider the two possible cases:
+            Mostrar que <strong>el resultado tiene que estar equivocado</strong> implica un <em>análisis de casos</em> como los utilizados para resolver los acertijos lógicos en la página 1. Considere los dos casos posibles:
             <ol>
-              <li>If <img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="halts (tester) (tester) reports true" title="halts (tester) (tester) reports true" /> then <code>tester</code> will take the first branch of the <code>if</code>, and so it will loop forever. That means <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> <em>won't</em> halt, and so <code>halts?</code> gave the wrong answer.</li>
-                <li>If <img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="halts (tester) (tester) reports false" title="halts (tester) (tester) reports false" /> then <code>tester</code> will take the <code>else</code> branch and report "It doesn't matter what value is reported." That means <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> <em>will</em> halt, and so <code>halts?</code> is wrong again.</li>
+              <li>If <img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="detener (prueba) (prueba) reporta verdadero" title="detener (prueba) (prueba) reporta verdadero" /> entonces <code>prueba</code> tomará la primera rama del <code>si</code>, por lo que se repetirá para siempre. Eso significa <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" /> <em>no se</em> detendrá, ¿entonces <code>detener?</code> dio la respuesta incorrecta.</li>
+                <li>Si <img class="inline" src="/bjc-r/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="detener (prueba) (prueba) reporta falso" title="detener (prueba) (prueba) reporta falso" /> entonces <code>prueba</code> tomará la rama <code>sino</code> y reporta "No importa qué valor se informe". Eso significa <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" /> <em>que se detendrá</em>, por lo que <code>detener?</code> vuelve a estar equivocado. </li>
             </ol>
 		</p>
-        <div class="endnote">It doesn't matter <em>what</em> value <code>tester</code> reports, just that it reports <em>some</em> value, but it <em>does</em> matter what value <code>halts?</code> reports.</div>
+        <div class="endnote">No importa <em>qué</em> valor <code>prueba</code> reporta, solo que reporta <em>algún</em> valor, pero <em>sí</em> importa qué valor reporta <code>detener</code>.</div>
         
         <div class="takeNote">
-            <p>No matter what <code>halts?</code> reports, it will always disagree with itself in a program like this. <strong>This contradiction (this logical impossibility) means that the assumption that it's possible write <code>halts?</code> has to be wrong</strong>. This isn't just a claim about what will happen in Snap<em>!</em>. The language you use to explore a computational problem can impact the clarity or readability of your code but not whether a solution to a problem exists. Even with advances in quantum computing, we will never be able to create a general-purpose debugging program. This famous example is known as the <em>halting problem,</em> and the fact that the halting problem is not decidable is the <em>Halting Theorem.</em></p>
+            <p>No importa qué <code>detener?</code> reporta, siempre estará en desacuerdo consigo mismo en un programa como este. <strong>Esta contradicción (esta imposibilidad lógica) significa que la suposición de que es posible escribir <code>detener?</code> tiene que estar equivocada</strong>. Esto no es solo un reclamo sobre lo que sucederá en Snap<em>!</em>. El lenguaje que use para explorar un problema computacional puede afectar la claridad o la legibilidad de su código, pero no si existe una solución a un problema. Incluso con los avances en computación cuántica, nunca podremos crear un programa de depuración de propósito general. Este famoso ejemplo se conoce como el <em>problema de detención</em> y el hecho de que el problema de detención no sea decidible es el <em>Teorema de detención</em>.</p>
 		</div>
         
         <div class="forYouToDo">
             <ol start="2">
                 <li>
-					<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                    Go over this whole proof again together. Make sure both you and your partner understand:
+					<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu pareja" title="Habla con tu pareja" />
+                    Revisen toda esta prueba nuevamente juntos. Asegúrese de que tanto tu como tu pareja entiendan:
                     <ol>
-	                    <li>Everything from exercise 1 about proof by contradiction, what <code>halts?</code> does, and how <code>halts?</code> is going to be used in the proof</li>
-	                    <li>The basics of how the <code>tester</code> function behaves (for <em>any</em> input function)</li>
-	                    <li>How calling <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> leads to a contradiction</li>
-                        <li>What that contradiction means in the proof</li>
-                        <li>Whether the Halting problem is an unsolvable problem, an undecidable problem, or both; and <em>why</em></li>
+	                    <li>Todo, desde el ejercicio 1 sobre la prueba por contradicción, ¿qué <code>detener?</code> y cómo se va a utilizar <code>detener?</code> en la prueba</li>
+	                    <li>Los fundamentos de cómo se comporta la función <code>prueba</code> (para <em>cualquier</em> función de entrada)</li>
+	                    <li>Como llamar <img class="inline" src="/bjc-r/img/5-algorithms/testertester.png" alt="prueba(prueba())" title="prueba(prueba())" /> conduce a una contradicción</li>
+                        <li>¿Qué significa esa contradicción en la prueba?</li>
+                        <li>Si el problema de detención es un problema irresoluble, un problema indecidible o ambos; y <em>por qué</em></li>
                     </ol>
                 </li>
-                <li>Write a paragraph explaining the difference between an problem that <em>can't</em> be solved (such as the halting problem) and a problem that takes unreasonable time.</li>
+                <li>Escriba un párrafo que explique la diferencia entre un problema que <em>no se puede</em> resolver (como el problema de detención) y un problema que lleva un tiempo irrazonable.</li>
             </ol>
         </div>
         
         <div class="endnote">
-            <h4><strong>Who first proved the Halting Theorem?</strong></h4>
-            <p>Alan Turing (1912-1954) was one of the founders of computer science. He is known for two achievements. First, he made a massive contribution to winning World War II by inventing a mathematical theory and corresponding computer hardware to break the encoded messages generated by the German Enigma machine. Second, together with his colleague Alonzo Church, Turing was a founder of <em>theoretical computer science</em>: proving how computers <em>must</em> work regardless of future technology. Though his work on the Halting Problem, he proved that <em>there are computations that can never be done</em>, no matter how big and fast computers get.</p>
-            <p>When Turing did this work, there were no programmable computers; people had to rewire physical machines to solve each new problem. With powerful programming languages (such as Snap<em>!</em>), we can see and understand the essence of Turing's proof much more easily because we can use functions as inputs to other functions, as you've seen with <code>map</code>, <code>keep</code>, and <code>combine</code>. This proof was even harder for Turing because he had to invent the idea of a computer program that can itself be represented as data inside the computer.</p>
+            <h4><strong>¿Quién probó primero el teorema de la detención?</strong></h4>
+            <p>Alan Turing (1912-1954) fue uno de los fundadores de la informática. Es conocido por dos logros. Primero, hizo una contribución masiva para ganar la Segunda Guerra Mundial al inventar una teoría matemática y el hardware informático correspondiente para descifrar los mensajes codificados generados por la máquina alemana Enigma. En segundo lugar, junto con su colega Alonzo Church, Turing fue uno de los fundadores de la <em>informática teórica</em>: demostrando cómo las computadoras <em>deben</em> funcionar independientemente de la tecnología futura. A pesar de su trabajo en el Problema de detención, demostró que <em> hay cálculos que nunca se pueden hacer </em>, sin importar cuán grandes y rápidas sean las computadoras.</p>
+            <p>Cuando Turing hizo este trabajo, no había computadoras programables; la gente tenia que volver a cablear máquinas físicas para resolver cada nuevo problema. Con potentes lenguajes de programación (como Snap<em>!</em>), podemos ver y comprender la esencia de la prueba de Turing mucho más fácilmente porque podemos usar funciones como entradas para otras funciones, como has visto con <code>mapa</code>, <code>keep</code> y <code>combine</code>. Esta prueba fue aún más difícil para Turing porque tuvo que inventar la idea de un programa de computadora que se pueda representar como datos dentro de la computadora.</p>
         </div>
                 
         
