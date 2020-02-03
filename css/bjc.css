@@ -383,7 +383,7 @@ ifTime, .takeItFurther, .endnote, .sidenote, .sidenoteBig {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before {content: "Ahora Es Tu Turno";} /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */
+.forYouToDo:before {content: "Ahora es tu turno";} /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */
 
 .ifTime {
   background-color: #cce4f6; /*#d2e3be; /* #edf4e6; */
@@ -485,7 +485,7 @@ table.truth tr td {
  }
 
 .vocab:before, .vocabBig:before, .vocabFullWidth:before {
-  content: "Vocabulary";
+  content: "Vocabulario";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5em;

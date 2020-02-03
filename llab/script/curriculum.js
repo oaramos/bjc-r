@@ -41,7 +41,7 @@ llab.secondarySetUp = function() {
      // making ifTime and takeItFurther DIVs hide until clicked --MF, 2/9/18
      $('div.ifTime').each(function(i) {
           var divcontent = this.innerHTML;
-		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-ifTime".concat(i, "' data-toggle='collapse' title='Si Queda Tiempo...'><strong>Si Queda Tiempo...</strong></a><div id='hint-ifTime", i, "' class='collapse'>", divcontent, "</div>");
+		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-ifTime".concat(i, "' data-toggle='collapse' title='Si queda tiempo...'><strong>Si queda tiempo...</strong></a><div id='hint-ifTime", i, "' class='collapse'>", divcontent, "</div>");
      });
 	 $('div.takeItFurther').each(function(i) {
           var divcontent = this.innerHTML;
