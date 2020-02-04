@@ -1,13 +1,13 @@
-title: AP CSP Create Task
+title: AP CSP Creando Tareas
 {
 
-heading: AP CSP Create Task
-	raw-html: <p>You will work through the following pages twice: once for the <em>practice</em> Create Task (when you can get help from your teacher and classmates) and once for the <em>official</em> Create Task (when you can't get help because it counts toward your AP score).</p>
-    resource: Using a Development Process to Organize Your Coding [/bjc-r/cur/performance-tasks/create-task/1-development-process.html]
-	resource: Choosing Your Project [/bjc-r/cur/performance-tasks/create-task/2-choosing-your-project.html]	
-	resource: Implementing Your Development Process [/bjc-r/cur/performance-tasks/create-task/3-implementing.html]	
-	resource: Testing Your Project [/bjc-r/cur/performance-tasks/create-task/4-testing.html]	
-	resource: Communicating About Your Project [/bjc-r/cur/performance-tasks/create-task/5-communicating.html]	
-	resource: Evaluating Your Work [/bjc-r/cur/performance-tasks/create-task/6-evaluating.html]	
+heading: AP CSP Creando Tareas
+	raw-html: <p>Trabajarás en las siguientes páginas dos veces: la primera para <em>practicar</em> Crear Tarea (aquí puedes obtener ayuda de tus maestros y compañeros) y una segunda vez para la la versión <em>oficial</em> Crear Tarea (aquí no puedes obtener ayuda porque te cuenta para la nota AP).</p>
+    resource: Usando un Proceso de Desarrollo para Organizar tu Código [/bjc-r/cur/performance-tasks/create-task/1-development-process.html]
+	resource: Eligiendo tu Proyecto [/bjc-r/cur/performance-tasks/create-task/2-choosing-your-project.html]	
+	resource: Implementando tu Proceso de Desarrollo [/bjc-r/cur/performance-tasks/create-task/3-implementing.html]	
+	resource: Probando tu Proyecto [/bjc-r/cur/performance-tasks/create-task/4-testing.html]	
+	resource: Comunicando acerca de tu Proyecto [/bjc-r/cur/performance-tasks/create-task/5-communicating.html]	
+	resource: Evaluando tu Trabajo [/bjc-r/cur/performance-tasks/create-task/6-evaluating.html]	
 
 }
