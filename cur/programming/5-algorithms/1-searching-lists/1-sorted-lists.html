@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html lang="es">
+        <head>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8">		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 5 Lab 1: Search Algorithms and Efficiency, Page 1</title>
-        <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+		<title>Unidad 5 Laboratorio 1: Algoritmos de b&uacute;squeda y eficiencia, P&aacute;gina 1</title>
+		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
 		<script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 	</head>
 
 	<body>
-    	<h2>Guess My Number</h2>
+    	<h2>Adivina mi n&uacute;mero</h2>
         <div class="learn">
-            <p><strong>In this lab</strong>, you will use two different algorithms to search a list, and you will learn that algorithms are categorized by the time required to run them.</p>
-            <p><strong>On this page</strong>, you will modify your number guessing game from Unit 2 to make the computer do the guessing.</p>
+            <p><strong>En este laboratorio</strong>, utilizar&aacute;s dos algoritmos diferentes para buscar una lista, y aprender&aacute;s que los algoritmos son categorizados por el tiempo requerido para ejecutarlos.</p>
+            <p><strong>En esta p&aacute;gina</strong>, modificar&aacute;s tu juego de adivinanza de n&uacute;meros de la Unidad 2 para que la computadora haga las adivinanzas.</p>
         </div>
 		<div class="forYouToDo" id="first">
             <ol>
-				<div class="sidenote">You built a number guessing game in <a href="http://localhost/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html" title="Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables">Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables</a>.</div>
-				<li> 
-					Click the picture to load a version of the number guessing game in which you guess a number from 1 to 60. <br />
-					<a class="run" href="/bjc-r/prog/5-algorithms/U5L1-GuessNumber.xml"> <img class="indent" src="/bjc-r/img/5-algorithms/number-guessing-game.png" alt="number guessing game" title="number guessing game"/> </a>
+				<div class="sidenote">T&uacute; construiste un juego de adivinanzas de n&uacute;meros en <a href="http://localhost/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html" title="Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables">Unidad 2, Laboratorio 2: Desarrollando un juego de adivinanza de n&uacute;meros con variables</a>.</div>
+				<li>Haz clic en la imagen para cargar una versi&oacute;n del juego de adivinanzas de n&uacute;meros en la que adivines un n&uacute;mero del 1 al 60. <br>
+					<a class="run" href="/bjc-r/prog/5-algorithms/U5L1-GuessNumber.xml"> <img class="indent" src="/bjc-r/img/5-algorithms/number-guessing-game.png" alt="number guessing game" title="number guessing game"> </a>
 				</li>
-                <li>Play a few times. Keep track of how many guesses it takes you to identify the number each time.</li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Develop a strategy that will identify the secret number in no more than 6 guesses.</li>
-                <li><img class="inline" src="/bjc-r/img/icons/write-out-thoughts-mini.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" /> Write down your strategy clearly enough for others to use it to play the game.</li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-another-pair-mini.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Then compare your algorithm with another pair of students. </li>
-                <li>
-                    Now make <em>the computer</em> guess <em>your</em> number using this strategy. 
-                    <div class="endnote">There are three sprites with costumes ("too small, "just right," and "too big") that are hidden in your project file. Use the <code>show</code> block in the "Looks" menu to see them.</div>
+                <li>Juega un par de veces. Lleva un registro de cu&aacute;ntas adivinanzas te lleva identificar el n&uacute;mero cada vez.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Habla con tu compañero" title="Habla con tu compañero"> Desarrolla una estrategia que identifique el n&uacute;mero secreto en no m&aacute;s de 6 adivinanzas.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/write-out-thoughts-mini.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos"> Escribe tu estrategia con claridad para que otros la utilicen en el juego.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-another-pair-mini.png" alt="Habla con tu compañero" title="Habla con tu compañero"> Luego comparte tu algoritmo con otro par de estudiantes.</li>
+                <li>Ahora haz que <em>la computadora</em> adivine <em>tu</em> n&uacute;mero utilizando esta estrategia. 
+                    
+
+
+
+<div class="endnote">Hay tres sprites con disfraces ("demasiado peque&ntilde;o, "justo a la medida," y "demasiado grande") que est&aacute;n escondidos en el archivo de tu proyecto. Utiliza el bloque <code>mostrar</code> en el men&uacute; "Apariencia" para verlos.</div>
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" /> Save your work.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/save-mini.png" alt="Guarda tu trabajo" title="Guarda tu trabajo"> Guarda tu trabajo.</li>
             </ol>
 		</div>
-
-        
-    </body>
+	</body>
 </html>

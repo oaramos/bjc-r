@@ -485,7 +485,7 @@ table.truth tr td {
  }
 
 .vocab:before, .vocabBig:before, .vocabFullWidth:before {
-  content: "Vocabulary";
+  content: "Vocabulario";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5em;
@@ -511,10 +511,10 @@ div.saveAs span.text {
   z-index:2;
   color: #333;
 }
-
+/* Added more margin for Spanish translation by Cinthia Rodriguez*/
 div.newProject span.text {
   position: absolute; 
-  margin-left: 323px;/*19.7em;*/
+  margin-left: 415px;/*25.9em;*/
   padding-top: 1.05em;
   z-index:2;
   color: #333;
