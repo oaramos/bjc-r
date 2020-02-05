@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 5 Lab 1: Search Algorithms and Efficiency, Page 4</title>
+		<title>Unidad 5 Laboratorio 1: Algoritmos de búsqueda y eficiencia, Página 4</title>
 	</head>
 
 	<body>
-		<h2>Exactly How Much Faster Is Binary Search?</h2>
+		<h2>&iquest;Exactamente cu&aacute;nto m&aacute;s r&aacute;pida es la b&uacute;squeda binaria?</h2>
         <div class="todo">
             <p>PAUL SHOULD REVIEW THIS CONTENT.</p>
             <h3>TG and solutions need to be checked. --MF, 12/19/18</h3>
         </div>
         <div class="learn">
-            <p><strong>On this page</strong>, you will compare the time required for binary search and for linear search.</p>
+            <p><strong>En esta p&aacute;gina</strong>,comparar&aacute;s el tiempo que se requiere para la b&uacute;squeda binaria y para la b&uacute;squeda lineal.</p>
             <div class="todo">TG: Students compare these two algorithms in two ways: empirically (with clock time) and by counting operations (steps).</div>
         </div>
 
@@ -21,123 +23,131 @@
 			<ol>
                 <li>
                     <div class="comment">AAP-2.P.3</div>
-                    Locate the <img class="inline" src="/bjc-r/img/5-algorithms/linear-search.png" alt="linear search for () in 'list input slot'" title="linear search for () in 'list input slot'" /> block included in your project, and look inside it. Compare it to the algorithm you used to count the number of five- or seven-letter words. This block does the same computation as the <code>binary search</code> block, but it uses the linear algorithm.
+                    Localiza el bloque <img class="inline" src="/bjc-r/img/5-algorithms/linear-search.png" alt="linear search for () in 'list input slot'" title="linear search for () in 'list input slot'"> incluido en tu proyecto, y mira dentro de &eacute;l. Comp&aacute;ralo con el algoritmo que usaste para contar el n&uacute;mero de palabras de cinco o siete letras. Este bloque hace el mismo c&aacute;lculo que el bloque de b&uacute;squeda binaria,&nbsp; pero utiliza el algoritmo lineal.
                 </li>
                 <li>
-                    Use <img class="inline" src="/bjc-r/img/5-algorithms/computation-time-of.png" alt="computation time of 'grey ring input slot'" title="computation time of 'grey ring input slot'" /> to test how much time <code>linear search</code> takes to find the word "zebra" in each length list.
-                    <table class="bordered center standard" summary="partially blank table showing the time to run LINEAR SEARCH for lists of different lengths">
-                        <tr>
-                            <th scope="col">Length of List</th>
-                            <th scope="col"><code>Linear Search</code> Time</th>
+                    Utiliza <img class="inline" src="/bjc-r/img/5-algorithms/computation-time-of.png" alt="computation time of 'grey ring input slot'" title="computation time of 'grey ring input slot'">para probar cu&aacute;nto tiempo le toma a la <code>b&uacute;squeda lineal</code> encontrar la palabra "cebra" en cada lista.
+                    
+
+<table class="bordered center standard" summary="partially blank table showing the time to run LINEAR SEARCH for lists of different lengths">
+                        <tbody>
+<tr>
+                            <th scope="col">Longitud de la lista</th>
+                            <th scope="col">Tiempo de la<span style="font-family: monospace;"> </span><code>b&uacute;squeda lineal</code> </th>
                         </tr>
                         <tr>
                             <td>1000</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>10,000</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>100,000</td>
-                            <td></td>
+                            <td><br></td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the table. How would you describe what happens to the time as the input gets bigger?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero"> Mira la tabla. &iquest;C&oacute;mo describir&iacute;as lo que sucede con el tiempo a medida que la entrada se hace m&aacute;s grande?</li>
             </ol>
         </div>
         <p>
-            The actual amount of physical time that it takes to solve a problem depends not only on your algorithm but also on how fast your computer is and what other programs you have running, etc. Therefore, computer scientists who want to measure the speed of an algorithm do it in terms of the number of <em>steps</em>. For example, what we really want to know about the efficiency of the <code>linear search</code> algorithm is how many times <var>current item</var> is compared to <var>value</var> (that is, how many times <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/current-item=value.png" alt="(current item) = (value)" title="(current item) = (value)" /> is called).
+            La cantidad actual de tiempo f&iacute;sico que se necesita para resolver un problema depende no s&oacute;lo de tu algoritmo, sino tambi&eacute;n de la velocidad de tu ordenador y de qu&eacute; otros programas tienes en ejecuci&oacute;n, etc. Por lo tanto, los inform&aacute;ticos que quieren medir la velocidad de un algoritmo lo hacen en t&eacute;rminos del n&uacute;mero de <em>pasos</em>. Por ejemplo, qu&eacute; realmente queremos saber sobre la eficiencia del algoritmo de <code>b&uacute;squeda lineal</code> c&uacute;antas veces el <var>art&iacute;culo actual</var> es comparado con el&nbsp; <var>valor</var> (es decir, cu&aacute;ntas veces <img class="inline nopadtb" src="/bjc-r/img/5-algorithms/current-item=value.png" alt="(current item) = (value)" title="(current item) = (value)"> es llamado).
         </p>
         <div class="forYouToDo">
 			<ol start="4">
                 <li>
                     <div class="comment">AAP-2.P.3</div>
-                    Add another column to your table. Assuming "zebra" is the <em>last word</em> in each word list, how many comparisons are made by the <code>linear search</code> algorithm for each length list?
-                    <table class="bordered center standard" summary="partially blank table showing the time and now also steps to run LINEAR SEARCH for lists of different lengths">
-                        <tr>
-                            <th scope="col" style="white-space: nowrap;">Length of List</th>
-                            <th scope="col"><code>Linear Search</code> Time</th>
-                            <th scope="col" style="white-space: nowrap;"><code>Linear Search</code> Steps</th>
+                    A&ntilde;ade otra columna a tu tabla. Asumiendo que "cebra" es la <em>&uacute;ltima palabra</em> en cada lista de palabras, &iquest;cu&aacute;ntas comparaciones son hechas por el algoritmo de <code>b&uacute;squeda lineal</code> para cada lista?
+                    
+
+<table class="bordered center standard" summary="partially blank table showing the time and now also steps to run LINEAR SEARCH for lists of different lengths">
+                        <tbody>
+<tr>
+                            <th scope="col" style="white-space: nowrap;">Longitud de la lista</th>
+                            <th scope="col">Tiempo de la<span style="font-family: monospace;"> </span><code>b&uacute;squeda lineal</code></th>
+                            <th scope="col" style="white-space: nowrap;">Pasos de la <span style="font-family: monospace;">b&uacute;squeda lineal</span><code></code></th>
                         </tr>
                         <tr>
                             <td>1000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>10,000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>100,000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </li>
-                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> How would you describe what happens to the number of <em>steps</em> as the input list gets bigger? Write your hypothesis about the pattern.</li>
-                <li>Does what happens with steps match what happens with time? That is, can you count steps as a measure of time?</li>
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero"> &iquest;C&oacute;mo describir&iacute;as lo que sucede con el n&uacute;mero de <em>pasos</em> a medida que la lista de entradas se hace m&aacute;s grande? Escribe tu hip&oacute;sis sobre este patr&oacute;n.</li>
+                <li>&iquest;Lo que sucede con los pasos coincide con lo que sucede con el tiempo? Es decir, &iquest;puedes contar los pasos como una medida de tiempo?</li>
             </ol>
         </div>
         <div class="vocabFullWidth">
             <div class="comment">AAP-4.A.3</div>
-            <p>The relationship between the input size and the number of steps required to solve a problem is the <strong>efficiency</strong> of the algorithm used to solve the problem.</p>
+            <p>La relaci&oacute;n entre el tama&ntilde;o de la entrada y el n&uacute;mero de pasos requeridos para resolver un problema es la eficiencia <strong>eficiencia</strong> del algoritmo utilizado para resolver el problema.</p>
         </div>
         <div class="comment">AAP-4.A.4, AAP-4.A.5</div>
-        <p>Counting the number of steps, as you just did, is an <em>informal</em>, but perfectly good way to determine the efficiency of an algorithm. The <em>formal</em> measurement of an algorithm requires a mathematical proof. </p>
+        <p>Contando el n&uacute;mero de pasos, como lo acabas de hacer, es <em>informal</em>, pero es una buena forma de determinar la eficiencia de un algoritmo.&nbsp; La medici&oacute;n <em>formal</em>&nbsp;de un algoritmo requiere de una prueba matem&aacute;tica.</p>
         
-        <div class="takeNote">In this course, you are mostly working with small problems, so it doesn't matter how efficient the algorithm is. But in the real world, programmers deal with lists of billions of items, so the efficiency of an algorithm can make a huge difference. </div>
+        <div class="takeNote">En este curso, la mayor&iacute;a de las veces est&aacute;s trabajando con peque&ntilde;os problemas, por lo que no importa lo eficiente que sea el algoritmo. Pero en el mundo real, los programadores se ocupan de listas de miles de millones de elementos, por lo que la eficiencia de un algoritmo puede marcar una gran diferencia. </div>
         
         <div class="forYouToDo">
             <ol start="7">
                 <li>
                 	<div class="comment">AAP-2.P part a</div>
                     <div class="comment">AAP-2.P.3</div>
-                    Now, test how much time <code>binary search</code> takes to find the word "zebra" in the <em>sorted</em> lists, and determine how many comparisons are made by the algorithm if "zebra" is the last word in each length list.
-                    <table class="bordered center standard" summary="partially blank table showing the time and now also steps to run LINEAR SEARCH for lists of different lengths">
-                        <tr>
-                            <th scope="col">Length of List</th>
-                            <th scope="col"><code>Binary Search</code> Time</th>
-                            <th scope="col"><code>Binary Search</code> Steps</th>
+                    Ahora, prueba cu&aacute;nto tiempo le toma a la <code>b&uacute;squeda binaria </code>encontrar la palabra "cebra" en las listas <em>clasificadas</em>, y determina cu&aacute;ntas comparasiones por el algoritmo si "zebra" es la &uacute;ltima palabra en cada lista.
+                    
+
+<table class="bordered center standard" summary="partially blank table showing the time and now also steps to run LINEAR SEARCH for lists of different lengths">
+                        <tbody>
+<tr>
+                            <th scope="col">Longitud de la lista</th>
+                            <th scope="col">Tiempo de la<span style="font-family: monospace;"> </span><code>b&uacute;squeda lineal</code></th>
+                            <th scope="col">Pasos de la <span style="font-family: monospace;">b&uacute;squeda lineal</span><code></code></th>
                         </tr>
                         <tr>
                             <td>1000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>10,000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
                         <tr>
                             <td>100,000</td>
-                            <td></td>
-                            <td></td>
+                            <td><br></td>
+                            <td><br></td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Describe what happens to the time and the number of steps as the input list gets bigger. Write down your hypothesis.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu compañero" title="Habla con tu compañero">Describe lo que sucede con el tiempo y el n&uacute;mero de pasos a medida que la lista de entradas se hace m&aacute;s grande. Escribe tu hip&oacute;tesis.</li>
                 <li>
                 	<div class="comment">AAP-2.P.3, AAP-4.A.6</div>
-                	Look back at your tables for the <code>linear search</code> and the <code>binary search</code> algorithm, and compare the two search algorithms:
-                    <ol>
-                        <li>Which has more blocks in its code?</li>
-                        <li>Which runs faster for large inputs?</li>
-                        <li>Which algorithm is more efficient?</li>
+                	Mira de nuevo tus tablas de algoritmos para la<code><span style="font-family: serif;"> </span>b&uacute;squeda lineal </code>y la&nbsp; <code>b&uacute;squeda binaria</code>, y compara los dos algoritmos de b&uacute;squeda:
+                    
+
+<ol>
+                        <li>&iquest;C&uacute;al tiene m&aacute;s bloques en su c&oacute;digo?</li>
+                        <li>&iquest;Cu&aacute;l se ejecuta m&aacute;s r&aacute;pido para grandes entradas?</li>
+                        <li>&iquest;Qu&eacute; algoritmo es m&aacute;s eficiente?</li>
                     </ol>
                 </li>
                 <li>
                     <div class="comment">AAP-2.P part b</div>
-                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" />
-                    What are the two requirements to use a binary search?
+                    <img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Escribe tus pensamientos" title="Escribe tus pensamientos">
+                    &iquest;Cu&aacute;les son los dos requerimientos para utilizar la b&uacute;squeda binaria?
                 </li>
             </ol>
         </div>
-                
-
-    </body>
-</html>
+</body></html>

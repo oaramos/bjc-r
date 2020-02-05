@@ -1,46 +1,48 @@
 title: Unidad 5: Algoritmos y Simulaciones
 {
 
-heading: Lab 1: Algoritmos de Búsqueda y Eficiencia
-    raw-html: <img class="imageRight" src="/bjc-r/img/5-algorithms/position-of-number-12-in-unsorted-list-reporting-2.png" alt="Encuentra Números en una Lista Desordenada" title="Encuentra Números en una Lista Desordenada" />
-	resource: Adivina mi Número [/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html]
-    resource: ¿Cuántas Palabras de Cinco Letras encuentras? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-how-many-five-letter-words.html]
-    quiz: ¿Está la palabra "Separado" escrita Correctamente? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-spell-checker.html]
-    resource: ¿Exactamente qué tan Rápida es la Búsqueda Binaria? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/4-efficiency.html]
-    quiz: Algoritmos de Categorización [/bjc-r/cur/programming/5-algorithms/1-searching-lists/5-categorizing-algorithms.html]
-    quiz: Soluciones Heurísticas [/bjc-r/cur/programming/5-algorithms/1-searching-lists/6-heuristics.html]
-    resource: Removiendo Duplicados [/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.html]
+heading: Lab 1: Algoritmos de búsqueda y eficiencia
+    raw-html: <img class="imageRight" src="/bjc-r/img/5-algorithms/position-of-number-12-in-unsorted-list-reporting-2.png" alt="Encontrar un número en una lista sin orden" title="Encontrar un número en una lista sin orden" />
+	resource: Adivina mi número [/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html]
+    resource: ¿Cuántas palabras de cinco letras hay? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-how-many-five-letter-words.html]
+    quiz: ¿Está deletreado correctamente "separar"? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-spell-checker.html]
+    resource: ¿Exactamente cuánto más rápida es la búsqueda binaria? [/bjc-r/cur/programming/5-algorithms/1-searching-lists/4-efficiency.html]
+    quiz: Categorizando algoritmos [/bjc-r/cur/programming/5-algorithms/1-searching-lists/5-categorizing-algorithms.html]
+    quiz: Soluciones heurísticas [/bjc-r/cur/programming/5-algorithms/1-searching-lists/6-heuristics.html]
+    resource: Eliminación de duplicados [/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.html]
     resource: Paralelismo [/bjc-r/cur/programming/5-algorithms/1-searching-lists/8-sequential.html]
 
 heading: Lab 2: Simulaciones
-	raw-html: <img class="imageRight" src="/bjc-r/img/5-algorithms/img_disease-spread/diseaseSpread.png" alt="Propagación de Enfermedades" title="Dispersión de Enfermedades" />
-	resource: ¿Por qué usar Simulaciones? [/bjc-r/cur/programming/5-algorithms/2-simulation/1-intro-to-simulations.html]
-	resource: Proyecto Propagación de Enfermedades [/bjc-r/cur/programming/5-algorithms/2-simulation/2-disease-spread.html]
+	raw-html: <img class="imageRight" src="/bjc-r/img/5-algorithms/img_disease-spread/diseaseSpread.png" alt="Propagación de la enfermedad" title="Propagación de la enfermedad" />
+	resource: ¿Por qué utilizar simulaciones? [/bjc-r/cur/programming/5-algorithms/2-simulation/1-intro-to-simulations.html]
+	resource: Proyecto de propagación de enfermedades [/bjc-r/cur/programming/5-algorithms/2-simulation/2-disease-spread.html]
 	
-heading: Lab 3: Convirtiendo Datos en Información
-	resource: Analizando Datos de Salud Global [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/1-health-data.html]
-	quiz: Autoevaluación: Big Data [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/2-self-check.html]
-	resource: Importando y Accediendo Datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/3-importing-data.html]
-	resource: Analizando Datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/4-filtering-data.html]
-	resource: Visualizando Datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/5-visualizing-data.html]
+heading: Lab 3: Transformando datos en información
+	resource: Analizando datos globales de salud [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/1-health-data.html]
+	quiz: Auto-evaluación: Macrodatos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/2-self-check.html]
+	resource: Importando y accesando a los datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/3-importing-data.html]
+	resource: Analizando los datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/4-filtering-data.html]
+	resource: Visualizando los datos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/5-visualizing-data.html]
     quiz: Metadatos [/bjc-r/cur/programming/5-algorithms/3-turning-data-information/6-metadata.html]
 
-heading: Lab 4: Problemas Insolvibles e Indecidibles
-	resource: Pruebas por Contradicción [/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/1-logical-inconsistency.html]
-	resource: Un Problema Indecidible [/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/2-halting-problem.html]
+heading: Lab 4: Problemas indecidibles y sin solución
+	resource: Prueba por contradicción [/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/1-logical-inconsistency.html]
+	resource: Un problema indecidible [/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/2-halting-problem.html]
 
-heading: Lab 5: Computación en la Guerra 
-	resource: Guerra y Tecnología [/bjc-r/cur/programming/5-algorithms/5-war/1-war-and-technology.html]
-	resource: Computadoras y Guerra [/bjc-r/cur/programming/5-algorithms/5-war/2-machines-and-lives.html]
-	resource: Tecnología Militar en la Vida Diaria [/bjc-r/cur/programming/5-algorithms/5-war/3-everyday-life.html]
+heading: Lab 5: Computación en la guerra
+	resource: Guerra y tecnología [/bjc-r/cur/programming/5-algorithms/5-war/1-war-and-technology.html]
+	resource: Computadoras y la guerra [/bjc-r/cur/programming/5-algorithms/5-war/2-machines-and-lives.html]
+	resource: Tecnología militar en la vida cotidiana [/bjc-r/cur/programming/5-algorithms/5-war/3-everyday-life.html]
 
-heading: Proyecto Opcional: Tres en Línea (Tic Tac Toe) 
-	//resource: Diseño Astrid [/bjc-r/cur/programming/5-algorithms/optional-projects/astrid.html]
+heading: Proyecto Opcional: Tres en línea
+	//resource: Astrid Design [/bjc-r/cur/programming/5-algorithms/optional-projects/astrid.html]
+trid.html]
 	//resource: <s>Tic-Tac-Toe with Intelligent Computer Player</s> [/bjc-r/cur/programming/5-algorithms/optional-projects/tic-tac-toe.html]
 	
 	//raw-html:<div class="todo">Mary's U5 TTT Revision became 4 pages spread across 2 units.</div>
 
 //heading: Tic-Tac-Toe with a Computer Player (for late U3/early U4)
+
 	resource: Revisando el proyecto Tres en Línea (Tic-Tac-Toe) [/bjc-r/cur/programming/5-algorithms/optional-projects/tic-tac-toe/1-review.html]
 	resource: Creando al Jugador Computadora [/bjc-r/cur/programming/5-algorithms/optional-projects/tic-tac-toe/2-creating-computer-player.html]
 	
