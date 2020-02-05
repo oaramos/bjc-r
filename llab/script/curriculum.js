@@ -45,11 +45,11 @@ llab.secondarySetUp = function() {
      });
 	 $('div.takeItFurther').each(function(i) {
           var divcontent = this.innerHTML;
-		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-takeItFurther".concat(i, "' data-toggle='collapse' title='Take It Further...'><strong>Take It Further...</strong></a><div id='hint-takeItFurther", i, "' class='collapse'>", divcontent, "</div>");
+		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-takeItFurther".concat(i, "' data-toggle='collapse' title='Llévalo más allá...'><strong>Llévalo más allá...</strong></a><div id='hint-takeItFurther", i, "' class='collapse'>", divcontent, "</div>");
      });
 	 $('div.takeItTeased').each(function(i) {
           var divcontent = this.innerHTML;
-		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-takeItFurther".concat(i, "' data-toggle='collapse' title='Take It Further...'><strong>Take It Further...</strong></a><div id='hint-takeItFurther", i, "' class='collapse'>", divcontent, "</div>");
+		  this.innerHTML = "&nbsp;<a style='font-size: 18px;' href='#hint-takeItFurther".concat(i, "' data-toggle='collapse' title='Llévalo más allá...'><strong>Llévalo más allá...</strong></a><div id='hint-takeItFurther", i, "' class='collapse'>", divcontent, "</div>");
      });
 
      llab.additionalSetup([
