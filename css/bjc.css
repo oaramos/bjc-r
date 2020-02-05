@@ -383,7 +383,7 @@ ifTime, .takeItFurther, .endnote, .sidenote, .sidenoteBig {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before {content: "Ahora Es Tu Turno";} /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */
+.forYouToDo:before {content: "Instrucciones";} /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */
 
 .ifTime {
   background-color: #cce4f6; /*#d2e3be; /* #edf4e6; */
@@ -492,7 +492,7 @@ table.truth tr td {
 }
 
 .exam:before, .examBig:before, .examFullWidth:before {
-  content: "On the AP Exam...";
+  content: "En el examen AP...";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5em;
@@ -583,7 +583,7 @@ div.task {font-size:large;padding-top: 10px;}
   margin-right: auto;
   }
 
-.time:before {  content: "If you are short on time, you can skip...";}
+.time:before {  content: "Si estas corto de tiempo, puedes saltar la sección.";}
 
 /* Compare Page Styles */
 div.CSPpeach, div.visualgreen, div.visualcyan, div.visualpurple, div.visualyellow, div.visualsalmon, div.socialorange {
