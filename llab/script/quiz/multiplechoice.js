@@ -191,10 +191,10 @@ MC.prototype.render = function() {
         // if there is no correct answer to this question (ie, when they're filling out a form),
         // change button to say "save answer" and "edit answer" instead of "check answer" and "try again"
         // and don't show the number of attempts.
-        this.multipleChoice.find(".checkAnswerButton").innerHTML = "Save Answer";
-        this.multipleChoice.find(".tryAgainButton").innerHTML = "Edit Answer";
+        this.multipleChoice.find(".checkAnswerButton").innerHTML = "Guardar respuesta";
+        this.multipleChoice.find(".tryAgainButton").innerHTML = "Editar respuesta";
     } else {
-        this.displayNumberAttempts("This is your", "attempt", this.attempts);
+        this.displayNumberAttempts("Este es tú", "attempt", this.attempts);
     };
 
     if (this.states.length > 0) {
@@ -393,12 +393,12 @@ MC.prototype.enforceMaxChoices = function(inputs) {
         if (countChecked > maxChoices) {
             //this.node.view.notificationManager.notify('You have selected too many. Please select only ' + maxChoices + ' choices.',3);
             //maxChoices = 3;
-            alert('You have selected too many. Please select only ' + maxChoices + ' choices.');
+            alert('Has seleccionado muchas opciones. Por favor selecciona únicamente ' + maxChoices + ' opciones.');
             return false;
         } else if (countChecked < maxChoices) {
             //this.node.view.notificationManager.notify('You have not selected enough. Please select ' + maxChoices + ' choices.',3);
             //maxChoices = 3;
-            alert('You have not selected enough. Please select ' + maxChoices + ' choices.');
+            alert('No has seleccionado suficientes opciones. Por favor selecciona ' + maxChoices + ' opciones.');
             return false;
         }
     }
@@ -418,7 +418,7 @@ MC.prototype.getResultMessage = function(isCorrect) {
 
     /* if this attempt is correct, then we only need to return a msg */
     if (isCorrect) {
-        message = "You have successfully completed this question!";
+        message = "¡Felicidades, has completado éxitosamente esta pregunta!";
     }
 
     return message;
@@ -506,10 +506,10 @@ MC.prototype.getTemplate = function() {
         "                <table class='buttonTable'>" +
         "                    <tr>" +
         "                        <td><div class='buttonDiv'>" +
-        "                            <button class='checkAnswerButton btn btn-primary'>Check Answer</button>" +
+        "                            <button class='checkAnswerButton btn btn-primary'>Revisar la respuesta</button>" +
         "                        </div></td><td>" +
         "                        <div class='buttonDiv'>" +
-        "                            <button class='tryAgainButton btn btn-primary'>Try Again</button>" +
+        "                            <button class='tryAgainButton btn btn-primary'>Probar de nuevo</button>" +
         "                        </div></td>" +
         "                    </tr>" +
         "                </table>" +
