@@ -194,7 +194,7 @@ MC.prototype.render = function() {
         this.multipleChoice.find(".checkAnswerButton").innerHTML = "Guardar respuesta";
         this.multipleChoice.find(".tryAgainButton").innerHTML = "Editar respuesta";
     } else {
-        this.displayNumberAttempts("Este es tú", "attempt", this.attempts);
+        this.displayNumberAttempts("Este es tú", "intento", this.attempts);
     };
 
     if (this.states.length > 0) {
