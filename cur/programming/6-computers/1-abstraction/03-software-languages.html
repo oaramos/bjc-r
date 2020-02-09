@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 6 Lab 1: Computer Abstraction Hierarchy, Page 3</title>
 	</head>
     <body>
-        <h2>The Software Domain: Programming Languages</h2>
+        <h2>Dominio de Software: Lenguajes de programaci&oacute;n</h2>
         <div class="todo">
             <p>This page is getting long. After we finish going through the standards, we should consider how much of this is really needed. --MF, 1/29/19</p>
             <p>Also, is this a page where we might want to make any of the "not a baby language" argument? --MF, 1/29/19</p>
             <p>MF: lightly clean up to make the text more concise</p>    
         </div>
         
-        <div class="learn"><strong>On this page</strong>, you will consider why there are different programming languages and look at some of the ways that languages differ.</div>
+        <div class="learn"><strong>En esta p&aacute;nina</strong>, considerar&aacute;s por qu&eacute; hay diferentes lenguajes de programaci&oacute;n y ver&aacute;s algunas de las formas en que los lenguajes difieren.</div>
         
-		<p>JavaScript, Python, Snap<em>!</em>, C++, Java, Scheme, Prolog... Why are there so many programming languages? Why don't we just pick the best one, or design a new best one, and stick with that?</p>
-        <p>Some languages have very narrow purposes; these are called <em>special-purpose</em> languages. For example, Microsoft Word has a programming language built into it called "Word macros" that's just for generating data and formatting in a document. Likewise, HTML (Hypertext Markup Language) is just for structuring web pages.</p>
-        <p><em>General-purpose</em> languages don't have a narrow purpose in mind. In a sense, these languages are all the same: if an algorithm can be expressed in one language, it can be expressed in all of them. Several basic features are included in nearly all languages including arithmetic operators (<code>+</code>, <code>-</code>, <code>&times;</code>, <code>÷</code>) and Boolean operators (<code>and</code>, <code>or</code>, <code>not</code>). The differences among languages are mostly about <em>levels of abstraction.</em></p>
+		<p>JavaScript, Python, Snap<em>!</em>, C++, Java, Scheme, Prolog... &iquest;Por qu&eacute; hay tantos lenguajes de programaci&oacute;n? &iquest;Por qu&eacute; no elegimos el mejor, o dise&ntilde;amos uno nuevo y mejor, y nos atenemos a &eacute;l?</p>
+        <p>Algunos lenguajes tienen prop&oacute;sitos muy limitados; estos se llaman lenguajes con <em>prop&oacute;sito-especial</em>. Por ejemplo, Microsoft Word tiene un lenguaje de programaci&oacute;n incorporado llamado "macros de Word" que s&oacute;lo sirve para generar datos y dar formato a un documento. As&iacute; como, HTML (Lenguaje de marcado de hipertexto) es s&oacute;lo para estructurar p&aacute;ginas web.</p>
+        <p><em> </em>Los lenguajes de <em>prop&oacute;sito-general</em> no tienen un prop&oacute;sito espec&iacute;fico. En cierto sentido, estos idiomas son todos iguales: si un algoritmo puede ser expresado en un idioma, puede ser expresado en todos ellos. Se incluyen varias caracter&iacute;sticas b&aacute;sicas en casi todos los idiomas, incluidos los operadores aritm&eacute;ticos (<code>+</code>, <code>-</code>, <code>&times;</code>, <code>&divide;</code>) y operadores Booleanos (<code>y</code>, <code>o</code>, <code>no</code>). Las diferencias entre los idiomas se refieren principalmente a <em>niveles de abstracci&oacute;n.</em></p>
         
-		<h3>High-Level and Low-Level Languages</h3>
-        <img class="imageRight noshadow" src="/bjc-r/img/6-computers/language-continuum.png" width="400" alt="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are 'high level languages,' the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are 'low level languages'" title="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are 'high level languages,' the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are 'low level languages'" />
-        <p>A <em>high-level language</em> (like Snap<em>!</em> or Scheme) includes many built-in abstractions that make it easier to focus on the problem you want to solve rather than on how computer hardware works. A <em>low-level language</em> (like C) has fewer abstractions, requiring you to know a lot about your computer's architecture to write a program.</p>
+		<h3>Lenguajes de alto y bajo nivel</h3>
+        <img class="imageRight noshadow" src="/bjc-r/img/6-computers/language-continuum.png" alt="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are 'high level languages,' the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are 'low level languages'" title="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are 'high level languages,' the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are 'low level languages'" width="400">
+        <p>Un <em>lenguaje de nivel alto</em> (como Snap<em>!</em> o Scheme) incluye muchas abstracciones incorporadas que hacen m&aacute;s f&aacute;cil centrarse en el problema que se quiere resolver en lugar de en c&oacute;mo funciona el hardware de la computadora. Un <em>lenguaje de nivel bajo </em>(como C) tiene menos abstracciones, requiriendo que sepas mucho sobre la arquitectura de tu computadora para escribir un programa.</p>
         
-        <h4><strong>Why do programmers use high-level languages?</strong></h4>
-        <p>High-level languages can produce <em>safer</em> programs&mdash;ones that are less likely to have bugs&mdash;because the abstractions manage messy details that can trip up programmers. </p>
+        <h4><strong>&iquest;Por qu&eacute; los programadores usan lenguajes de alto nivel?</strong></h4>
+        <p>Los lenguajes de nivel alto pueden producir programas m&aacute;s <em>seguros</em> &mdash;los que son menos propensos a tener errores&mdash;porque las abstracciones manejan detalles desordenados que pueden hacer fracasar a los programadores. </p>
         <div class="endnote">
-            <p>High-level languages reduce bugs in memory use. Older, low-level languages required the programmer to manage the use of the computer's memory with instructions saying "get me a block of memory big enough to hold 100 numbers" and other instructions saying "okay, I'm finished using this block of memory; it can be allocated for some other purpose."</p>
-            <p>This is a nuisance to have to think about, and human programmers are bad at it. In low level languages, a very common bug is for one part of a program to say "I'm done with this block of memory" while another part of the program is still using it. High-level languages take care of this for us by using a technique called <em>garbage collection</em> that puts the computer in charge of knowing when a block of memory is no longer in use.</p>
+            <p>Los lenguajes de nivel alto reducen los errores en el uso de la memoria. Los lenguajes m&aacute;s antiguos y de bajo nivel requer&iacute;an que el programador manejara el uso de la memoria de la computadora con instrucciones que dijeran "cons&iacute;gueme un bloque de memoria lo suficientemente grande para contener 100 n&uacute;meros" y otras instrucciones que dijeran "bien, ya termin&eacute; de usar este bloque de memoria; puede ser asignado para alg&uacute;n otro prop&oacute;sito."</p>
+            <p>Es una molestia en la que hay que pensar, y los programadores humanos son malos en ello. En los lenguajes de bajo nivel, un error muy com&uacute;n es que una parte del programa diga "He terminado con este bloque de memoria" mientras que otra parte del programa lo sigue usando. Los lenguajes de alto nivel se encargan de esto por nosotros usando una t&eacute;cnica llamada <em>recolecci&oacute;n de basura</em> que pone a la computadora a cargo de saber cuando un bloque de memoria ya no est&aacute; en uso.</p>
         </div>
-        <p>High-level languages can also make programming much more convenient because they offer more abstractions. One example is <em>higher order functions</em> (like <code>map</code>, <code>keep</code>, <code>combine</code>, and <code>for each</code>), which allow the programmer to write shorter, cleaner code.</p>
+        <p>Los lenguajes de alto nivel tambi&eacute;n pueden hacer la programaci&oacute;n mucho m&aacute;s conveniente porque ofrecen m&aacute;s abstracciones. Un ejemplo son las <em>funciones de orden m&aacute;s alto</em> (como <code>mapear</code>, <code>mantener</code>, <code>combinar</code>, y <code>para cada</code>), que permiten al programador escribir un c&oacute;digo m&aacute;s corto y limpio.</p>
         <div class="forYouToDo" id="first">
 			<ol>
                 <li>
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Identify this higher order function."
-hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
+                    <div class="assessment-data" type="multiplechoice" identifier="Identify this higher order function." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false">
                         <div class="prompt">
-                            This code is similar to a higher-order procedure that you have learned.
-                            <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                            Identify the procedure that this code imitates:<br />
-                            <img class="indent" src="/bjc-r/img/6-computers/hard-way.png" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" />
+                            Este c&oacute;digo es similar a un procedimiento de orden superior que has aprendido.
+                            <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner">
+                            Identifica el procedimiento que este c&oacute;digo imita:<br>
+                            <img class="indent" src="/bjc-r/img/6-computers/hard-way.png" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)">
                             <div class="endnote">
                                 <ul>
-                                    <li>You learned about <code>for each</code> in <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/3-traversing-list.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 2: Checking Each Quiz Answer">Unit 2 Lab 2: Checking Each Quiz Answer</a>.</li>
-                                    <li>You learned about <code>keep</code> in <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Keeping Items from a List">Unit 2 Lab 3: <code>Keep</code>ing Items from a List</a>.</li>
-                                    <li>You learned about <code>map</code> in <a href="/bjc-r/cur/programming/3-lists/2-contact-list/5-mapping-over-list.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Transforming Every List Item">Unit 3 Lab 2: Transforming Every List Item</a>.</li>
-                                    <li>You learned about <code>combine</code> in <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 4: Other Mathematical Reporters">Unit 2 Lab 4: Other Mathematical Reporters</a>.</li>
+                                    <li>Aprendiste acerca de <code>para cada</code> en <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/3-traversing-list.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 2: Checking Each Quiz Answer">Unidad 2 Laboratorio 2: Comprobando cada respuesta del cuestionario</a>.</li>
+                                    <li>Aprendiste acerca de <code>mantener</code> en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Keeping Items from a List">Unidad 2 Laboratorio 3: <code>Manteniendop</code> elementos de una lista</a>.</li>
+                                    <li>Aprendiste acerca de <code>mapear</code> en <a href="/bjc-r/cur/programming/3-lists/2-contact-list/5-mapping-over-list.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Transforming Every List Item">Unidad 3 Laboratorio 2: Transformando cada elemento de la lista</a>.</li>
+                                    <li>Aprendiste acerca de <code>combinar</code> en <a href="/bjc-r/cur/programming/2-complexity/4-making-computers-do-math/3-other-math-reporters.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 4: Other Mathematical Reporters">Unidad 2 Laboratorio 4: Otros reporteros matem&aacute;ticos</a>.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text"><img src="/bjc-r/img/6-computers/for-each-s.png" alt="for each (word) of (words) {report ((join (word) (s)))}" title="for each (word) of (words) {report ((join (word) (s)))}" /></div>
-                            <div class="feedback">Does the original script report a list of words or does it report each word separately? Which would this do?</div>
+                            <div class="text"><img src="/bjc-r/img/6-computers/for-each-s.png" alt="for each (word) of (words) {report ((join (word) (s)))}" title="for each (word) of (words) {report ((join (word) (s)))}"></div>
+                            <div class="feedback">&iquest;El gui&oacute;n original informa una lista de palabras o informa cada palabra por separado? &iquest;Qu&eacute; har&iacute;a esto?</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text"><img src="/bjc-r/img/6-computers/keep-s.png" alt="report (keep items such that (join () (s)) from (words))" title="report (keep items such that (join () (s)) from (words))" /></div>
-                            <div class="feedback"><code>Keep</code> takes a predicate (a question) as input and reports a list of the items that make that predicate true.</div>
+                            <div class="text"><img src="/bjc-r/img/6-computers/keep-s.png" alt="report (keep items such that (join () (s)) from (words))" title="report (keep items such that (join () (s)) from (words))"></div>
+                            <div class="feedback"><code>Mantener</code> toma un predicado (una pregunta) como entrada y reporta una lista de los elementos que hacen que ese predicado sea verdadero.</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text"><img src="/bjc-r/img/6-computers/map-s.png" alt="report (map (join () (s)) over (words))" title="report (map (join () (s)) over (words))" /></div>
-                            <div class="feedback">Correct!</div>
+                            <div class="text"><img src="/bjc-r/img/6-computers/map-s.png" alt="report (map (join () (s)) over (words))" title="report (map (join () (s)) over (words))"></div>
+                            <div class="feedback">!Correcto!</div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text"><img src="/bjc-r/img/6-computers/combine-s.png" alt="report (combine with (join () (s)) items of (words))" title="report (combine with (join () (s)) items of (words))" /></div>
-                            <div class="feedback"><code>Combine</code> takes a predicate with two blanks (like <img class="inline" src="/bjc-r/img/3-lists/plus.png" alt="() + ()" title="() + ()" /> or <img class="inline" src="/bjc-r/img/3-lists/join.png" alt="join () ()" title="join () ()" />) as input and reports the result of combining all the list items using that function (for example, adding them all together or joining them all into one text string).</div>
+                            <div class="text"><img src="/bjc-r/img/6-computers/combine-s.png" alt="report (combine with (join () (s)) items of (words))" title="report (combine with (join () (s)) items of (words))"></div>
+                            <div class="feedback"><code>Combinar</code> toma un predicado con dos espacios en blanco (como () + () o unir () ()) como entrada e informa del resultado de combinar todos los elementos de la lista usando esa funci&oacute;n (por ejemplo, sum&aacute;ndolos todos juntos o uni&eacute;ndolos todos en una cadena de texto).</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c4"></div>
@@ -75,44 +75,45 @@ hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false"
 		</div>
         
         <p>
-            In C, you can do this the long way:<br />
-            <img class="indent" src="/bjc-r/img/6-computers/hard-way.png" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" /><br />
-            but C doesn't let you take an expression (like <img class="inline" src="/bjc-r/img/6-computers/join-with-s.png" alt="join () (s)" title="join () (s)" /> or <img class="inline" src="/bjc-r/img/6-computers/5-times-blank-plus-7.png" alt="((5) &times; ( )) + (7)" title="((5) &times; ( )) + (7)" />) and stick it into a higher order function like <code>map</code>:<br />
-            <img class="indent" src="/bjc-r/img/6-computers/map-s.png" alt="report (map (join () (s)) over (words))" title="report (map (join () (s)) over (words))" />
+            En C, puedes hacer esto de la forma m&aacute;s larga:<br>
+            <img class="indent" src="/bjc-r/img/6-computers/hard-way.png" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)"><br>
+            pero C no te deja tomar una expresi&oacute;n (como <img class="inline" src="/bjc-r/img/6-computers/join-with-s.png" alt="join () (s)" title="join () (s)"> o <img class="inline" src="/bjc-r/img/6-computers/5-times-blank-plus-7.png" alt="((5) &times; ( )) + (7)" title="((5) &times; ( )) + (7)">) y ponerla en una funci&oacute;n de orden superior como <code>mapear</code>:<br>
+            <img class="indent" src="/bjc-r/img/6-computers/map-s.png" alt="report (map (join () (s)) over (words))" title="report (map (join () (s)) over (words))">
         </p>
         
-        <h4><strong>Why do programmers use low-level languages?</strong></h4>
-		<p>The best reason to use low-level languages is to write operating systems (like Windows, Mac OS X, Android, or iOS). You'll learn more about Operating systems on the <a href="/bjc-r/cur/programming/6-computers/1-abstraction/05-software-OS.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Software Domain: Operating Systems">The Software Domain: Operating Systems</a> page.</p>
+        <h4><strong>&iquest;Por qu&eacute; los programadores usan lenguajes de bajo nivel?</strong></h4>
+		<p>La mejor raz&oacute;n para usar lenguajes de bajo nivel es para escribir sistemas operativos (como Windows, Mac OS X, Android, o iOS).&nbsp; Aprender&aacute;s m&aacute;s acerca de sistemas operativos en la p&aacute;gina <a href="/bjc-r/cur/programming/6-computers/1-abstraction/05-software-OS.html?topic=nyc_bjc%2F6-how-computers-work.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="The Software Domain: Operating Systems">Dominio de software: Sistemas operativos</a>.</p>
         <div class="endnote">
-            <a href="#hint-low-level-lang" data-toggle="collapse" title="Why else would a programmer use a low-level language?">Why else would a programmer use a low-level language?</a>
+            <a href="#hint-low-level-lang" data-toggle="collapse" title="Why else would a programmer use a low-level language?">&iquest;Por que otra raz&oacute;n un programador usar&iacute;a un lenguaje de bajo nivel?</a>
             <div id="hint-low-level-lang" class="collapse">
                 <div class="todo">I still think this is too long and needs wordsmithing the next time around.  --MF, 11/16/17</div>
-				<p>Application programmers don't often decide "I'm going to write this program in a low level language." They may simply not realize that higher levels of abstraction are possible. For example, a computer's hardware limits the size of numbers that its arithmetic unit can add in a single step. Four billion—about ten digits—is a common size limit for integers. Programmers who use Java, JavaScript, Python, C or C++ may think that this limit is unavoidable. But programmers who use really high level languages, such as Scheme or Common Lisp, know that they can do arithmetic on numbers with millions or billions of digits, limited only by the size of the computer's memory. As you will see later, Snap! has a library that lets it do this, too.</p>
-                <p>People often say that different programming languages are good for different kinds of programs, but except for 3-D video processing (next paragraph), it's hard to imagine an application that would be harmed by things like garbage collection or higher order functions. There are just a few cases in which people deliberately design languages with features that might not be wanted for some applications. Here's one such example: In Snap!, a text string of only digits is considered to be a number; you can do arithmetic on it. In a language for learners, requiring explicit conversion between data types just makes it harder to get started programming. But most languages that aren't meant for beginners keep the two data types separate.</p>
-                <p><em>Programmers may think that abstraction is too slow.</em> This used to be true, and programmers of 3-D video games still need all the speed they can get because their programs strain the speed of modern computers. So they often write part of their programs, the part that actually puts pictures on the screen, in machine language, just for speed. But most programmers  write applications that don't strain computers at all. When you send an email or text message, the limiting factor  is how fast you can type, not how fast your computer can run programs.</p>
+				<p>Los programadores de aplicaciones no suelen decidir "Voy a escribir este programa en un lenguaje de nivel bajo". Puede que simplemente no se den cuenta de que es posible alcanzar niveles m&aacute;s altos de abstracci&oacute;n. Por ejemplo, el hardware de una computadora limita el tama&ntilde;o de los n&uacute;meros que su unidad aritm&eacute;tica puede sumar en un solo paso. Cuatro mil millones&mdash;unos diez d&iacute;gitos&mdash;es un l&iacute;mite de tama&ntilde;o com&uacute;n para los n&uacute;meros enteros. Los programadores que utilizan Java, JavaScript, Python, C o C++ pueden pensar que este l&iacute;mite es inevitable. Pero los programadores que usan lenguajes de alto nivel, como Scheme o Common Lisp, saben que pueden hacer aritm&eacute;tica con n&uacute;meros de millones o miles de millones de d&iacute;gitos, limitados s&oacute;lo por el tama&ntilde;o de la memoria de la computadora. Como ver&aacute;s m&aacute;s adelante, Snap! tambi&eacute;n tiene una librer&iacute;a que te permite hacer esto.</p>
+                <p>Las personas a menudo dicen que los diferentes lenguajes de programaci&oacute;n son buenos para diferentes tipos de programas, pero excepto para el procesamiento de video en 3D, es dif&iacute;cil imaginar una aplicaci&oacute;n que se ver&iacute;a perjudicada por cosas como la recolecci&oacute;n de basura o funciones de orden superior. Hay s&oacute;lo unos pocos casos en los que las personas dise&ntilde;an deliberadamente lenguajes con caracter&iacute;sticas que podr&iacute;an no ser deseadas para algunas aplicaciones. Aqu&iacute; hay un ejemplo: En Snap!, una cadena de texto de s&oacute;lo d&iacute;gitos se considera un n&uacute;mero; puedes hacer aritm&eacute;tica sobre ella. En un lenguaje para estudiantes, el requerir una conversi&oacute;n expl&iacute;cita entre tipos de datos s&oacute;lo hace m&aacute;s dif&iacute;cil empezar a programar. Pero la mayor&iacute;a de los lenguajes que no son para principiantes mantienen los dos tipos de datos separados.</p>
+                <p><em>Los programadores pueden pensar que la abstracci&oacute;n es demasiado lenta.</em> Esto sol&iacute;a ser cierto, y los programadores de videojuegos en 3D todav&iacute;a necesitan toda la velocidad que puedan conseguir porque sus programas presionan la velocidad de las computadoras modernas. As&iacute; que a menudo escriben parte de sus programas, la parte que realmente pone las im&aacute;genes en la pantalla, en lenguaje de m&aacute;quina, s&oacute;lo para la velocidad. Pero la mayor&iacute;a de los programadores escriben aplicaciones que no fuerzan a las computadoras en absoluto. Cuando env&iacute;as un correo electr&oacute;nico o un mensaje de texto, el factor limitante es la velocidad con la que puedes escribir, no la velocidad con la que tu computadora puede ejecutar programas.</p>
                 <div class="todo">
-                    <strong>From Michael:</strong><br />
+                    <strong>From Michael:</strong><br>
                     Somewhere the was a comment about the speed of abstraction. IMO, we shouldn't have this in the curriculum -- but probably in the teachers guide. "Abstraction slows things down" is an argument students won't hear if they're just learning CS from BJC. By trying to address the argument before it happens, we just introduced to students who I think would have no reason to believe otherwise.
-                    <ul><li>Brian thinks that Michael would not have this concern if the link was still, "There are also less-good reasons." However, Mary and Paul find that text problematic. Brian and Mary agreed to record and ignore this issue for now. --MF, 11/21/17</li></ul>
+                    <ul>
+<li>Brian thinks that Michael would not have this concern if the link was still, "There are also less-good reasons." However, Mary and Paul find that text problematic. Brian and Mary agreed to record and ignore this issue for now. --MF, 11/21/17</li></ul>
                 </div>
-        		<p><em>Legacy code.</em> Programmers in industry hardly ever get to write a program from the beginning. Much more often, they're maintaining a program that somebody wrote years ago, and that person might not even work for that company anymore. In the long run, it might be better to rewrite the program in a more modern language, but in the short run, there's no time to do that so they end up modifying the existing code in the existing programming language.</p>
+        		<p><em>C&oacute;digo heredado.</em> Los programadores de la industria casi nunca llegan a escribir un programa desde el principio. Mucho m&aacute;s a menudo, mantienen un programa que alguien escribi&oacute; hace a&ntilde;os, y esa persona puede que ya no trabaje para esa compa&ntilde;&iacute;a. A largo plazo, podr&iacute;a ser mejor reescribir el programa en un lenguaje m&aacute;s moderno, pero a corto plazo, no hay tiempo para hacerlo, as&iacute; que terminan modificando el c&oacute;digo existente en el lenguaje de programaci&oacute;n existente.</p>
             </div>
         </div>
         
-        <h4><strong>What is machine language?</strong></h4>
-        <p>Both high- and low-level languages are used by <em>people</em> to write computer programs. Computer hardware understands a sort of ultra-low-level language, called <em>machine language.</em> Special programs called <em>compilers</em> and <em>interpreters</em> are used to translate human programming languages into machine language to be run by the computer.</p>
+        <h4><strong>&iquest;Qu&eacute; es el lenguaje de m&aacute;quina?</strong></h4>
+        <p>Tanto los idiomas de alto como de bajo nivel son utilizados por <em>personas</em> para escribir programas de m&aacute;quina. El hardware de la computadora entiende una especie de lenguaje de nivel ultra bajo, llamado <em>lenguaje de m&aacute;quina.</em> Programas especiales llamados <em>compiladores</em> e <em>int&eacute;rpretes </em>se utilizan para traducir los lenguajes de programaci&oacute;n de humanos a lenguaje de m&aacute;quina para ser ejecutado por la computadora.</p>
         <div class="endnote">
-            <a href="#hint-compilers" data-toggle="collapse" title="Read more about compilers and interpreters">Read more about compilers and interpreters.</a>
+            <a href="#hint-compilers" data-toggle="collapse" title="Read more about compilers and interpreters">Lee m&aacute;s acerca de compiladores e int&eacute;rpretes.</a>
             <div id="hint-compilers" class="collapse">
-                <p>A <em>compiler</em> is a program that takes a high- or low-level language program (the <em>source code</em>) as input and produces a machine language program (the <em>object code</em>) as its output. Once produced, the machine language program can be run repeatedly without needing to be compiled again.</p>
-                <p>An <em>interpreter</em> is a program that takes a high- or low-level program as input and carries out machine language instructions as needed to run the program. It does not produce a stand-alone machine language program as output and will have to repeat the process again next time.</p>
+                <p>Un <em>compilador</em> es un programa que toma un programa de lenguaje de alto o bajo nivel (el <em>c&oacute;digo de origen</em>) como entrada y produce un programa de lenguaje de m&aacute;quina (el <em>c&oacute;digo de objeto</em>) como su salida. Una vez producido, el programa de lenguaje de m&aacute;quina puede ser ejecutado repetidamente sin necesidad de ser compilado de nuevo.</p>
+                <p>Un <em>int&eacute;rprete</em> es un programa que toma un programa de alto o bajo nivel como entrada y lleva a cabo las instrucciones del lenguaje de la m&aacute;quina seg&uacute;n sea necesario para ejecutar el programa. No produce un programa de lenguaje de m&aacute;quina independiente como salida y tendr&aacute; que repetir el proceso de nuevo la pr&oacute;xima vez.</p>
                 <p>
-                    <a href="#hint-compilers-better" data-toggle="collapse" title="Does that mean compilers are better?">Does that mean compilers are better?</a>
-                    <div id="hint-compilers-better" class="collapse">
-                        <p>It <em>would</em> mean that, except that the process of writing a program includes <em>debugging.</em> During the debugging, an interpreter can help by providing information about the progress of the program, like the visual stepping feature in Snap<em>!</em>, and allowing small changes in the source program without having to run a compiler repeatedly. For example, in Snap<em>!</em> you can drag a block into a script while it's running, and a compiler couldn't allow that.</p>
-                        <p>For professional programmers, the best arrangement is to have <em>both</em> an interpreter and a compiler for the same language. The programmer writes and debugs the program using an interpreter, and once they're sure it works, they compile it. Then, the compiler can run slowly, putting a lot of effort into <em>optimizing</em> the machine language code, so they get the fastest possible compiled program.</p>
+                    <a href="#hint-compilers-better" data-toggle="collapse" title="Does that mean compilers are better?">&iquest;Eso significa que los compiladores son mejores?</a>
+                    </p><div id="hint-compilers-better" class="collapse">
+                        <p>Exacto, excepto que el proceso de escribir un programa incluye <em>depuraci&oacute;n.</em> Durante la depuraci&oacute;n, un int&eacute;rprete puede ayudar proporcionando informaci&oacute;n sobre el progreso del programa, como la caracter&iacute;stica de paso visual en Snap<em>!</em>, y permitiendo peque&ntilde;os cambios en el programa de origen sin tener que ejecutar un compilador repetidamente. Por ejemplo, en Snap<em>!</em> puedes arrastrar un bloque a un script mientras se est&aacute; ejecutando, y un compilador no podr&iacute;a permitir eso.</p>
+                        <p>Para programadores profesionales, el mejor arreglo es tener <em>ambos</em> un int&eacute;rprete y un compilador para el mismo lenguaje. El programador escribe y depura el programa usando un int&eacute;rprete, y una vez que est&aacute;n seguros de que funciona, lo compilan. Entonces, el compilador puede funcionar lentamente, poniendo mucho esfuerzo en <em>optimizar</em> el c&oacute;digo de lenguaje de m&aacute;quina, para que obtengan el programa compilado lo m&aacute;s r&aacute;pido posible.</p>
                     </div>
-                </p>
+                <p></p>
             </div>
         </div>
 
@@ -120,33 +121,33 @@ hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false"
         <div class="forYouToDo">
 			<ol start="2">
                 <li>
-                    These questions are similar to those you will see on the AP CSP exam.
+                    Estas preguntas son similares a las que ver&aacute;n en el examen AP CSP.
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which is TRUE about a low-level language?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
+                    <div class="assessment-data" type="multiplechoice" identifier="Which is TRUE about a low-level language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false">
                         <div class="prompt">
-                        	Which of the following statements are correct about a low-level programming language compared with a high-level programming language?
-                            <ol style="list-style:upper-roman;">
-                                <li>Low-level language programs are generally harder for people to understand than programs written in a high-level language.</li>
-                                <li>A low-level language provides programmers with more abstractions than a high-level language.</li>
-                                <li>Low-level language programs are generally harder to debug than programs written in a high-level language.</li>
+                        	&iquest;Cu&aacute;les de las siguientes afirmaciones son correctas sobre un lenguaje de programaci&oacute;n de bajo nivel en comparaci&oacute;n con un lenguaje de programaci&oacute;n de alto nivel?
+                            
+<ol style="list-style:upper-roman;">
+                                <li>Los programas de lenguaje de bajo nivel son generalmente m&aacute;s dif&iacute;ciles de entender para las personas, que los programas escritos en un lenguaje de alto nivel.</li>
+                                <li>Un lenguaje de bajo nivel proporciona a los programadores m&aacute;s abstracciones que un lenguaje de alto nivel.</li>
+                                <li>Los programas de lenguaje de bajo nivel son generalmente m&aacute;s dif&iacute;ciles de depurar que los programas escritos en un lenguaje de alto nivel.</li>
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">I only.</div>
-                            <div class="feedback">I is true but is it the only true statement?</div>
+                            <div class="text">I solamente.</div>
+                            <div class="feedback">I es verdadera, pero &iquest;es la &uacute;nica declaraci&oacute;n verdadera?</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">I and III only.</div>
-                            <div class="feedback">Correct. Both statements are correct and opposite of II is true as high-level languages are more expressive and able in creating abstractions.</div>
+                            <div class="text">I y III solamente.</div>
+                            <div class="feedback">Correcto. Ambas afirmaciones son correctas y lo contrario de II es cierto, ya que los lenguajes de alto nivel son m&aacute;s expresivos y capaces de crear abstracciones.</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">II and III only.</div>
-                            <div class="feedback">Opposite of II is true as high-level languages are more expressive and able in creating abstractions.</div>
+                            <div class="text">II y III solamente.</div>
+                            <div class="feedback">Lo contrario de II es verdadera, ya que los lenguajes de alto nivel son m&aacute;s expresivos y capaces de crear abstracciones.</div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">I, II, and III.</div>
-                            <div class="feedback">Opposite of II is true as high-level languages are more expressive and able in creating abstractions.</div>
+                            <div class="text">I, II, y III.</div>
+                            <div class="feedback">Lo contrario de II es verdadera, ya que los lenguajes de alto nivel son m&aacute;s expresivos y capaces de crear abstracciones.</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c2"></div>
@@ -154,24 +155,23 @@ hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false"
                     </div>
                     
                     <!-- Question 2 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which is TRUE about a program written in a high-level programming language?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
-                        <div class="prompt">A program is written in a high-level programming language.  Identify the correct statement about the program?</div>
+                    <div class="assessment-data" type="multiplechoice" identifier="Which is TRUE about a program written in a high-level programming language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false">
+                        <div class="prompt">Un programa est&aacute; escrito en un lenguaje de programaci&oacute;n de alto nivel. Identifica la declaraci&oacute;n correcta sobre el programa.</div>
                         <div class="choice" identifier="c1">
-                            <div class="text">The program can also be written in machine language using binary code, but then it will be less easily understood by people.</div>
-                            <div class="feedback">Correct.  Binary code is very hard to read for humans.</div>
+                            <div class="text">El programa tambi&eacute;n puede ser escrito en lenguaje de m&aacute;quina usando c&oacute;digo binario, pero entonces ser&aacute; menos f&aacute;cil de entender por la personas.</div>
+                            <div class="feedback">Correcto. Para los humanos, es muy dif&iacute;cil leer el c&oacute;digo binario.</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">The program can also be written in machine language using binary code, which will decrease the possibility of mistakes.</div>
-                            <div class="feedback">Mistakes will likely increase as it is harder for humans to make sense of binary code.</div>
+                            <div class="text">El programa tambi&eacute;n puede ser escrito en lenguaje de m&aacute;quina usando c&oacute;digo binario, lo que disminuir&aacute; la posibilidad de errores.</div>
+                            <div class="feedback">Los errores probablemente aumentar&aacute;n ya que es m&aacute;s dif&iacute;cil para los humanos darle sentido al c&oacute;digo binario.</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">The program cannot be written in binary code as only data can be represented by using binary notation.</div>
-                            <div class="feedback">Entire program can be converted to binary code.  Such a code is actually the only code a machine can understand.</div>
+                            <div class="text">El programa no puede ser escrito en c&oacute;digo binario, ya que s&oacute;lo los datos pueden ser representados utilizando la notaci&oacute;n binaria.</div>
+                            <div class="feedback">Todo el programa puede ser convertido en c&oacute;digo binario. Dicho c&oacute;digo es en realidad el &uacute;nico c&oacute;digo que una m&aacute;quina puede entender.</div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Simple parts of the program can be written in binary code, but control elements such as conditionals, loops must be expressed in a high-level programming language.</div>
-                            <div class="feedback">Entire program can be converted to binary code.  Such a code is actually the only code a machine can understand.</div>
+                            <div class="text">Partes simples del programa pueden ser escritas en c&oacute;digo binario, pero los elementos de control como los condicionales, los bucles deben ser expresados en un lenguaje de programaci&oacute;n de alto nivel.</div>
+                            <div class="feedback">Todo el programa puede ser convertido en c&oacute;digo binario. Dicho c&oacute;digo es en realidad el &uacute;nico c&oacute;digo que una m&aacute;quina puede entender.</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
                             <div class="correctResponse" identifier="c1"></div>
@@ -181,31 +181,32 @@ hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false"
 			</ol>
 		</div>
         
-        <h3>Code Readability</h3>
+        <h3>Legibilidad del c&oacute;digo</h3>
         <p>
-            One of the features that Snap<em>!</em> gives you is that you can put title text in the middle of a block.<br />
-            <div class="sidenote">You built <code>polygon</code> in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/7-graphics-and-art.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Graphics and Art">Unit 1: Graphics and Art</a>.</div>
-            <img class="indent" src="/bjc-r/img/6-computers/polygon-30-15.png" alt="polygon, sides: (30) side length: (15)" title="polygon, sides: (30) side length: (15)" /><br />
-            Compared to some other languages where the function has one name at the beginning and then all the inputs, this increases clarity and readability of your function.<br />
-            <p class="indent"><code>polygon(30, 15)</code></p>
-        </p>
+            Una de las caracter&iacute;sticas que te da Snap<em>!</em> es que puedes poner el texto del t&iacute;tulo en el medio de un bloque.<br>
+            </p><div class="sidenote">Escrib&iacute;ste <code>pol&iacute;gono</code> en <a href="/bjc-r/cur/programming/1-introduction/3-drawing/7-graphics-and-art.html?topic=nyc_bjc%2F1-intro-loops.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Graphics and Art">Unidad 1: Gr&aacute;ficos y arte</a>.</div>
+            <img class="indent" src="/bjc-r/img/6-computers/polygon-30-15.png" alt="polygon, sides: (30) side length: (15)" title="polygon, sides: (30) side length: (15)"><br>
+            En comparaci&oacute;n con otros lenguajes en los que la funci&oacute;n tiene un nombre al principio y luego todas las entradas, este aumenta la claridad y la legibilidad de su funci&oacute;n.<br>
+            <p class="indent"><code>pol&iacute;gono(30, 15)</code></p>
+        <p></p>
         <div class="pseudop">
-            Also, in a text-based language, when you see something like 3 &times; 5 + 4, you need to  have memorized that multiplication comes before addition (so the answer is 19). If you want it the other way, you have to use parentheses: 3 &times; (5 + 4) to get 27. In a blocks-based language, the blocks show you what was intended:
-            <img class="inline nopadtb" src="/bjc-r/img/6-computers/3-times(5+4).png" alt="3 × (5 + 4)" title="3 × (5 + 4)" />. You've learned order of operations for +, &ndash;, &times;, and &div; in math class, but you probably haven't learned order of operations for an expression like this: <pre class="inline">x &amp;&amp; y &lt;&lt; z</pre>. How you know which comes first <pre class="inline">&amp;&amp;</pre> or <pre class="inline">&lt;&lt;</pre>?
+            Adem&aacute;s, en un lenguaje basado en texto, cuando ves algo como 3 &times; 5 + 4, tienes que haber memorizado que la multiplicaci&oacute;n viene antes de la suma (as&iacute; que la respuesta es 19). Si lo quieres de otra manera, tienes que usar par&eacute;ntesis: 3 &times; (5 + 4) para obtener 27. En un lenguaje basado en bloques, los bloques muestran lo que se pretend&iacute;a:
+            <img class="inline nopadtb" src="/bjc-r/img/6-computers/3-times%285+4%29.png" alt="3 &times; (5 + 4)" title="3 &times; (5 + 4)">. Has aprendido el orden de las operaciones en la clase de matem&aacute;ticas para +, &ndash;, &times;, y &divide; , pero probablemente no has aprendido el orden de las operaciones para una expresi&oacute;n como esta: 
+<pre class="inline">x &amp;&amp; y &lt;&lt; z</pre>. &iquest;C&oacute;mo sabes cual viene primero?
+<pre class="inline">&amp;&amp;</pre> o 
+<pre class="inline">&lt;&lt;</pre>?
         </div>
         <div class="endnote">
-            <a href="#hint-ooo" data-toggle="collapse" title="">How <em>do</em> you know?</a>
+            <a href="#hint-ooo" data-toggle="collapse" title="">&iquest;C&oacute;mo lo sabes?</a>
             <div id="hint-ooo" class="collapse">
-                <p>See for example, <a href="https://en.cppreference.com/w/c/language/operator_precedence" title="C Operator Precedence" target="_blank">C Operator Precedence</a>.</p>
+                <p>Observa el ejemplo, <a href="https://en.cppreference.com/w/c/language/operator_precedence" title="C Operator Precedence" target="_blank">C Precedencia del operador</a>.</p>
             </div>
         </div>        
         
-        <h3>Parallelism</h3>
+        <h3>Paralelismo</h3>
         <div class="commentBig">5.2.1H A process may execute on one or several CPUs.</div>
-        <p>One reason to create new programming languages is to make it easier to write <em>parallel</em> programs&mdash;programs that can use more than one processor at the same time. Today in 2017, computers and smartphones have <em>multicore</em> processor chips that may include 2, 4, or 8 processors all running code at the same time. (The number of processors will increase even further over time.) Big companies such as Google use parallelism even more; they have clusters of thousands of computers, all working on the same program.</p>
-        <div class="commentBig">4.1.2D Different languages are better suited for expressing different algorithms.<br />4.1.2E Some programming languages are designed for specific domains and are better for expressing algorithms in those domains.</div>
-        <p><em>Functional</em> programming languages (languages in which programmers never change the value of a variable) are particularly well suited to parallelism because there's no danger of one processor changing the value of a variable that another processor is using. We've introduced you to functional programming techniques wherever possible throughout this course, including writing reporters and using higher order functions (<code>map</code>, <code>keep</code>, and <code>combine</code>).</p>
-        <div class="endnote">Snap<em>!</em> isn't a functional programming language, but it would be if the Snap<em>!</em> developers removed just a few procedures, including <code>set</code> (instead, you'd use input variables of recursive functions) and these four list commands: <code>add</code>, <code>delete</code>, <code>insert</code>, and <code>replace</code> (instead, you'd use <code>in front of</code>, <code>item 1 of</code>, and <code>all but first of</code> to report a new list with different values instead of changing the old list).</div>
-
-	</body>
-</html>
+        <p>Una de las razones para crear nuevos lenguajes de programaci&oacute;n es facilitar la escritura de programas <em>paralelos</em> &mdash;programas que pueden usar m&aacute;s de un procesador al mismo tiempo. Hoy en 2017, las computadoras y los tel&eacute;fonos inteligentes tienen chips de procesador <em>multin&uacute;cleo</em> que pueden incluir 2, 4, u 8 procesadores todos ejecut&aacute;ndose en c&oacute;digo al mismo tiempo. (El n&uacute;mero de procesadores aumentar&aacute; a&uacute;n m&aacute;s con el tiempo). Las grandes compa&ntilde;&iacute;as como Google usan el paralelismo a&uacute;n m&aacute;s; tienen grupos de miles de computadoras, todas trabajando en el mismo programa.</p>
+        <div class="commentBig">4.1.2D Different languages are better suited for expressing different algorithms.<br>4.1.2E Some programming languages are designed for specific domains and are better for expressing algorithms in those domains.</div>
+        <p>Lenguajes de programci&oacute;n <em>funcional</em> (lenguajes en los que los programadores nunca cambian el valor de una variable) son particularmente adecuados para el paralelismo porque no hay peligro de que un procesador cambie el valor de una variable que otro procesador est&aacute; usando. A lo largo de este curso te hemos introducido en t&eacute;cnicas de programaci&oacute;n funcional siempre que ha sido posible, incluyendo la redacci&oacute;n de reporteros y el uso de funciones de orden superior (<code>mapear</code>, <code>mantener</code>, y <code>combinar</code>).</p>
+        <div class="endnote">Snap<em>!</em> no es un lenguaje de programaci&oacute;n funcional, pero lo ser&iacute;a si los programadores de Snap<em>!</em> eliminaran s&oacute;lo unos pocos procedimientos, incluyendo <code>conjunto</code> (en su lugar, utilizar&iacute;as variables de entrada de funciones recursivas) y estos cuatro comandos de lista: <code>a&ntilde;adir</code>, <code>borrar</code>, <code>insertar</code>, y <code>reemplazar</code>(en lugar de eso, usar&iacute;as <code>en frente de</code>, <code>elemento 1 de <span style="font-family: serif;"></span></code>, y <code>todo menos el primero de</code> para reportar una nueva lista con diferentes valores en lugar de cambiar la lista antigua).</div>
+</body></html>
