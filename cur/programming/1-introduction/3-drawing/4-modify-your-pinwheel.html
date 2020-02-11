@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-        <h2>Modifica tu Molinillo</h2>
+        <h2>Modifica tu molinillo</h2>
         <div class="todo">
             <p>Teacher feedback from 2017-2018: one teacher: "Pg 4. Some students really needed to be prodded to get to see how it becomes an asterisk or polygon. Maybe a hint button might help." --MF, 3/6/19</p>
         </div>
@@ -25,37 +25,37 @@
         
 
         <div class="learn">
-        	<strong>En esta página,</strong> tú vas a modificar el código existente de <code>molinillo</code> con el objetivo de usarlo para dibujar una gran variedad de formas.<br />
+        	<strong>En esta página</strong> vas a modificar el código existente de <code>pinwheel</code> con el objetivo de usarlo para dibujar una gran variedad de formas.<br />
             <img class="indent" src="/bjc-r/img/1-introduction/assorted-pinwheels.png" alt="assortment of pinwheels" title="assortment of pinwheels" />
         </div>
         
-        <h3>Agregando Múltiples Entradas</h3>
-        <p>Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.</p>
+        <h3>Agregando múltiples entradas</h3>
+        <p>Recuerda la forma en la que <em>generalizaste</em> el programa original de molinillo: agregaste un campo de entrada llamado <var>número de ramas</var>, él cuál controlaba el ángulo de rotación del cursor. Si agregamos <em>más</em> campos de entrada, es posible generalizar otros aspectos del programa.</p>
         <div class="forYouToDo" id="first">
 			<ol>
-                <li>If it isn't already open, open your U1L3-Pinwheel project.</li>
+                <li>Si aún no has abierto el proyecto U1L3-Pinwheel, ahora es el momento.</li>
                 <li>
                     <div class="comment">AAP-3.A part b</div>
-                    Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.<br />
+                    Experimenta con un campo de entrada para el segundo bloque <code>move</code> que se encuentra en el código de <code>pinwheel</code>. A continuación se muestra una toma de pantalla del lugar específico.<br />
                     <ol>
                     	<li>
-                        	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                        	First predict. What do you think will happen?
+                        	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Habla con tu pareja" title="Habla con tu pareja" />
+                        	Inicialmente hagamos una predicción. ¿Qué crees que pasará al hacer cambios en dicho valor?
                         </li>
 						<img class="indent" src="/bjc-r/img/1-introduction/pinwheel-change-second-move-input.png" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" />
-                        <li>Then try several inputs between -100 and 0.</li>
+                        <li>Luego prueba con varios valores entre -100 y 0.</li>
                         <li>
-                        	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                            What happened? How does it compare to what you predicted? How does this input value impact the sprite's behavior? How does it impact the resulting image on the stage?<br />
+                        	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Habla con tu pareja" title="Habla con tu pareja" />
+                            ¿Qué ha pasado? ¿Cómo se compara el resultado con tu predicción? ¿Cuál es el impacto en el cambio del valor en el comportamiento del cursor? ¿Cuál es el impacto en la imagen que se presenta en el escenario?<br />
                             <img class="indent" data-gifffer="/bjc-r/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200" alt="Animation cycle from Asterisk to Polygon" title="Animation cycle from Asterisk to Polygon"/>
                         </li>
                 	</ol>
                 </li>
                 <li>
-                    <div class="sidenote">Review how to add an input at <a href="/bjc-r/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.</div>
-                    Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360&deg;.
+                    <div class="sidenote">En el caso de ser necesario, revisa el procedimiento para agregar un campo de entrada en <a href="/bjc-r/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Blocks with Inputs">Unidad 1 Lab 3 Página 3: Bloques con campo de entrada</a>.</div>
+                    Agrega un <em>segundo campo de entrada</em> para controlar la cantidad de "espera" que el cursor realiza antes de cada giro para llegar a la vuelta completa a 360&deg;.
                 	<ol>
-                        <li>Edit your <code>pinwheel</code> block, then click the "+" sign at the end to add an input <strong>label</strong> (<strong>choose "Title text"</strong>). Type <code>backup:</code> as shown below, and click "OK".</li>
+                        <li>Edita el bloque <code>pinwheel</code>, haz clic en el signo "+" que se encuentra al final y agrega un <strong>parámetro</strong> (<strong>elige la etiqueta "Parámetro"</strong>). Escribe <code>backup:</code> como se muestra más abajo y haz clic en "Aceptar".</li>
                         <div class="todo">Redo image with plain prototype labels. --MF, 5/14/19</div>
                         <img class="indent" src="/bjc-r/img/1-introduction/create-input-name.jpg" alt="typing 'backup:' as Title text into Block Editor's Create input name window" title="typing 'backup:' as Title text into Block Editor's Create input name window" />
                         <li>Then click the "+" sign at the end <em>again</em> to add an input (choose "Input name"), and call it <var>backup</var>.</li>
