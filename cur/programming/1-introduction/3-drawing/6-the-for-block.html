@@ -35,10 +35,10 @@
         
         <div class="vocabFullWidth">: <strong>Iteración</strong>
             <div class="comment">AAP-2.J.1</div>
-            <p>Computer scientists describe a repeating program structure as <em>looping</em>, <em>repetition</em>, or <strong>iteration</strong>.</p>
+            <p>Los científicos de la computación definen una estructura de programa repetitivo como un <em>ciclo</em>, <em>repetición</em>, o <strong>iteración</strong>.</p>
             <div class="comment">AAP-2.K.1</div>
             <p>
-                The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you'll see in Lab 5). <br />
+                El código puede repetirse <code>por siempre</code>, un número específico de veces (al usar <code>repetir</code>), o bien hasta que una condición específica se cumpla (por ejemplo al usar <code>repetir hasta que</code> como se presentará en el Laboratorio 5). <br />
                 <img class="indent" src="/bjc-r/img/1-introduction/repeat-4(move-100-turn-right-90).png" alt="repeat (4) (move (100), turn clockwise (90))" title="repeat (4) (move (100), turn clockwise (90))" />
                 <img class="indent" src="/bjc-r/img/1-introduction/move-tiny-no-hat.png" alt="repeat until (touching (Leader)?)
 {
@@ -53,13 +53,13 @@
         </div>
 
         <p>
-            Sometimes the script inside a loop needs to know which time through the loop it's in (first, second, etc.).
-            You can use <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> to keep track, and you can use its counter (the default name is <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br /> 
+            Algunas veces el código dentro de un ciclo necesita saber en que iteración se encuentra (primera, segunda, etc.).
+            Se puede usar el bloque <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> para llevar el control, y se puede usar su contador en el código a repetir (está representado por defecto por la letra "i" <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />). Por ejemplo, el bloque <code>para</code> brinda la oportunidad de simplificar un código largo como el siguiente: <br /> 
             <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" />  
-            &nbsp; &nbsp; &nbsp; to  
+            &nbsp; &nbsp; &nbsp; en  
             <img class="noshadow" src="/bjc-r/img/looping/for-loop-drag-i.gif" alt="for (i)= (1) to (10) {say (i) for (2) secs}" title="for (i)= (1) to (10) {say (i) for (2) secs}" /> 
 		</p>
-        <p>Each time the <code>for</code> block  runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.</p>   
+        <p>Cada vez que el bloque <code>para</code> ejecuta el código en su interior, incrementa el valor del contador en 1, empezando con el primer valor y terminando en el último valor que aparece (en el ejemplo el 10).</p>   
 		
 
 <!--        <div class="endnote">
@@ -71,36 +71,36 @@
         
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu at the top of the <span class="snap">snap</span> window and select "Import Tools."</li>
-                <div class="takeNote">The <code>for</code> block gives you a default counter name, <var style="color: #fa0">i</var> (for index). You can change this name by clicking it. To use the counter, drag it into the script.</div>
+                <li>Haz clic en el menú "Archivo" <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> en la barra superior de la ventana de <span class="snap">Snap</span> y selecciona la opción "Importar..."</li>
+                <div class="takeNote">El bloque <code>para</code> define un nombre de contador predeterminado, <var style="color: #fa0">i</var> (letra i de índice). Se puede cambiar este nombre de variable haciendo clic sobre él. Para usar el contado, arrástralo a la ubicación requerida.</div>
                 <li>
-                	Build this script that makes the sprite say the numbers 1 through 10. <br />
+                	Construye el siguiente código que hace que el personaje diga los números del 1 al 10. <br />
                 	<img class="indent" src="/bjc-r/img/1-introduction/for-i-1-10-say-i.png" alt="for (i) = (1) to (10) {say (i) for (2) secs}" title="for (i) = (1) to (10) {say (i) for (2) secs}" />
                     <ol>
-                        <li>Then modify it so that the sprite says 0, 2, 4, 6, 8, ... up through 30.</li>
-                        <li>Discuss your solutions with another pair.</li>
+                        <li>Luego modifica el código para que el personaje diga 0, 2, 4, 6, 8, ... hasta 30.</li>
+                        <li>Discute tu solución con tu compañero.</li>
                     </ol>
 				</li>
 				<li>
-                    Experiment with spirals.
+                    Experimenta con espirales.
                     <ol>
 						<li>
-                        	Build this script and try it out:<br />
-                            <div class="sidenote">This design got the nickname "squiral" because it's a <strong>squ</strong>are sp<strong>iral</strong>. </div>
+                        	Construye el siguiente código y pruébalo:<br />
+                            <div class="sidenote">Este diseño recibe el nombre "cuadriral" porque es un <strong>caudr</strong>rado esp<strong>iral</strong>. </div>
                             <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}"><br />
 						</li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Make sure you can explain why the squiral spirals outward.</li>
-                        <li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
-                        <li>Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Asegúrate de poder explicar la razón por la que el "cuadriral" se dibjua hacia afuera.</li>
+                        <li>Intenta cambiar el orden de 100 y de 1 en el bloque <code>para</code> en el código previo. ¿Cuál es el resultado?</li>
+                        <li>Intenta cambiar el ángulo de vuelta en el código a otros valores, por ejemplo 92, 126, etc.</li>
                         <li>
-                        	Change the inputs to <code>turn</code> and <code>move</code> to get as close as you can get to a smooth spiral:<br />
+                        	Cambia los valores dentro de <code>turn</code> y <code>move</code> para obtener un resultado más parecido a un espiral normal similar a:<br />
                         	<img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
                         </li>
                     </ol>
                 </li>
                 <li><div class="saveAs"><span class="text">"U1L3-Squiral"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L3-Squiral" title="Save your work as U1L3-Squiral" /></div></li>
                 <li> 
-                    Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> 
+                    Abre el proyecto U1L3-Pinwheel. Construye un bloque <code>cuadrados anidados</code> que haga uso de los bloques <code>para</code> y <code>polygon</code> para dibujar cuadrados anidados. Proporciona un valor de entrada que dibuje <var>número de cuadrados</var> a especificar, con cada cuadrado más grande que el anterior: <br /> 
                     <img class="indent" src="/bjc-r/img/1-introduction/nested-squares.png" alt="nested squares" title="nested squares" />
                 </li>
                 
@@ -109,21 +109,21 @@
         
         <div class="ifTime">
             <ol start="6">
-                <li>Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.</li>
+                <li>Construye el bloque <code>polígonos anidados</code> que reciba el campo de entrada <var>número de polígonos</var> y  <var>número de lados</var> para los polígonos a dibujar.</li>
                 <li>
-                    Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br />
+                    Construye un programa que dibuje 12 polígonos regulares, cada uno con un lado más que el polígono anterior, ver el ejemplo a continuación.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/polygons.png" alt="polygons: triangle through decagon" title="polygons: triangle through decagon" />
                 </li>
-                <li>Predict what this script will do before you try it:<br /><img class="indent" src="/bjc-r/img/1-introduction/nested-fors.png" width="399" height="147" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}"></li>
-                <li>Build a script that counts down by 10 from 100 to 0  (that is, 100, 90, 80, etc.).</li>
+                <li>Predice el comportamiento del código que se presenta a continuación antes de ejecutarlo:<br /><img class="indent" src="/bjc-r/img/1-introduction/nested-fors.png" width="399" height="147" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}"></li>
+                <li>Construye un programa que cuente descendientemente números del 100 al 0, de 10 en 10 (esto es, 100, 90, 80, etc.).</li>
 				<!--<li><img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /> Build a <em>block</em> with inputs that let you specify how to count. If you say <img src="/bjc-r/img/1-introduction/count-by-10-from-100-to-0.png" alt="count-by-10-from-100-to-0">, it counts 100, 90, 80, etc., but if you say <img src="/bjc-r/img/1-introduction/count-by-2-from-0-to-30.png" alt="count-by-2-from-0-to-30">, it counts 0, 2, 4, 6, ..., 28, 30.</li>-->
                 <!--<div class="comment">We might want to teach them about sliders as part of the TiF. It is useful here, not essential (so TiF) and cool (so TiF). </div>-->
                 <li>
-                	Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br />
+                	Abajo se encuentran dos animaciones que hacen uso del código <code>pinwheel</code> con campos de entrada. Encuentra la forma de crear tus propias animaciones artísticas.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/pinwheelArray" height="200" alt="Array of pinwheels animation" title="Array of pinwheels animation"/>
                     <img  src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif"  height="200" alt="Pinwheel wreath animation" title="Pinwheel wreath animation"/><br />
                     <div class="endnote">
-                        <p>The following code may give you ideas about how to create animations. Make sure to remove all <code> wait</code> <var>0.5</var> <code>secs</code> blocks from your <code>pinwheel</code> code so they don't slow it down. The <code>warp</code> block allows the drawing of the pinwheel all at once.</p>
+                        <p>El código que se presenta a continuación puede darte la idea de cómo crear animaciones. Debes asegurarte de remover los bloques <code> wait</code> <var>0.5</var> <code>secs</code> que se encuentra en el código <code>pinwheel</code> para evitar que lo haga más lento. El bloque <code>warp</code> permite dibujar el molinillo de inmediato.</p>
                         <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/animationCode.png"  height="150" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}"/>
                     </div>
                 </li>
@@ -141,31 +141,27 @@
             <ol type="A">
 
                 <li>
-                    Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br />
+                    Encuentra la forma de usar el bloque <code>para</code> con el objetivo de enlazar cuadrados de la forma que se presenta en las imágenes. Construye un <em>bloque</em> con dos campos de entrada que permitan especificar la cantidad de cuadrados que contendrá la pintura y qué tan grande será el cuadrado actual en relación al anterior.<br />
                     <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" /> 
-                    <img class="indent" src="/bjc-r/img/1-introduction/concentric-squares.png" width="219" height="170" alt="concentric squares" title="concentric squares">
+                    <img class="indent" src="/bjc-r/img/1-introduction/concentric-squares.png" width="219" height="170" alt="Cuadrados concéntricos" title="Cuadrados concéntricos">
                 </li>
 			</ol>
 		<img class="imageRight" src="/bjc-r/img/1-introduction/Josef_Albers's_painting_'Homage_to_the_Square',_1965.jpg" height="150" alt="painting-by-Josef-Albers" title="painting-by-Josef-Albers" />
-		<p>On the right is a painting by Josef Albers.  He was interested in
-		experimenting with variations of color within a "family" of similar
-		colors.  Snap<i>!</i> will let you make similar experiments.</p>
+		<p>A la derecha se despliega una pintura de Josef Albers.  Él estaba interesado en experimentar con una variación de colores, dentro de la "familia" del colores similares.
+          Snap<i>!</i> permite hacer experimentos similares.</p>
 
-			<ol type="A" start="2"> <li>What is the favorite color of the
-			author of this activity?</li> <li>If you didn't do the Take It
-			Further activity based on this Kazimir Malevich picture:
+			<ol type="A" start="2"> <li>¿Cuál es el color favorito del autor para esta actividad?</li> <li>En el caso que no hayas comletado la actividad basada en el trabajo de Kazimir Malevich:
 			<img src="/bjc-r/img/1-introduction/Malevich-tiny.jpg">
-			then <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.html">read it now</a>
-			to learn about Snap<em>!</em> features for <em>solid rectangles</em> and <em>color families</em>.</li>
-			<li>Okay, now dig in.
+			entonces <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.html">debes leerla ahora</a>
+			para aprender las funcionalidades de Snap<em>!</em> para <em>rectángulos sólidos</em> y <em>familia de colores</em>.</li>
+			<li>Muy bien, ahora entremos en detalles.
 			<div class="narrowpurple">
-				<strong>Randomness:</strong> The four examples above are
-				different from the actual Albers picture in that they include
-				occasional colors that aren't from the same family.  This can
-				make the pictures more interesting to someone who doesn't
-				share Albers's interest in subtle differences in color.
-				<em>Too much</em> randomness, though, can make the picture
-				<em>less</em> interesting.  Compare the last two examples
+				<strong>Aleatoriedad:</strong> Los cuatro ejemplos que se presentan arriba son
+				diferentes a la pintura de Albers en el sentido que incluyen colores ocasionales
+                que no son de la misma familia. Esto puede hacer las pinturas más interesantes para
+                alguien que no comparta el interés de Albers en diferencias nínimas de color.
+				<em>Demasiada</em> aleatoriedad, puede en cambio, hacer la pintura 
+				<em>menos</em> interesante.  Compare the last two examples
 				above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but
 				the right one has violets, greens, oranges, a yellow&mdash;too
 				much chaos, maybe.  Look back at the Gossip project if you
