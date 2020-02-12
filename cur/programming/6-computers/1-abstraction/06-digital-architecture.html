@@ -16,78 +16,78 @@
 		<p>El software en una computadora sería inútil sin el <em>hardware</em> de la computadora: el circuito real dentro de la caja. Así como hay capas de abstracción para el software, los diseñadores de hardware también piensan en capas de abstracción.</p>
 		<img class="imageRight noshadow" src="/bjc-r/img/6-computers/hardware-abstraction-mini.png" alt="diagrama simplificado de la jerarquía de abstracción computacional que muestra tres niveles de abstracción decreciente: dominio de software, dominio digital y dominio analógico; hay una línea divisoria entre los dominios de software y digital etiquetada como 'barrera de abstracción del programa' y una línea divisoria entre los dominios analógico y digital etiquetada como 'barrera de abstracción digital;' hay una flecha vertical de dos puntas a la derecha que indica que los elementos enumerados primero en la lista tienen un 'alto nivel de abstracción' y los que están más abajo en la lista tienen un 'bajo nivel de abstracción'" title="diagrama simplificado de la jerarquía de abstracción computacional que muestra tres niveles de abstracción decreciente: dominio de software, dominio digital y dominio analógico; hay una línea divisoria entre los dominios de software y digital etiquetada como 'barrera de abstracción del programa' y una línea divisoria entre los dominios analógico y digital etiquetada como 'barrera de abstracción digital;' hay una flecha vertical de dos puntas a la derecha que indica que los elementos enumerados primero en la lista tienen un 'alto nivel de abstracción' y los que están más abajo en la lista tienen un 'bajo nivel de abstracción'" />
         <p>Todos hablan de computadoras representando todos los datos utilizando solo dos valores, 0 y 1. Pero en realidad no es así como funcionan los circuitos electrónicos. Los diseñadores de computadoras pueden trabajar <em>como si</em> los circuitos estuvieran apagados (0) o encendidos (1) debido a la <strong>abstracción digital</strong>, la abstracción más importante en hardware. Por encima de ese nivel de abstracción, hay cuatro niveles más detallados, llamados <strong>dominio digital</strong>. Debajo de la abstracción digital, los diseñadores trabajan en el <strong>dominio analógico</strong>, en el que un cable en un circuito puede tener cualquier valor de voltaje, no solo dos valores.</p>
-        <p>On the next four pages, we'll explore four levels of the digital domain.</p>
+        <p>En las siguientes cuatro páginas, exploraremos cuatro niveles del dominio digital.</p>
 
         <div class="endnote">
-            <h3>The Stored Program Computer</h3>
-            <p>As you'll see in Lab 3, there have been machines to carry out computations for thousands of years. But the modern, <em>programmable</em> computer had its roots in the work of Charles Babbage in the early 1800s.</p>
-            <p>Babbage was mainly a mathematician, but he contributed to fields as varied as astronomy and economics. Babbage lived about 150 years ago from  1791-1871. Electricity as a source of energy was unknown. The steam engine came into widespread use around the time he was born. The most precise machinery of his time was clockwork—gears.</p>
+            <h3>La computadora del programa almacenado</h3>
+            <p>Como verá en el Laboratorio 3, ha habido máquinas para realizar cálculos durante miles de años. Pero la computadora moderna, <em>programable</em> tuvo sus raíces en el trabajo de Charles Babbage a principios de 1800.</p>
+            <p>Babbage era principalmente un matemático, pero contribuyó a campos tan variados como la astronomía y la economía. Babbage vivió hace unos 150 años de 1791-1871. La electricidad como fuente de energía era desconocida. La máquina de vapor entró en uso generalizado en la época en que nació. La maquinaria más precisa de su tiempo era el mecanismo de relojería -engranajes.</p>
         
-            <h4><strong>Difference Engine</strong></h4>
-            <p>Babbage's first computer was the Difference Engine. He used gears to design a complex machine that would compute and print tables of numbers (like the tables of log or trig functions you may have in the back of a math textbook). But these gears needed to be so precise that each one had to be handmade. The project became so expensive that the government stopped funding it, and Babbage never finished a full-scale version.</p>
+            <h4><strong>Máquina diferencial</strong></h4>
+            <p>La primera computadora de Babbage fue la Máquina Diferencial. Utilizó engranajes para diseñar una máquina compleja que calcularía e imprimiría tablas de números (como las tablas de registro o funciones trigonométricas que puede tener en la parte posterior un libro de texto de matemáticas). Pero estos engranajes debían ser tan precisos que cada uno tenía que ser hecho a mano. El proyecto se volvió tan costoso que el gobierno dejó de financiarlo y Babbage nunca terminó una versión a gran escala.</p>
             <div class="comment">Bad Mary. ;) We need a CSS solution for this instead of using tables. --MF, 12/4/17</div>
             <table class="indent">
                 <tr>
                     <td>
-                        <img src="/bjc-r/img/6-computers/babbage-difference-engine.jpg" height="200px" alt="The Difference Engine at the London Science Museum: the image shows a large mechanical device with many gears and a large crank on the side." title="The Difference Engine at the London Science Museum: the image shows a large mechanical device with many gears and a large crank on the side." /><br />
-                        <small>The Difference Engine at the London Science Museum</small><br />
+                        <img src="/bjc-r/img/6-computers/babbage-difference-engine.jpg" height="200px" alt="La máquina diferencial en el Museo de Ciencias de Londres: la imagen muestra un gran dispositivo mecánico con muchos engranajes y una gran manivela al lado." title="La máquina diferencial en el Museo de Ciencias de Londres: la imagen muestra un gran dispositivo mecánico con muchos engranajes y una gran manivela al lado." /><br />
+                        <small>La máquina diferencial en el Museo de Ciencias de Londres</small><br />
                         <small><small>
-                            Image by Wikimedia user geni. Copyright 2008. License: GFDL, CC BY-SA.
+                            Imagen del usuario geni de Wikimedia. Copyright 2008. License: GFDL, CC BY-SA.
                         </small></small>
                     </td>
                     <td>
-                        <img src="/bjc-r/img/6-computers/closeup-difference-eng.jpg" height="200px" alt="A closeup showing the gears of the Difference Engine more clearly" title="A closeup showing the gears of the Difference Engine more clearly" /><br />
-                        <small>A closeup showing the gears more clearly</small><br />
+                        <img src="/bjc-r/img/6-computers/closeup-difference-eng.jpg" height="200px" alt="Un primer plano que muestra los engranajes de la máquina diferencial más claramente" title="Un primer plano que muestra los engranajes de la máquina diferencial más claramente" /><br />
+                        <small>Un primer plano que muestra los engranajes de la máquina diferencial más claramente</small><br />
                         <small><small>
-                            Image by Carsten Ullrich. Copyright 2005. License: CC-BY-SA-2.5.
+                            Imagen de Carsten Ullrich. Copyright 2005. License: CC-BY-SA-2.5.
                         </small></small>
                     </td>
                 </tr>
             </table>
     
             <p>
-                <a href="#hint-difference" data-toggle="collapse" title="Learn more about the history of the Difference Engine">Learn more about the history of the Difference Engine.</a>
+                <a href="#hint-difference" data-toggle="collapse" title="Aprende más sobre la historia de la máquina diferencial">Aprende más sobre la historia de la máquina diferencial.</a>
                 <div id="hint-difference" class="collapse">
-                    <p>In Babbage's time, such numerical tables were computed by hand by human mathematicians, and they were typeset by hand for printing. Both the computation and the copying into type were error-prone, and accurate tables were needed for purposes ranging from engineering to navigation.</p>
-                    <p>Babbage built a first, small Difference Engine in 1822.  This first effort proved that a Difference Engine was possible, but it didn't have the precision (number of digits in each number) to be practical.  In 1823, the British government funded Babbage to build a larger version.  Unfortunately, metalsmiths in his day could not produce very precise gears in large quantities; each one had to be handmade.  So he spent ten times his approved budget by the time the government canceled the project in 1842.</p>
-                    <p>In 1991, the London Science Museum completed a Difference Engine following Babbage's original design using gears made by modern processes but at the level of precision that was available to Babbage.  This proved that, in principle, Babbage could have completed a working machine, given enough time and money.</p>
+                    <p>En la época de Babbage, tales tablas numéricas fueron calculadas a mano por matemáticos humanos, y fueron escritas a mano para imprimir. Tanto el cálculo como la copia para imprenta eran propensos a errores, y se necesitaban tablas precisas para fines que iban desde la ingeniería hasta la navegación.</p>
+                    <p>Babbage construyó una primer máquina diferencial pequeño en 1822. Este primer esfuerzo demostró que una máquina diferencial era posible, pero no tenía la precisión (número de dígitos en cada número) para ser práctico. En 1823, el gobierno británico financió a Babbage para construir una versión más grande. Desafortunadamente, los metalúrgicos en su día no podían producir engranajes muy precisos en grandes cantidades; cada uno tenía que ser hecho a mano. Entonces gastó diez veces su presupuesto aprobado para cuando el gobierno canceló el proyecto en 1842.</p>
+                    <p>En 1991, el Museo de Ciencias de Londres completó una máquina diferencial siguiendo el diseño original de Babbage utilizando engranajes hechos por procesos modernos pero con el nivel de precisión que estaba disponible para Babbage. Esto demostró que, en principio, Babbage podría haber completado una máquina en funcional, con suficiente tiempo y dinero.</p>
                 </div>
             </p>
             
-            <h4><strong>The Analytical Engine</strong></h4>
+            <h4><strong>La máquina analítica</strong></h4>
             <p>
-            	The Difference Engine could be used to compute many different functions by manually setting the starting position of various gears.  But it had <strong>only one algorithm</strong>: the one built into the hardware design. In 1833, Babbage began working on the Analytical Engine, which was based on the general idea of the Difference Engine but <strong>could carry out instructions</strong> in a primitive programming language prepared on punched cards.<br />
+            	La máquina diferencial podría usarse para calcular muchas funciones diferentes configurando manualmente la posición de inicio de varios engranajes. Pero tenía <strong>sólo un algoritmo</strong>: el construido en el diseño de hardware. En 1833, Babbage comenzó a trabajar en la máquina analítica, que se basaba en la idea general de la máquina diferencial, pero <strong>podía llevar a cabo instrucciones</strong> en un lenguaje de programación primitivo preparado en tarjetas perforadas.<br />
                 <div class="sidenote">
-                    <small>Punched cards used to program the Analytical Engine</small><br />
+                    <small>Tarjetas perforadas utilizadas para programar la máquina analítica</small><br />
                     <small><small>Karoly Lorentey.  Copyright 2004.  License: CC-BY.</small></small>
                 </div>
-                <img class="indent" src="/bjc-r/img/6-computers/punched-cards-analytical-engine.jpg" height="300px" alt="punched cards used to program the Analytic Engine" title="punched cards used to program the Analytic Engine" />
+                <img class="indent" src="/bjc-r/img/6-computers/punched-cards-analytical-engine.jpg" height="300px" alt="Tarjetas perforadas utilizadas para programar la máquina analítica" title="Tarjetas perforadas utilizadas para programar la máquina analítica" />
             </p>
-            <p>These days, we are surrounded by programmable computers, and having software seems obvious now. But it wasn't obvious, and before Babbage, all algorithms were implemented directly in hardware.</p>
-            <p>So, 150 years ago, Babbage created plans for what is essentially a modern computer, although he didn't have electronics available. His underlying idea for hardware was entirely mechanical, but it turned out not to be possible for him to build it with then-current technology. We didn't get <em>usable</em> computers until there was an underlying technology small enough, inexpensive enough, and fast enough to support the software abstraction. You'll learn about this technology, transistors, soon.</p>
+            <p>En estos días, estamos rodeados de computadoras programables, y tener software parece obvio ahora. Pero no era obvio, y antes de Babbage, todos los algoritmos se implementaron directamente en el hardware.</p>
+            <p>Entonces, hace 150 años, Babbage creó planes para lo que es esencialmente una computadora moderna, aunque no tenía dispositivos electrónicos disponibles. Su idea fundamental para el hardware era completamente mecánica, pero resultó que no le fue posible construirlo con la tecnología de su tiempo. No obtuvimos computadoras <em>utilizables</em> hasta que hubo una tecnología fundamental lo suficientemente pequeña, económica y lo suficientemente rápida como para soportar la abstracción del software. aprenderá sobre esta tecnología, transistores, Pronto.</p>
         </div>
         
-		<div class="takeNote">The abstraction of <em>software</em> (a program stored in the computer's memory) is what makes a computer usable for more than one purpose.</div>
+		<div class="takeNote">La abstracción del <em>software</em> (un programa almacenado en la memoria de la computadora) es lo que hace que una computadora sea utilizable para más de un propósito.</div>
 
         <div class="endnote">        
             <p>
-                <a href="#hint-analytical" data-toggle="collapse" title="Learn more about the Analytical Engine">Learn more about the Analytical Engine.</a>
+                <a href="#hint-analytical" data-toggle="collapse" title="Aprende más sobre la máquina analítica">Aprende más sobre la máquina analítica.</a>
                 <div id="hint-analytical" class="collapse">
-                    <p>The Analytical Engine, like modern computers, had an arithmetic processor (called the "mill") and a separate memory (the "store") that would hold 1,000 numbers, each with up to 40 digits.  <!--(In modern terms, this is comparable to 20,000 bytes, since a byte can hold two digits, with four bits needed for each.)-->  The mill did arithmetic in decimal (with digits 0-9 equally spaced around each gear); using just "ones and zeros" in computing came later.</p>
-                    <p>The programming language used in the Analytical Engine included conditionals and looping, which is all you need to represent any algorithm.  (It could loop because it could move forward or backward through the punched cards containing the program.)</p>
-                    <p>Alas, Babbage could build only a small part of the Analytical Engine, which would have required even more metalworking than the Difference Engine.  His notes about the design weren't complete, and so nobody has ever built a working model, although there are simulations available on the Web (see the Take It Further problem below). Sadly, in the early days of electronic computers, Babbage's work was not widely known, and people ended up reinventing many of his ideas.</p>
+                    <p>La máquina analítica, al igual que las computadoras modernas, tenía un procesador aritmético (llamado "molino") y una memoria separada (el "almacén") con capacidad para 1,000 números, cada uno con hasta 40 dígitos.  <!--(In modern terms, this is comparable to 20,000 bytes, since a byte can hold two digits, with four bits needed for each.)-->  El molino hacía aritmética en decimal (con dígitos 0-9 igualmente espaciados alrededor de cada engranaje); el uso de "unos y ceros" en computación llegó más tarde.</p>
+                    <p>El lenguaje de programación utilizado en la máquina analítica incluía condicionales y bucles, que es todo lo que se necesita para representar cualquier algoritmo. (Podría hacer bubles porque podría avanzar o retroceder a través de las tarjetas perforadas que contienen el programa).</p>
+                    <p>Por desgracia, Babbage podo construir solo una pequeña parte de la máquina analítica, lo que habría requerido aún más trabajo en metal que la máquina diferencial. Sus notas sobre el diseño no estaban completas, por lo que nadie ha construido nunca un modelo funcional, aunque hay simulaciones disponibles en la Web (consulte el problema Llevar más allá a continuación). Lamentablemente, en los primeros días de las computadoras electrónicas, el trabajo de Babbage no era ampliamente conocido, y la gente terminó reinventando muchas de sus ideas.</p>
                 </div>
             </p>
             <p>
-            	<a href="#hint-ada" data-toggle="collapse" title="Learn about Ada, Countess Lovelace's invention of symbolic computing">Learn about Ada, Countess Lovelace's invention of symbolic computing.</a>
+            	<a href="#hint-ada" data-toggle="collapse" title="Learn about Ada, Countess Lovelace's invention of symbolic computing">Aprenda sobre Ada, Condesa de Lovelace y su invención de la computación simbólica.</a>
 				<div id="hint-ada" class="collapse">
-                    <p>Although his design was very versatile, Babbage was mainly interested in printing tables of numbers.  It was his collaborator Augusta Ada King-Noel, Countess of Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on.</p>
-                    <img class="indent" height="300px" src="/bjc-r/img/6-computers/ada-lovelace.jpg" alt="Ada, Countess Lovelace" title="Ada, Countess Lovelace" />
+                    <p>Aunque su diseño era muy versátil, Babbage estaba principalmente interesado en imprimir tablas de números. Fue su colaborador Augusta Ada King-Noel, condesa de Lovelace, quien primero reconoció que los números en la computadora de Babbage podían usarse no solo como cantidades sino también como notas musicales, caracteres de texto, etc.</p>
+                    <img class="indent" height="300px" src="/bjc-r/img/6-computers/ada-lovelace.jpg" alt="Ada, Condesa de Lovelace" title="Ada, Condesa de Lovelace" />
                     <div class="sidenote">
-                    	<small>Image by Alfred Edward Chalon, Science &amp; Society Picture Library, Public Domain, via Wikimedia.</small>
+                    	<small>Imagen por Alfred Edward Chalon, Science &amp; Society Picture Library, Public Domain, via Wikimedia.</small>
                     </div>
-                    <p>Much of what we know today about Babbage's design comes from Ada Lovelace's extensive notes on his design.  Her notes included the first <em>published</em> program for the Analytical Engine, and so she is widely considered "the first programmer," although it's almost certain that Babbage himself wrote several example programs while designing the machine.</p>
-                    <p>Whether or not she was truly the first programmer, historians agree that she did something more important: she invented the idea of <em>symbolic</em> computation (including text, pictures, music, etc.) as opposed to numeric computation.  This insight paved the way for all the ways that computers are used today, from movies on demand to voice-interactive programs such as Siri and Alexa.</p>
+                    <p>Gran parte de lo que sabemos hoy sobre el diseño de Babbage proviene de las extensas notas de Ada Lovelace sobre su diseño. Sus notas incluyeron el primer programa <em>publicado</em> para la máquina analítica, por lo que es ampliamente considerada "la primera programadora", aunque es casi seguro que el mismo Babbage escribió varios programas de ejemplo mientras diseñaba la máquina.</p>
+                    <p>Independientemente de si ella fue realmente la primera programadora, los historiadores coinciden en que hizo algo más importante: inventó la idea de la computación <em>simbólica</em> (incluyendo texto, imágenes, música, etc.) en oposición a la computación numérica. Esta idea pavimento el camino para todas las formas en que se usan las computadoras hoy en día, desde películas por demanda hasta programas interactivos de voz como Siri y Alexa.</p>
                 </div>
             </p>
         </div>
