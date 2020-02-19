@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 6 Lab 1: Computer Abstraction Hierarchy, Page 1</title>
+		<title>Unidad 6 Lab 1: Abstracción dentro de la computadora, Página 1</title>
 	</head>
     <body>
 		<h2>Abstracci&oacute;n dentro de la computadora</h2>
@@ -17,8 +17,8 @@
             <p>MF: lightly clean up to make the text more concise</p>    
 		</div>
         
-        <p>En Unidad 4 <a href="/bjc-r/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="A Hierarchy of Open Protocols">Una jerarqu&iacute;a de protocolos abiertos</a>, viste que el software de Internet est&aacute; organizado en varios niveles de abstracci&oacute;n, con programas de aplicaci&oacute;n (como tu programa de correo electr&oacute;nico) en el nivel m&aacute;s alto y protocolos de red de hardware como WiFi y Ethernet en el nivel m&aacute;s bajo. Recuerda que los niveles <em>m&aacute;s altos</em> est&aacute;n m&aacute;s cerca de lo que los usuarios quieren pensar; los niveles inferiores est&aacute;n m&aacute;s cerca de la forma en que funcionan las m&aacute;quinas.</p>
-        <p>Al igual que Internet, la forma en que una computadora trabaja dentro de esta, tambi&eacute;n tiene niveles de abstracci&oacute;n.</p>
+        <p>En la Unidad 4 <a href="/bjc-r/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="A Hierarchy of Open Protocols">Una jerarqu&iacute;a de protocolos abiertos</a>, viste que el software de Internet est&aacute; organizado en varios niveles de abstracci&oacute;n, con programas de aplicaci&oacute;n (como tu programa de correo electr&oacute;nico) en el nivel m&aacute;s alto y protocolos de red de hardware como WiFi y Ethernet en el nivel m&aacute;s bajo. Recuerda que los niveles <em>m&aacute;s altos</em> est&aacute;n m&aacute;s cerca de cómo piensan los usuarios; los niveles inferiores est&aacute;n m&aacute;s cerca de cómo funcionan las m&aacute;quinas.</p>
+        <p>Al igual que Internet, la forma en que una computadora funciona internamente, tambi&eacute;n tiene niveles de abstracci&oacute;n.</p>
 		
 		<div class="learn">
           <p><strong>En este laboratorio </strong>aprender&aacute;s acerca de los niveles de abstracci&oacute;n en el software y el hardware de la computadora.</p>
@@ -50,14 +50,14 @@
             Los programas que escribes y usas son software, pero debajo de estos programas hay m&aacute;s software que les ayuda a funcionar. En este laboratorio, veremos cuatro capas de abstracci&oacute;n en el dominio de software:
             </p>
 <ul>
-                <li><strong>aplicaciones</strong> que escribes y utilizas</li>
-                <li><strong>lenguajes de programaci&oacute;n</strong> que son utilizados para escribirlos</li>
-                <li><strong>librer&iacute;as</strong> de funciones &uacute;tiles que ocultan detalles desordenados</li>
-                <li><strong>sistemas operativos</strong> que interact&uacute;an con el hardware</li>
+                <li><strong>Aplicaciones</strong> que escribes y utilizas</li>
+                <li><strong>Lenguajes de programaci&oacute;n</strong> que son utilizados para escribirlos</li>
+                <li><strong>Librer&iacute;as</strong> de funciones &uacute;tiles que ocultan detalles desordenados</li>
+                <li><strong>Sistemas operativos</strong> que interact&uacute;an con el hardware</li>
             </ul>
         <p></p>
-        <p>El Software es una <em>abstracci&oacute;n</em>&mdash;una forma de pensar en la computadora sin pensar en c&oacute;mo esta funciona.</p>
-        <div class="endnote">Del mismo modo, un conductor de autom&oacute;vil est&aacute; operando a un alto nivel de abstracci&oacute;n cuando usa el pedal de freno. Mientras los ingenieros y mec&aacute;nicos dise&ntilde;en y construyan bien el auto, los conductores no necesitan saber los detalles sobre <em>c&oacute;mo </em>el sistema de frenos trabaja&mdash;s&oacute;lo lo usan a un alto nivel.</div>
+        <p>El Software es una <em>abstracci&oacute;n</em>&mdash;una forma de pensar en la computadora sin pensar en c&oacute;mo funciona internamente.</p>
+        <div class="endnote">Del mismo modo, un conductor de autom&oacute;vil est&aacute; operando a un alto nivel de abstracci&oacute;n cuando usa el pedal de freno. Mientras los ingenieros y mec&aacute;nicos dise&ntilde;en y construyan bien el auto, los conductores no necesitan saber los detalles sobre <em>c&oacute;mo </em>trabaja el sistema de frenos &mdash; s&oacute;lo lo usan a un alto nivel.</div>
         <div class="captioned">
             <img class="inline" src="/bjc-r/img/6-computers/motherboard_small.jpg" alt="motherboard" title="motherboard">
             <div><small>Imagen por Wikipedia usuario Julianprescott2604juuly</small></div>
@@ -89,9 +89,9 @@
 		<p>In the different levels of abstraction in software, each level of abstraction is a different piece of software, but the level of abstraction in the digital domain are four ways of thinking about the same physical object.</p>-->
         
         <h3>Dominio an&aacute;logo</h3>        
-        <p>Las compuertas l&oacute;gicas, que son el nivel de abstracci&oacute;n m&aacute;s bajo del dominio digital, operan con unos y ceros. En la realidad f&iacute;sica, estas compuertas l&oacute;gicas est&aacute;n construidas a partir de <strong>transistores</strong>, un tipo de componente de circuito. Los transitorios no son como los interruptores de luz que se encienden o se apagan. Pueden haber valores intermedios (como "s&oacute;lo el 23% en"). As&iacute; que los ingenieros el&eacute;ctricos tienen que pensar en las leyes de la electr&oacute;nica para dise&ntilde;ar circuitos digitales.</p><strong>Vocabulario: an&aacute;logo</strong> vs. <strong>digital</strong>
+        <p>Las compuertas l&oacute;gicas, que son el nivel de abstracci&oacute;n m&aacute;s bajo del dominio digital, operan con unos y ceros. En la realidad f&iacute;sica, estas compuertas l&oacute;gicas est&aacute;n construidas a partir de <strong>transistores</strong>, un tipo de componente de circuito. Los transistores no son como los interruptores de luz que se encienden o se apagan. Pueden haber valores intermedios (como "encendido s&oacute;lo el 23%"). As&iacute; que los ingenieros el&eacute;ctricos tienen que pensar en las leyes de la electr&oacute;nica para dise&ntilde;ar circuitos digitales.</p><strong>Vocabulario: an&aacute;logo</strong> vs. <strong>digital</strong>
         	<div class="vocabFullWidth">
-<p>Digital y an&aacute;logo son opuestos. <strong>Digital</strong> significa informaci&oacute;n que es representada en <em>unos y ceros</em>. <strong>An&aacute;logo</strong> significa informaci&oacute;n que es representada por se&ntilde;ales que <em>var&iacute;an constantemente</em> (es decir, incluyendo los valores intermedios).</p>
+<p>Digital y an&aacute;logo son opuestos. <strong>Digital</strong> significa informaci&oacute;n que es representada en <em>unos y ceros</em>. <strong>An&aacute;logo</strong> significa informaci&oacute;n que es representada por se&ntilde;ales que <em>var&iacute;an constantemente</em> (es decir, que incluyen los valores intermedios).</p>
         </div>
 		
         
