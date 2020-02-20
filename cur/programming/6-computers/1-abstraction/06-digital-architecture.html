@@ -92,33 +92,33 @@
             </p>
         </div>
 
-        <h3>What's an Architecture?</h3>
-        <p>The Analytical Engine (described above) was the first programmable computer architecture. The processor in the computer you are using today understands only one language, its own <em>machine language</em>&mdash;not Java, not C, not Snap<em>!</em>, not Python, nor anything else. Programs written in those other languages must first be translated into machine language.</p>
-		<p>The most important part of the architecture is the machine language, the set of ultra-low-level instructions that the hardware understands. This language is like a contract between the hardware and the software: The hardware promises to understand a set of instructions, and the software compiles programs from human-friendly language into those instructions.</p>
+        <h3>¿Qué es una arquitectura?</h3>
+        <p>La máquina analítica (descrito anteriormente) fue la primera arquitectura de computadora programable. El procesador en la computadora que está utilizando hoy comprende un solo idioma, su propio <em>lenguaje de máquina</em>&mdash;no Java, ni C, ni Snap <em>!</em>, ni Python, ni ninguna otra cosa. Programas escritos en esos otros idiomas primero deben traducirse al lenguaje de máquina.</p>
+		<p>La parte más importante de la arquitectura es el lenguaje de máquina, el conjunto de instrucciones de nivel ultra bajo que comprende el hardware. Este lenguaje es como un contrato entre el hardware y el software: el hardware promete comprender un conjunto de instrucciones, y el software compila programas de lenguaje amigable para los humanos en esas instrucciones.</p>
 		<div class="vocabFullWidth">
-			<p><strong>Machine language</strong> is the lowest-level programming language; it is directly understood by the computer hardware.</p>
-            <p><strong>Architecture</strong> is an abstraction, a specification of the machine language. It also tells how the processor connects to the memory. It doesn't specify the circuitry; the same architecture can be built as circuitry in many different ways.</p>
+			<p><strong>Lenguaje de máquina</strong> es el lenguaje de programación de más bajo nivel; es entendido directamente por el hardware de la computadora.</p>
+            <p><strong>Arquitectura</strong> es una abstracción, una especificación del lenguaje de máquina. También indica cómo se conecta el procesador a la memoria. No especifica la circuitería; La misma arquitectura se puede construir como circuitería de muchas maneras diferentes.</p>
         </div>
-        <p>One important part of an architecture is the number of wires that connect the processor and  memory. This is called the <em>width</em> of the architecture, measured in <em>bits</em> (number of wires). A wider computer can process more data in one instruction.</p>
+        <p>Una parte importante de una arquitectura es la cantidad de cables que conectan el procesador y la memoria. Esto se llama el <em>ancho</em> de la arquitectura, medido en <em>bits</em> (número de cables). Una computadora más ancha puede procesar más datos en una sola instrucción.</p>
         
         <div class="endnote">        
-            <a href="#hint-machine-language" data-toggle="collapse" title="What does machine language look like?">What does machine language look like?</a>
+            <a href="#hint-machine-language" data-toggle="collapse" title="¿Cómo se ve el lenguaje de máquina??">¿Cómo se ve el lenguaje de máquina??</a>
             <div id="hint-machine-language" class="collapse">
                 <p>
-                	Consider the Snap<em>!</em> instruction <img class="inline nopad" src="/bjc-r/img/6-computers/set-c-to-a+b.png" alt="set (c) to (a + b)" title="set (c) to (a + b)" />.  In a lower-level language such as C or Java, the same idea would be written as:<br />
+                	Considere la instrucción de Snap <em>!</em> <img class="inline nopad" src="/bjc-r/img/6-computers/set-c-to-a+b.png" alt="set (c) to (a + b)" title="set (c) to (a + b)" />.  En un lenguaje de nivel mas bajo como C o Java, la misma idea se escribiría como:<br />
                     <pre >c = a+b;</pre>
-                    That simple command might be translated into <em>six</em> machine language instructions (slightly simplified here):<br />
+                    Ese simple comando podría traducirse a <em>six</em> instrucciones de lenguaje de máquina (ligeramente simplificadas aquí):<br />
                     <pre>movq    _c, %rcx
 movq    _b, %rdx
 movq    _a, %rsi
 movl    (%rsi), %edi
 addl    (%rdx), %edi
 movl    %edi, (%rcx)</pre>
-                    This notation, called <em>assembly language</em>, is a line-by-line equivalent to the actual numeric instruction codes but is slightly more readable.
+                    Esta notación, llamada <em>lenguaje ensamblador</em>, es un equivalente línea por línea a los códigos de instrucción numéricos reales, pero es un poco más legible.
                 </p>
-                <a href="#hint-assembly" data-toggle="collapse" title="What does that code mean?">What does that code mean?</a>
+                <a href="#hint-assembly" data-toggle="collapse" title="¿Qué significa ese código?">¿Qué significa ese código?</a>
 				<div id="hint-assembly" class="collapse">
-					<p>The first three instructions load the <em>addresses</em> of the three variables into registers inside the processor.  The names with percent signs, such as <code>%rcx</code>, refer to specific processor registers.  <code>Movq</code> is the name of a machine language instruction. (It abbreviates "move quote," which says to move a constant value into a register.  Note that <var>a</var> is a variable, but <em>the address of</em> <var>a</var> is a constant value — the variable doesn't move around in the computer's memory.)</p>
+					<p>Las primeras tres instrucciones cargan las <em>direcciones</em> de las tres variables en registros dentro del procesador. Los nombres con signos de porcentaje, como <code>%rcx</code>, se refieren a registros específicos del procesador. <code>Movq</code> is the name of a machine language instruction. (It abbreviates "move quote," which says to move a constant value into a register.  Note that <var>a</var> is a variable, but <em>the address of</em> <var>a</var> is a constant value — the variable doesn't move around in the computer's memory.)</p>
 					<p>The next instruction, <code>movl</code> ("move long"), says to move a word from one place to another.  Putting a register name in parentheses, like <code>(%rsi)</code>, means to use the memory location whose address is in the register.  In this case, since the third <code>movq</code> put the address of <var>a</var> into register <code>%rsi</code>, the first <code>movl</code> says to move the variable <var>a</var> from memory into a processor register.  Then the <code>addl</code> instruction says to add the variable <var>b</var> into that same register.  Finally, the value in register <code>%edi</code> is moved into the memory location containing variable <var>c</var>.</p>
                 </div>
                 <p>You wouldn't want to have to program in this language!  And you <em>don't</em> have to; modern architectures are designed for compilers, not for human machine language programmers.</p>
