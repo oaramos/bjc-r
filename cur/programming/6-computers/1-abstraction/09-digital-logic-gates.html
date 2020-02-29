@@ -203,36 +203,36 @@
                 	<a href="#hint-truth-tables-not" data-toggle="collapse" title="Un circuito de emulación y tablas de verdad para no">Un circuito de emulación y tablas de verdad para <code>no</code>.</a>
 					<div id="hint-truth-tables-not" class="collapse">
                     <p>
-                        This electric circuit shows a simplified way to emulate the Boolean operator <code>not</code> electronically. This switch is basically a <em>circuit breaker</em>: if the switch is <em>on</em>, the current flow is broken and the light bulb turns off; if the switch is off, the current flows directly to the light bulb and the light bulb turns on.<br />
-                        <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/NOT_Animation2.gif" width="335" height="250" alt="Electric circuit for NOT: The animation shows a a single loop of wire connecting a battery to a circuit breaker and a light bulb. When the circut breaker is open, the light is on, and when the circuit breaker is closed, the light turns off." title="Electric circuit for NOT: The animation shows a a single loop of wire connecting a battery to a circuit breaker and a light bulb. When the circut breaker is open, the light is on, and when the circuit breaker is closed, the light turns off." />
+                        Este circuito eléctrico muestra una forma simplificada de emular el operador booleano. <code>no</code> electrónicamente. Este interruptor es básicamente un <em>disyuntor</em>: si el interruptor está <em>encendido</em>, el flujo de corriente se interrumpe y la bombilla se apaga; Si el interruptor está apagado, la corriente fluye directamente a la bombilla y la bombilla se enciende.<br />
+                        <img class="indent" data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/NOT_Animation2.gif" width="335" height="250" alt="Circuito eléctrico para NO: la animación muestra un solo bucle de cable que conecta una batería a un disyuntor y una bombilla. Cuando el disyuntor está abierto, la luz está encendida y cuando el disyuntor está cerrado, la luz se apaga." title="Circuito eléctrico para NO: la animación muestra un solo bucle de cable que conecta una batería a un disyuntor y una bombilla. Cuando el disyuntor está abierto, la luz está encendida y cuando el disyuntor está cerrado, la luz se apaga." />
                     </p>
-                    	<div class="sidenote">As with the other tables, these are identical for true/Falso vs. ones/zeros.</div>
-                        <table class="truth bordered" summary="truth table for NOT with Falso/true">
+                    	<div class="sidenote">Al igual que con las otras tablas, estas son idénticas para verdadero/falso vs a unos/ceros.</div>
+                        <table class="truth bordered" summary="tabla de verdad para NO con falso/verdadero">
                         	<tr>
-                            	<th scope="col">input</th>
-                            	<th scope="col">output</th>
+                            	<th scope="col">entrada</th>
+                            	<th scope="col">salida</th>
                             </tr>
                             <tr>
                             	<th scope="col" style="width:100px;">A</th>
-                            	<th scope="col" style="width:100px;"><code>not</code> A</th>
+                            	<th scope="col" style="width:100px;"><code>no</code> A</th>
                             </tr>
                             <tr>
-                            	<td>False</td>
-                            	<td>True</td>
+                            	<td>Falso</td>
+                            	<td>Verdadero</td>
                             </tr>
                             <tr>
-                            	<td>True</td>
-                            	<td>False</td>
+                            	<td>Verdadero</td>
+                            	<td>Falso</td>
                             </tr>
                         </table>
-                        <table class="truth bordered" summary="truth table for NOT with zero/one">
+                        <table class="truth bordered" summary="tabla de verdad para NO con cero/uno">
                         	<tr>
-                            	<th scope="col">input</th>
-                            	<th scope="col">output</th>
+                            	<th scope="col">entrada</th>
+                            	<th scope="col">salida</th>
                             </tr>
                             <tr>
                             	<th scope="col" style="width:100px;">A</th>
-                            	<th scope="col" style="width:100px;"><code>not</code> A</th>
+                            	<th scope="col" style="width:100px;"><code>no</code> A</th>
                             </tr>
                             <tr>
                             	<td>0</td>
@@ -249,85 +249,85 @@
         </div>
         
         
-        <h2>Logic Gates</h2>
-        <p>Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic circuits are often represented with drawings that help engineers see how the information will flow through a circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean expression <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="A or (A and B)" title="A or (A and B)" />. Can you see how?</p>
+        <h2>Compuertas lógicas</h2>
+        <p>Dentro de una computadora, las operaciones booleanas se implementan en circuitos físicos utilizando compuertas lógicas. (Una sola compuerta implementa una de las funciones básicas <code>y</code>, <code>o</code>, or <code>no</code>.) Los circuitos lógicos a menudo se representan con dibujos que ayudan a los ingenieros a ver cómo fluirá la información a través de un circuito. Por ejemplo, el siguiente diagrama de un circuito lógico con dos compuertas representa la expresión booleana <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="A o (A y B)" title="A o (A y B)" />. Puedes ver como?</p>
         
-        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="logic gate diagram of (A or (A and B))" title="logic gate diagram of (A or (A and B))" />
+        <img class="indent noshadow" src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="diagrama de compuerta lógica de (A o (A y B))" title="diagrama de compuerta lógica de (A o (A y B))" />
         
         <div class="forYouToDo" id="first">
 			<ol>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the logic circuit drawn above. For what values of A and B will the output be <code>true</code>?</li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Habla con un compañero" title="Habla con un compañero" /> Mira el circuito lógico dibujado arriba. ¿Para qué valores de A y B la salida será <code>verdadero</code>?</li>
             </ol>
         </div>
         
-		<div class="takeNote">On the previous page, you learned about tungsten and tin, and here we're talking about Boolean functions. In what sense is this less abstract? <strong>From the point of view of the chip designer, logic gates are the fundamental building blocks of a digital circuit.</strong> (The actual physical chip fabrication is at an even lower level of abstraction, in the analog domain.)</div>		
+		<div class="takeNote">En la página anterior, aprendiste sobre tungsteno y estaño, y aquí estamos hablando de funciones booleanas. ¿En qué sentido es esto menos abstracto? <strong>Desde el punto de vista del diseñador de chips, las compuertas lógicas son los bloques de construcción fundamentales de un circuito digital.</strong> (La fabricación real de chips físicos se encuentra en un nivel aún más bajo de abstracción, en el dominio analógico).</div>		
 
 		
         
         <div class="forYouToDo">
 			<ol start="2">
                 <li>
-                	Review <code>AND</code>, <code>OR</code>, and <code>NOT</code> with the following questions, which are similar to the type of questions you will see on the AP CSP exam.
+                	Revisa <code>Y</code>, <code>O</code>, and <code>NO</code> con las siguientes preguntas, que son similares al tipo de preguntas que verás en el examen AP CSP.
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which expression will report TRUE?"
+                    <div class="assessment-data" type="multiplechoice" identifier="¿Qué expresión reportara VERDADERO?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
                         <div class="prompt">
-                            Which of the following expressions will report <code>true</code>?
+                            ¿Cuál de las siguientes expresiones reporta <code>verdadero</code>?
                             <ol style="list-style:upper-roman;">
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png" alt="(T and F) and (not (T and F))" title="(T and F) and (not (T and F))" /></li>
-                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.png" alt="(not (T or F)) or (T or F)" title="(not (T or F)) or (T or F)" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png" alt="(T y F) y (no (T y F))" title="(T y F) y (no (T y F))" /></li>
+                            	<li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.png" alt="(no (T o F)) o (T o F)" title="(no (T o F)) o (T o F)" /></li>
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">I only</div>
-                            <div class="feedback">Evaluate each part separately first, and then determine what the outermost block in each expression will report. In expression I: What does <code>(true) and (false)</code> report? What does <code>not((true) and (false))</code> report? In expression II: What does <code>(true) or (false)</code> report? What does <code>not((true) or (false))</code> report?</div>
+                            <div class="text">I solamente</div>
+                            <div class="feedback">Primero evalúe cada parte por separado y luego determine qué reporta el bloque más externo de cada expresión. En la expresión I: Que reporta?<code>(verdadero) y (falso)</code>. Que reporta?  <code>no((verdadero) y (falso))</code>. En la expresión II: Que reporta? <code>(verdadero) o (falso)</code>. Que reporta? <code>no((verdadero) o (falso))</code>.</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">II only</div>
-                            <div class="feedback">Correct!</div>
+                            <div class="text">II solamente</div>
+                            <div class="feedback">Correcto!</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">I and II</div>
-                            <div class="feedback">Take another look at expression I. What does <code>not((true) and (false))</code> (on the right) report to the outermost <code>and</code> block?</div>
+                            <div class="text">I y II</div>
+                            <div class="feedback">Echa otro vistazo a la expresión I. Que reporta <code>no((verdadero) y (falso))</code> (a la derecha) al bloque <code>y</code> externo?</div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Neither I nor II</div>
-                            <div class="feedback">Take another look at expression II. What does <code>(true) and (false)</code> (on the right) report to the outermost <code>or</code> block?</div>
+                            <div class="text">Ni I ni II</div>
+                            <div class="feedback">TEcha otro vistazo a la expresión II. Que reporta <code>(verdadero) y (falso)</code> (a la derecha) al bloque <code>o</code> externo?</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c2"></div>
                         </div>
                     </div>
                     <!-- Question 2 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which logic gate will report TRUE?"
+                    <div class="assessment-data" type="multiplechoice" identifier="Qué compuerta lógica reporta VERDADERO?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
                         <div class="prompt">
-                            Which of the following logic circuits will report <code>true</code>? (T stands for <code>true</code>, and F stands for <code>false</code>.)
+                            ¿Cuál de los siguientes circuitos lógicos reportara? <code>verdadero</code>? (T representa <code>Verdadero</code>, y F representa <code>falso</code>.)
                             <ol style="list-style:upper-roman;">
-	                            <div class="sidenote">This problem is probably <em>harder</em> than something you'll see on the exam, so if you can get this one, you are doing great!</div>
+	                            <div class="sidenote">Este problema es probablemente <em>más difícil</em> que algo que verás en el examen, así que si puedes con este, ¡lo estás haciendo muy bien!</div>
                             	<table>
                                 	<tr>
-                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.png" alt="logic gate diagram of (not ((T and F)) or (T and F))" title="logic gate diagram of (not ((T and F)) or (T and F))" /></li></td>
-                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.png" alt="logic gate diagram of ((T or F) and (not (T or F)))" title="logic gate diagram of ((T or F) and (not (T or F)))" /></li></td>
+                                    	<td width="200"><li><img class="inline noshadow" src="/bjc-r/img/6-computers/logic-gates-quiz-b.png" alt="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" title="diagrama de compuerta lógica de (no ((T y F)) o (T y F))" /></li></td>
+                                        <td><li><img class="inline noshadow" align="bottom" src="/bjc-r/img/6-computers/logic-gates-quiz-a.png" alt="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" title="diagrama de compuerta lógica de ((T o F) y (no (T o F)))" /></li></td>
                                     </tr>
                                 </table>
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">I only</div>
-                            <div class="feedback">Correct!</div>
+                            <div class="text">I solamente</div>
+                            <div class="feedback">Correcto!</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">II only</div>
-                            <div class="feedback">Try building both diagrams in Snap<em>!</em> similarly to the images in Question 1 above.</div>
+                            <div class="text">II solamente</div>
+                            <div class="feedback">Intenta construir ambos diagramas en Snap<em>!</em> de manera similar a las imágenes de la pregunta 1 anterior.</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">I and II</div>
-                            <div class="feedback">Take another look at diagram II. What signal does the right side send to the AND gate?</div>
+                            <div class="text">I y II</div>
+                            <div class="feedback">Echa otro vistazo al diagrama II. ¿Qué señal envía el lado derecho a la compuerta Y?</div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Neither I nor II</div>
-                            <div class="feedback">Take another look at diagram I. What signal does the left side send to the OR gate?</div>
+                            <div class="text">Ni I ni II</div>
+                            <div class="feedback">Echa otro vistazo al diagrama I. ¿Qué señal envía el lado izquierdo a la puerta O?</div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
                             <div class="correctResponse" identifier="c1"></div>
@@ -338,16 +338,16 @@
 		</div>
         
         <div class="endnote">
-        	<a href="#hint-target" data-toggle="collapse" title="How do engineers draw logic gates?">How do engineers draw logic gates?</a>
+        	<a href="#hint-target" data-toggle="collapse" title="¿Cómo dibujan los ingenieros las compuertas lógicas?">¿Cómo dibujan los ingenieros las compuertas lógicas?</a>
 			<div id="hint-target" class="collapse">
-                <img class="imageRight" src="/bjc-r/img/6-computers/logic-gates-example-circuit.png" alt="logic gate diagram of (not and) and (or)" title="logic gate diagram of (not and) and (or)" />
-                Engineers typically draw logic gates horizontally and use special shapes that represent each gate: <br />
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.png" width="151" height="80" alt="AND-gate" title="AND-gate"/>
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.png" width="156" height="81" alt="OR-gate" title="OR-gate"/>
-                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69" alt="NOT-gate" title="NOT-gate"/><br />
+                <img class="imageRight" src="/bjc-r/img/6-computers/logic-gates-example-circuit.png" alt="diagrama de compuerta lógica de (no y) y (o)" title="diagrama de compuerta lógica de (no y) y (o)" />
+                Los ingenieros generalmente dibujan compuertas lógicas horizontalmente y usan formas especiales que representan cada compuerta:<br />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.png" width="151" height="80" alt="compuerta-Y" title="compuerta-Y"/>
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.png" width="156" height="81" alt="compuerta-O" title="compuerta-O"/>
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69" alt="compuerta-NO" title="compuerta-NO"/><br />
                 For example, engineers would draw the logic circuit shown at right like this: <br />
-				<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250" alt="Engineer's version a logic gate with (not and) and (or)" title="Engineer's version a logic gate with (not and) and (or)"/><br />
-                Do an <a href="https://www.google.com/search?q=logic+gate+diagrams&tbm=isch" target="_blank" title="Google Image Search for: logic gate diagrams">image search for "logic gate diagrams"</a> to see more examples. 
+				<img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250" alt="Versión de puerta lógica de un ingeniero de (no y) y (o)" title="Versión de puerta lógica de un ingeniero de (no y) y (o)"/><br />
+                Haz una <a href="https://www.google.com/search?q=diagramas+compuertas+logicas&tbm=isch" target="_blank" title="Google Image Search for: logic gate diagrams">búsqueda de imágenes de "diagramas de compuerta lógica"</a> para ver más ejemplos. 
             </div>
         </div>
 
