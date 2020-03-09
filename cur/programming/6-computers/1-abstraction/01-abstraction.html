@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 6 Lab 1: Computer Abstraction Hierarchy, Page 1</title>
+		<title>Unidad 6 Lab 1: Abstracción dentro de la computadora, Página 1</title>
 	</head>
     <body>
-		<h2>Abstraction Inside the Computer</h2>
+		<h2>Abstracci&oacute;n dentro de la computadora</h2>
 		<div class="todo">
             <p><strong>Why this?</strong>  AP talks about the abstraction hierarchy.  This page shows some level of detail, but also highlights the two crucial abstraction barriers: between hardware and software, and between the analog domain and the digital domain.</p>
             <p><strong>Why here?</strong>  This page is sort of preview of coming attractions.  It's a short
             page, with nothing really to do except read it and move on to the full story.</p>
-            <p>PG, on unit: This whole unit is a lot of reading and very little action. Of course, that's true of most school courses so, for better or for worse, kids are used to it. We've thought about it and (currently) have no solution. I very much like all the content. I equally much want the entire unit to be optional extra. To me, it feels like the second course in computer science, not the attract-students-in course. For those who want to see what's under the hood of the /computer/—the computer engineering interest—this should be available, but if it were not for CB, I'd leave it all optional.</p>
+            <p>PG, on unit: This whole unit is a lot of reading and very little action. Of course, that's true of most school courses so, for better or for worse, kids are used to it. We've thought about it and (currently) have no solution. I very much like all the content. I equally much want the entire unit to be optional extra. To me, it feels like the second course in computer science, not the attract-students-in course. For those who want to see what's under the hood of the /computer/&mdash;the computer engineering interest&mdash;this should be available, but if it were not for CB, I'd leave it all optional.</p>
             <p>BH, on lab: There's hardly anything to do in this lab, and if we could improve on that it'd be great, but I don't see how.</p>
             <p>MF: lightly clean up to make the text more concise</p>    
 		</div>
         
-        <p>In Unit 4 <a href="/bjc-r/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="A Hierarchy of Open Protocols">A Hierarchy of Open Protocols</a>, you saw that the Internet software is arranged in several levels of abstraction, with application programs (like your email program) at the highest level and network hardware protocols such as WiFi and Ethernet at the lowest level. Recall that <em>higher</em> levels are closer to what users want to be thinking about; lower levels are closer to the way machines work.</p>
-        <p>Like the Internet, the way a computer works on the inside also has levels of abstraction.</p>
+        <p>En la Unidad 4 <a href="/bjc-r/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="A Hierarchy of Open Protocols">Una jerarqu&iacute;a de protocolos abiertos</a>, viste que el software de Internet est&aacute; organizado en varios niveles de abstracci&oacute;n, con programas de aplicaci&oacute;n (como tu programa de correo electr&oacute;nico) en el nivel m&aacute;s alto y protocolos de red de hardware como WiFi y Ethernet en el nivel m&aacute;s bajo. Recuerda que los niveles <em>m&aacute;s altos</em> est&aacute;n m&aacute;s cerca de cómo piensan los usuarios; los niveles inferiores est&aacute;n m&aacute;s cerca de cómo funcionan las m&aacute;quinas.</p>
+        <p>Al igual que Internet, la forma en que una computadora funciona internamente, tambi&eacute;n tiene niveles de abstracci&oacute;n.</p>
 		
 		<div class="learn">
-          <p><strong>In this lab,</strong> you will learn about the levels of abstraction in computer software and hardware.</p>
-          <p><strong>On this page,</strong> you will learn get an overview of three groups (<em>domains</em>) of levels of abstraction.</p>
+          <p><strong>En este laboratorio </strong>aprender&aacute;s acerca de los niveles de abstracci&oacute;n en el software y el hardware de la computadora.</p>
+          <p><strong>En esta p&aacute;gina,</strong> aprender&aacute;s a obtener una visi&oacute;n general de tres grupos (<em>dominios</em>) de niveles de abstracci&oacute;n.</p>
         </div>
 
-        <p>There are a lot of levels of abstraction in how computers work. Here they are organized into three overarching domains:</p>
+        <p>Hay muchos niveles de abstracci&oacute;n en el funcionamiento de las computadoras. Aqu&iacute; se organizan en tres dominios generales:</p>
 		
-		<img class="indent noshadow" src="/bjc-r/img/6-computers/hardware-abstraction.png" alt="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'" title="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'" />
-        <div class="endnote">Different people might draw this diagram slightly differently, so don't try to memorize all the levels.  The  key abstraction levels to remember are software, digital computer hardware, and underlying analog circuit components.</div>
+		<img class="indent noshadow" src="/bjc-r/img/6-computers/hardware-abstraction.png" alt="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'" title="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'">
+        <div class="endnote">Diferentes personas podr&iacute;an dibujar este diagrama de forma ligeramente diferente, as&iacute; que no intentes memorizar todos los niveles. Los niveles de abstracci&oacute;n clave para recordar son el software, el hardware de la computadora digital, y los componentes de los circuitos anal&oacute;gicos correspondientes.</div>
 
         <!-- table version is more ADA-compliant?
         <table frame="border" border="4" cellspacing="20" cellpadding="20">
@@ -44,39 +45,41 @@
         </table>
         -->
         
-        <h3>Software Domain</h3>
+        <h3>Dominio de software</h3>
         <p>
-            The programs you write and use are software, but underneath these programs is more software that helps them work. In this lab, we'll look at four layers of abstraction in the software domain:
-            <ul>
-                <li><strong>applications</strong> that you write and use</li>
-                <li><strong>programing languages</strong> that are used to write them</li>
-                <li><strong>libraries</strong> of useful functions that hide messy details</li>
-                <li><strong>operating systems</strong> that interface with the hardware</li>
+            Los programas que escribes y usas son software, pero debajo de estos programas hay m&aacute;s software que les ayuda a funcionar. En este laboratorio, veremos cuatro capas de abstracci&oacute;n en el dominio de software:
+            </p>
+<ul>
+                <li><strong>Aplicaciones</strong> que escribes y utilizas</li>
+                <li><strong>Lenguajes de programaci&oacute;n</strong> que son utilizados para escribirlos</li>
+                <li><strong>Librer&iacute;as</strong> de funciones &uacute;tiles que ocultan detalles desordenados</li>
+                <li><strong>Sistemas operativos</strong> que interact&uacute;an con el hardware</li>
             </ul>
-        </p>
-        <p>Software is an <em>abstraction</em>&mdash;a way of thinking about the computer without thinking about how it works.</p>
-        <div class="endnote">Similarly, an automobile driver is operating at a high level of abstraction when using the brake pedal. As long as the engineers and mechanics designed and built the car right, drivers don't need to know the details about <em>how</em> the brake system works&mdash;they just use it at a high level.</div>
+        <p></p>
+        <p>El Software es una <em>abstracci&oacute;n</em>&mdash;una forma de pensar en la computadora sin pensar en c&oacute;mo funciona internamente.</p>
+        <div class="endnote">Del mismo modo, un conductor de autom&oacute;vil est&aacute; operando a un alto nivel de abstracci&oacute;n cuando usa el pedal de freno. Mientras los ingenieros y mec&aacute;nicos dise&ntilde;en y construyan bien el auto, los conductores no necesitan saber los detalles sobre <em>c&oacute;mo </em>trabaja el sistema de frenos &mdash; s&oacute;lo lo usan a un alto nivel.</div>
         <div class="captioned">
-            <img class="inline" src="/bjc-r/img/6-computers/motherboard_small.jpg" alt="motherboard" title="motherboard"/>
-            <div><small>Image by Wikipedia user Julianprescott2604juuly</small></div>
+            <img class="inline" src="/bjc-r/img/6-computers/motherboard_small.jpg" alt="motherboard" title="motherboard">
+            <div><small>Imagen por Wikipedia usuario Julianprescott2604juuly</small></div>
         </div>
         
-        <h3>Digital Domain</h3>
+        <h3>Dominio digital</h3>
         <p>
-        	In the software domain, each level of abstraction is a different piece of software, but the levels of abstraction in the digital domain are different ways of thinking about the same physical object. The circuitry inside a computer is complicated, and to make building it possible, engineers think about it at several different levels of abstraction: 
-            <ul>
-                <li>The <strong>architecture</strong> is the instructions that software can send that the hardware will understand.</li>
-                <li>The computer has <strong>components</strong> (such as memory, processors, video cards, etc.) that implement the architecture.</li>
-                <li>Those components are built out of <strong>integrated circuits (chips)</strong>, which are the black rectangles that you can see on this circuit board.</li>
-                <li>Those integrated circuits are designed around <strong>logic gates</strong>, the fundamental building blocks that implement Boolean functions.</li>
+        	En el dominio del software, cada nivel de abstracci&oacute;n es una pieza de software diferente, pero los niveles de abstracci&oacute;n en el dominio digital son diferentes maneras de pensar sobre el mismo objeto f&iacute;sico. Los circuitos dentro de una computadora son complicados, y para hacer posible su construcci&oacute;n, los ingenieros piensan en varios niveles diferentes de abstracci&oacute;n: 
+            </p>
+<ul>
+                <li>La <strong>arquitectura</strong> son las instrucciones que el software puede enviar y que el hardware entender&aacute;.</li>
+                <li>La computadora tiene <strong>componentes</strong> (como la memoria, procesadores, tarjetas de video, etc.) la arquitectura implementada.</li>
+                <li>Esos componentes est&aacute;n construidos a partir de <strong>circuitos integrados (chips)</strong>, que son los rect&aacute;ngulos negros que puedes ver en esta placa de circuito.</li>
+                <li>Esos circuitos integrados est&aacute;n dise&ntilde;ados alrededor de <strong>compuertas l&oacute;gicas</strong>, los bloques de construcci&oacute;n fundamentales que implementan las funciones booleanas.</li>
                 <div class="endnote">
-                    You learned about Boolean functions in <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Unit 2 Lab 3: Making Decisions by Using Predicates</a>.<br />
-                    <img class="indent" src="/bjc-r/img/blocks/and.png" alt="() and ()" title="() and ()" />
-                    <img class="indent" src="/bjc-r/img/blocks/or-small.png" alt="() or ()" title="() or ()" />
-                    <img class="indent" src="/bjc-r/img/blocks/not_small.png" alt="not ()" title="not ()" />
+                    Aprendiste acerca de las funciones Booleanas en <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment">Unidad 2 Laboratorio 3: Tomando decisiones mediante el uso de predicciones</a>.<br>
+                    <img class="indent" src="/bjc-r/img/blocks/and.png" alt="() and ()" title="() and ()">
+                    <img class="indent" src="/bjc-r/img/blocks/or-small.png" alt="() or ()" title="() or ()">
+                    <img class="indent" src="/bjc-r/img/blocks/not_small.png" alt="not ()" title="not ()">
                 </div>
             </ul>
-        </p>
+        <p></p>
         <!--<p>Engineers mostly don't have to think about how these digital components work inside&mdash;they just think of circuits being either <em>on</em> or <em>off</em> (<em>1</em> or <em>0</em>), with no in-between values.</p>
         
         <s>Below the software is the hardware (the guts of the computer)<!-- and its <em>architecture</em> (the design that specifies how those basic hardware components  fit together to do their job)- ->. The hardware's job is to run whatever programs the user requests. For hardware engineers, the <!--high level of- -> abstraction focuses on how to make best use of components (memory, chips, logic gates, etc.) that already have some useful built in behaviors, and often also assembling these into slightly fancier components.  </s>
@@ -85,13 +88,13 @@
         
 		<p>In the different levels of abstraction in software, each level of abstraction is a different piece of software, but the level of abstraction in the digital domain are four ways of thinking about the same physical object.</p>-->
         
-        <h3>Analog Domain</h3>        
-        <p>Logic gates, which are the lowest abstraction level of the digital domain, operate on ones and zeros. In physical reality, those logic gates are built out of <strong>transistors</strong>, a type of circuit component. Transitors aren't like light switches that are either on or off. There can be in-between values (like "only 23% on"). So, electrical engineers have to think about the laws of electronics to design digital circuits so that in-between values don't happen.</p>
-        
-        <div class="vocabFullWidth">: <strong>analog</strong> vs. <strong>digital</strong>
-        	<p>Digital and analog are opposites. <strong>Digital</strong> means information that is represented as <em>ones and zeros</em>. <strong>Analog</strong> means information that is represented by signals that <em>vary continuously</em> (that is, including in-between values).</p>
+        <h3>Dominio an&aacute;logo</h3>        
+        <p>Las compuertas l&oacute;gicas, que son el nivel de abstracci&oacute;n m&aacute;s bajo del dominio digital, operan con unos y ceros. En la realidad f&iacute;sica, estas compuertas l&oacute;gicas est&aacute;n construidas a partir de <strong>transistores</strong>, un tipo de componente de circuito. Los transistores no son como los interruptores de luz que se encienden o se apagan. Pueden haber valores intermedios (como "encendido s&oacute;lo el 23%"). As&iacute; que los ingenieros el&eacute;ctricos tienen que pensar en las leyes de la electr&oacute;nica para dise&ntilde;ar circuitos digitales.</p><strong>Vocabulario: an&aacute;logo</strong> vs. <strong>digital</strong>
+        	<div class="vocabFullWidth">
+<p>Digital y an&aacute;logo son opuestos. <strong>Digital</strong> significa informaci&oacute;n que es representada en <em>unos y ceros</em>. <strong>An&aacute;logo</strong> significa informaci&oacute;n que es representada por se&ntilde;ales que <em>var&iacute;an constantemente</em> (es decir, que incluyen los valores intermedios).</p>
         </div>
 		
         
-	</body>
-</html>
+	
+
+</body></html>

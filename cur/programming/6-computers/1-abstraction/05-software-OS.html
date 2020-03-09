@@ -1,66 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 6 Lab 1: Computer Abstraction Hierarchy, Page 5</title>
+		<title>Unidad 6 Lab 1: Abstracción dentro de la computadora, Página 5</title>
 	</head>
     <body>
-        <h2>The Software Domain: Operating Systems</h2>
+        <h2>Dominio de software: Sistemas operativos</h2>
         <div class="todo">
             <p>MF: lightly clean up to make the text more concise</p>    
         </div>
         
-        <div class="learn"><strong>On this page</strong>, you'll learn about the software that directly manages the computer's hardware, the <em>operating system.</em></div>   
-        <p>Your computer came with an <em>operating system</em> (OS) installed. Operating systems are the underlying programs that your apps interact with to communicate with the computer. For computers with keyboards, it's probably Linux, macOS, or Windows. For phones and tablets, it's probably Android or iOS. </p>
+        <div class="learn"><strong>En esta p&aacute;gina</strong>, aprender&aacute;s sobre el software que gestiona directamente el hardware del ordenador, el <em>sistema operativo.</em></div>   
+        <p>Tu computadora vino con un <em>sistema operativo</em> (SO) instalado. Los sistemas operativos son los programas fundamentales con los que interact&uacute;an tus aplicaciones para comunicarse con la computadora. Para las computadoras con teclados, probablemente sea Linux, MacOS o Windows. Para tel&eacute;fonos y tabletas, probablemente sea Android o iOS. </p>
         <p>
-            Roughly speaking, the operating system handles the basic tasks that your applications depend on, including:
-			<ul>
-                <li>the window system, which allows more than one window to be open on your screen</li>
-                <li>the file manager, that displays the contents of folders and lets you select files to read or manipulate</li>
-                <li>communications with external devices like your keyboard or printer</li>
-                <li>utilities such as a simple text editor or a calculator</li>
+            En t&eacute;rminos generales, el sistema operativo se encarga de las tareas b&aacute;sicas de las que dependen tus aplicaciones, incluyendo:
+			</p>
+<ul>
+                <li>el sistema de ventanas, que permite que se abra m&aacute;s de una ventana en tu pantalla</li>
+                <li>el administrador de archivos, que muestra el contenido de las carpetas y permite seleccionar los archivos para leer o manipular</li>
+                <li>comunicaci&oacute;n con dispositivos externos como el teclado o la impresora</li>
+                <li>herramientas como un simple editor de texto o una calculadora</li>
 			</ul>
-        </p>
+        <p></p>
 
-        <div class="takeNote">In a computer, there are many  applications and operating system tasks all wanting to run at once. Every operating system has a <em>kernel</em> that manages when all these processes run.</div>
+        <div class="takeNote">En una computadora, hay muchas aplicaciones y tareas del sistema operativo que quieren ejecutarse a la vez. Cada sistema operativo tiene un <em>n&uacute;cleo </em>que gestiona cuando todos estos procesos se ejecutan.</div>
                 
         <div class="endnote">
-            <h3>The Kernel</h3>
+            <h3>El n&uacute;cleo</h3>
             <p>
-                The <em>kernel</em> deals directly with hardware (keyboard, mouse, microphone, camera, hard drives, memory, printer, speakers, screen, etc.). So the kernel is generally written in a low level language so it can control that hardware. It handles several important tasks:
-                <ul>
-                    <li><strong>Scheduling.</strong> The kernel has access to the time clock that's built into the hardware and lets each program run for a small amount of time (typically about 1/10 second) and then switches to the next program in line.</li>
-                    <li><strong>Security.</strong> Those many application programs may have bugs or malicious code. The kernel, which has access to the <em>memory</em> where programs and data are stored, ensures that each program is assigned a separate location in memory and doesn't interfere with other programs. The kernel also controls which data files a program can use based on <em>file protection</em> settings that users or applications specify for each file.</li>
-                    <li><strong>Input and output.</strong> Many devices can be attached to your computer. The kernel knows how the computer's hardware reads or writes to each device. Only the kernel is allowed direct access to these devices, and it carries out authorized transfers of information for the applications.</li>
+                El <em>n&uacute;cleo</em> se ocupa directamente del hardware (teclado, rat&oacute;n, micr&oacute;fono, c&aacute;mara, discos duros, memoria, impresora, altavoces, pantalla, etc.). As&iacute; que el n&uacute;cleo est&aacute; generalmente escrito en un lenguaje de bajo nivel para que pueda controlar ese hardware. Se encarga de varias tareas importantes:
+                </p>
+<ul>
+                    <li><strong>Programar.</strong> El n&uacute;cleo tiene acceso al reloj de tiempo que est&aacute; incorporado en el hardware y permite que cada programa se ejecute durante una peque&ntilde;a cantidad de tiempo (t&iacute;picamente alrededor de 1/10 de segundo) y luego cambia al siguiente programa en l&iacute;nea.</li>
+                    <li><strong>Seguridad.</strong> Esos muchos programas de aplicaci&oacute;n pueden tener errores o c&oacute;digo malicioso. El n&uacute;cleo, que tiene acceso a la <em>memoria</em> donde se almacenan los programas y los datos, asegura que a cada programa se le asigne una ubicaci&oacute;n separada en la memoria y no interfiera con otros programas. El n&uacute;cleo tambi&eacute;n controla qu&eacute; archivos de datos puede usar un programa bas&aacute;ndose en la configuraci&oacute;n de <em>protecci&oacute;n de archivos</em> los usuarios o las aplicaciones especifican para cada archivo.</li>
+                    <li><strong>Entrada y salida</strong> Se pueden conectar muchos dispositivos a la computadora. El n&uacute;cleo sabe c&oacute;mo el hardware de la computadora lee o escribe en cada dispositivo. S&oacute;lo el kernel tiene acceso directo a estos dispositivos, y realiza transferencias autorizadas de informaci&oacute;n para las aplicaciones.</li>
                 </ul>
-            </p>
-            <p>These days, OS kernels are remarkably similar. Of the five systems listed earlier (Linux, macOS, Windows, Android, and iOS), four of them (all but Windows) are based on variants of a single kernel, called Unix.</p>        
-            <p><a href="#hint-unix" data-toggle="collapse" title="Read more about Unix">Read more about Unix.</a></p>
+            <p></p>
+            <p>Hoy en d&iacute;a, los n&uacute;cleos OS son notablemente similares. De los cinco sistemas listados anteriormente (Linux, macOS, Windows, Android, e iOS), cuatro de ellos (todos menos Windows) est&aacute;n basados en variantes de un solo n&uacute;cleo, llamado Unix.</p>        
+            <p><a href="#hint-unix" data-toggle="collapse" title="Read more about Unix">Lee m&aacute;s informaci&oacute;n acerca de Unix.</a></p>
             <div id="hint-unix" class="collapse">
                 <div class="comment">This still needs editing. If we find a way to cut this back, more students will actually read it. --MF, 11/8/17</div>
-                <p>("Unix" is a trademark, currently owned by The Open Group, and not all of the variants discussed here are authorized to use that name, but they all provide essentially the same program interface.) Unix was created around 1970 by Ken Thompson and Dennis Ritchie at AT&amp;T Bell Laboratories.</p>
-                <p>Prior to Unix, almost everyone thought that an operating system had to be developed for a particular computer architecture, and had to be written in the machine language of that computer, the very low-level instructions that the hardware understands directly. The  first version of Unix was also written in the machine language of a particular computer, the Digital Equipment Corporation PDP-7. But the Unix developers knew that the PDP-7 wasn't the only computer in the world, and better ones would come along, so they wanted to make Unix <em>portable,</em> meaning that it could be brought to a new computer architecture without a complete rewrite.  So in 1972 Dennis Ritchie invented the C programming language for that purpose.  C is similar to other languages available at the time, but with one added feature: a C programmer can read or write any individual byte of the program's memory by knowing its <em>address,</em> a number that distinguishes it from other bytes.  (You can see that this feature is quite the opposite from high level abstraction.  It is useful only to a programmer who's thinking in detail about what's where in the computer's memory.) Unix was then rewritten in C.</p>
-                <p>Because of its portability, Unix spread quickly to many computer architectures. Researchers at Berkeley developed a version, based on the AT&amp;T version, with <em>virtual memory,</em> the ability to run a program that's only partly in the computer's main memory, with the rest kept on a disk. This Berkeley version is an ancestor of Apple's operating systems, macOS (since macOS 10.0) and iOS. (An Apple computer doesn't behave anything like a Unix computer, but the differences are almost all in application-level programs, not in the kernel.) Android, Google's operating system for cell phones and tablets, is based on Linux, a complete rewrite of Unix originally written by Linus Torvalds, who was, at the time, a computer science student in Finland.</p>
-                <p>The application-level programs that were part of the original Unix package have, in most systems, been replaced with rewritten programs from the Free Software Foundation's GNU (an acronym for Gnu's Not Unix) package.</p>
+                <p>("Unix" es una marca registrada, actualmente propiedad de The Open Group, y no todas las variantes que se discuten aqu&iacute; est&aacute;n autorizadas a usar ese nombre, pero todas ellas proporcionan esencialmente la misma interfaz de programa). Unix fue creado alrededor de 1970 por Ken Thompson y Dennis Ritchie en los Laboratorios AT&amp;T Bell.</p>
+                <p>Antes de Unix, casi todo el mundo pensaba que un sistema operativo ten&iacute;a que ser desarrollado para una arquitectura de computadora en particular, y ten&iacute;a que ser escrito en el lenguaje de m&aacute;quina de esa computadora, las instrucciones de muy bajo nivel que el hardware entiende directamente. La primera versi&oacute;n de Unix tambi&eacute;n fue escrita en el lenguaje de m&aacute;quina de una computadora en particular, la Digital Equipment Corporation PDP-7. Pero los desarrolladores de Unix sab&iacute;an que el PDP-7 no era la &uacute;nica computadora del mundo, y que vendr&iacute;an otras mejores, as&iacute; que quer&iacute;an hacer que Unix fuera <em>port&aacute;til,</em> lo que significa que podr&iacute;a ser llevado a una nueva arquitectura de computadora sin una reescritura completa. As&iacute; que en 1972 Dennis Ritchie invent&oacute; el lenguaje de programaci&oacute;n C para ese prop&oacute;sito. El C es similar a otros lenguajes disponibles en esa &eacute;poca, pero con una caracter&iacute;stica a&ntilde;adida: un programador de C puede leer o escribir cualquier byte individual de la memoria del programa conociendo su <em>direcci&oacute;n,</em> un n&uacute;mero que lo distingue de otros bytes. (Puedes ver que esta caracter&iacute;stica es bastante opuesta a la abstracci&oacute;n de alto nivel. S&oacute;lo es &uacute;til para un programador que est&aacute; pensando en detalle sobre qu&eacute; es y d&oacute;nde est&aacute; en la memoria del ordenador). Unix fue entonces reescrito en C.</p>
+                <p>Debido a su portabilidad, Unix se extendi&oacute; r&aacute;pidamente a muchas arquitecturas de computadoras. Los investigadores de Berkeley desarrollaron una versi&oacute;n, basada en la versi&oacute;n de AT&amp;T, con <em>memoria virtual,</em> la capacidad de ejecutar un programa que s&oacute;lo est&aacute; parcialmente en la memoria principal del ordenador, con el resto guardado en un disco. Esta versi&oacute;n de Berkeley es un ancestro de los sistemas operativos de Apple, macOS (desde macOS 10.0) e iOS. (Una computadora Apple no se comporta como una computadora Unix, pero las diferencias est&aacute;n casi todas en los programas de nivel de aplicaci&oacute;n, no en el n&uacute;cleo.) Android, el sistema operativo de Google para tel&eacute;fonos celulares y tabletas, est&aacute; basado en Linux, una reescritura completa de Unix escrita originalmente por Linus Torvalds, quien era, en ese momento, un estudiante de inform&aacute;tica en Finlandia.</p>
+                <p>Los programas a nivel de aplicaci&oacute;n que formaban parte del paquete original de Unix han sido reemplazados, en la mayor&iacute;a de los sistemas, por programas reescritos del paquete GNU (acr&oacute;nimo de Gnu's Not Unix) de la Fundaci&oacute;n para el Software Libre.</p>
             </div>
         </div>
         
 		<div class="ifTime" type="first">
             <ol>
             	<li>
-                    Explore the programs running on your computer right now.
-                    <ol>
-                        <li>Find out how to list all the programs that are running right now on your computer, and collect such a program list in a text file.</li>
-                        <li>Count how many of them are programs <em>you</em> asked the computer to run.</li>
-                        <li>Of the rest, can you figure out from the names what they do?</li>
-                        <li>Which ones are part of the operating system (not the OS kernel)?</li>
-                        <li>See if you can figure out the purpose of some oddly-named ones by doing a web search.</li>
+                    Explora los programas que se est&aacute;n ejecutando en tu computadora ahora mismo.
+                    
+<ol>
+                        <li>Averigua c&oacute;mo hacer una lista de todos los programas que se est&aacute;n ejecutando ahora mismo en tu computadora, y recopila dicha lista de programas en un archivo de texto.</li>
+                        <li>Cuenta cu&aacute;ntos de ellos son programas que <i>le pediste</i> a la computadora que ejecutara.</li>
+                        <li>Del resto, &iquest;puedes averiguar a partir de los nombres lo que hacen?</li>
+                        <li>&iquest;Cu&aacute;les son parte del sistema operativo (no el n&uacute;cleo del sistema operativo)?</li>
+                        <li>Mira si puedes averiguar el prop&oacute;sito de algunos nombres extra&ntilde;os haciendo una b&uacute;squeda en la web.</li>
                     </ol>
                 </li>
             </ol>
         </div>
         
         
-    </body>
-</html>
+    
+
+</body></html>
