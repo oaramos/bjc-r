@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 4 Lab 2: Cybersecurity, Page 2</title>
-	</head>
 
-	<body>
-        <h2>Caesar Cipher Project</h2>        
-        <div class="learn"><strong>On this page,</strong> you will program a shift cipher procedure to encrypt/decrypt text.</div>
-        <div class="sidenote">
-            The Caesar cipher is named after Gaius Julius Caesar, who ruled Rome 49-44 BC and used encryption in his correspondence.
-            <div class="commentBig">You know, Caesar is a Dead White Male.  How come we can have his stupid picture but we can't have genuine heros such as Turing and Snowden? -bh</div>
-            <p class="center"><img src="/bjc-r/img/4-internet/img_CaesarCipher/Caesar.JPG" height="232" alt="Caesar" title="Caesar"/></p>
-        </div>
-        <p>
-            Computers store keyboard characters (capital and small letters, punctuation marks, space, digits, symbols, and so on) as numbers called Unicode. This table shows the Unicode for some of the keyboard characters:<br />
-            <img class="indent noshadow" src="/bjc-r/img/4-internet/img_CaesarCipher/Mary_CharacterTable.jpeg" height="330px" alt="Unicode Table"/>
-        </p>
-        
-        <p>
-            The <code>unicode of</code> block reports the number that is used for a particular character:<br />
-            <img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/SnapUnicode1.png" height="52" alt="unicode of (a) reporting '97'" title="unicode of (a) reporting '97'" /><br />
-            The <code>unicode as letter</code> block reports the character that a given Unicode number represents:<br /> 
-            <img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/SnapUnicode2.png" height="52"  alt="unicode (65) as letter reporting 'A'" title="unicode (65) as letter reporting 'A'" />
-        </p>
-        
-        <div class="forYouToDo" id="second">
-            <ol>
-                <li>Experiment with the <code>unicode of</code> and <code>unicode as letter</code> blocks. Try changing a word into Unicode, telling the Unicode to a friend, and then having them change it back into a word.</li>
-                <li>On paper, use a shift cipher to encrypt and decrypt a short message  to get a feel for how this cipher works.</li> 
-                <li>Write a Caesar cipher procedure that works for <em>any input text</em> and <em>any shift value</em>.</li>
-                <div class="endnote">
-                    <p><a href="#hint-characters" data-toggle="collapse" title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why do we see characters like <strong>= ? @ # ^ * { </strong> or <strong>~</strong> ?</a></p>
-                    <div id="hint-characters" class="collapse">
-                        <p>You can safely assume that shifting any set of text characters a reasonable distance will result in a set of printable characters, which may include non-alphanumeric (not letter or digit) characters.</p>
-                        <p>For example, if we use a shift of 4 to encrypt:</p>
-                        <p class="indent"><em><strong>Invasion of Normandy is on 6 June 1944</strong></em></p>
-                        <p>it becomes:</p>
-                        <p class="indent"><em><strong>Mrzewmsr$sj$Rsvqerh}$mw$sr$:$Nyri$5=88</strong></em></p>
-                        <p>
-                            <ul>
-                                <li>Which character in ciphertext (the coded version) represents a space in the plaintext?</li>
-                                <li>In this code, 1 becomes 5 and 4 becomes 8, clearly showing the shift of 4. What does 9 become?</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <p><a href="#hint-missing" data-toggle="collapse" title="What if your decrypted text is missing some letters?">What if your decrypted text is missing some letters?</a></p>
-                    <div id="hint-missing" class="collapse">
-                        <p>If you copy your encrypted message with a method other than by using copy and paste (for example, by writing it by hand or typing it into a phone), some characters may disappear from your message. This is because some of the Unicode characters after 126 are printing characters that symbolize things like "delete." These characters won't get displayed in Snap<em>!</em>, so you can't copy them by hand, but if you use copy and paste, Snap<em>!</em> knows they are there. In Take It Further exercise A, you can develop a method of encryption that avoids this problem.</p>
-                    </div>
-                </div>
-                <li>Now test your work. Agree with your partner on a shift value for the encryption.  Then use your program to encrypt a secret message and e-mail it to your partner.  Then let your partner decrypt your message by using the program to reverse the shift.</li>
-                <div class="endnote">
-                	You can extract the encrypted messages from the Snap<em>!</em> interface by right-clicking on the variable that holds the encrypted message and selecting the “Export” option which will download a text file to your computer which then you can copy/paste.<br />
-                	<img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/Export.png" width="350" alt="export option" title="export option"/>
-                </div>
-            </ol>
-		</div>
-        <div class="takeItFurther">
-			<ol type="A">
-                <li>Implement a version of the Caesar Cipher that not only shifts the characters but also wraps them around the alphabet when the end of the alphabet is reached.  You may wish to restrict your alphabet to the set of printable characters given above in the Unicode table.</li>
-                <li>If you came across a long message encrypted in the Caesar Cipher but did not know the shift value, what are some ways you might be able to break the system and decrypt the message?  Discuss the weaknesses of a Caesar Cipher and how it is prone to breaking.</li>
-                <li>Do some research on other types of ciphers used historically. Especially read about the Vigenere Cipher which was used extensively in communicating sensitive information during World War 2.</li>
-                <li>Create your own encryption/decryption scheme and implement it in Snap<em>!</em>.</li>
-            </ol>
-        </div>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+    <title>Unidad 4 Lab 2: La Ciberseguridad, Pagina 2</title>
+</head>
 
-	</body>
+<body>
+    <h2>Caesar Cipher Project</h2>
+    <div class="learn"><strong>On this page,</strong> you will program a shift cipher procedure to encrypt/decrypt text.
+    </div>
+    <div class="sidenote">
+        The Caesar cipher is named after Gaius Julius Caesar, who ruled Rome 49-44 BC and used encryption in his
+        correspondence.
+        <div class="commentBig">You know, Caesar is a Dead White Male. How come we can have his stupid picture but we
+            can't have genuine heros such as Turing and Snowden? -bh</div>
+        <p class="center"><img src="/bjc-r/img/4-internet/img_CaesarCipher/Caesar.JPG" height="232" alt="Caesar"
+                title="Caesar" /></p>
+    </div>
+    <p>
+        Computers store keyboard characters (capital and small letters, punctuation marks, space, digits, symbols, and
+        so on) as numbers called Unicode. This table shows the Unicode for some of the keyboard characters:<br />
+        <img class="indent noshadow" src="/bjc-r/img/4-internet/img_CaesarCipher/Mary_CharacterTable.jpeg"
+            height="330px" alt="Unicode Table" />
+    </p>
+
+    <p>
+        The <code>unicode of</code> block reports the number that is used for a particular character:<br />
+        <img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/SnapUnicode1.png" height="52"
+            alt="unicode of (a) reporting '97'" title="unicode of (a) reporting '97'" /><br />
+        The <code>unicode as letter</code> block reports the character that a given Unicode number represents:<br />
+        <img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/SnapUnicode2.png" height="52"
+            alt="unicode (65) as letter reporting 'A'" title="unicode (65) as letter reporting 'A'" />
+    </p>
+
+    <div class="forYouToDo" id="second">
+        <ol>
+            <li>Experiment with the <code>unicode of</code> and <code>unicode as letter</code> blocks. Try changing a
+                word into Unicode, telling the Unicode to a friend, and then having them change it back into a word.
+            </li>
+            <li>On paper, use a shift cipher to encrypt and decrypt a short message to get a feel for how this cipher
+                works.</li>
+            <li>Write a Caesar cipher procedure that works for <em>any input text</em> and <em>any shift value</em>.
+            </li>
+            <div class="endnote">
+                <p><a href="#hint-characters" data-toggle="collapse"
+                        title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why do we see characters like
+                        <strong>= ? @ # ^ * { </strong> or <strong>~</strong> ?</a></p>
+                <div id="hint-characters" class="collapse">
+                    <p>You can safely assume that shifting any set of text characters a reasonable distance will result
+                        in a set of printable characters, which may include non-alphanumeric (not letter or digit)
+                        characters.</p>
+                    <p>For example, if we use a shift of 4 to encrypt:</p>
+                    <p class="indent"><em><strong>Invasion of Normandy is on 6 June 1944</strong></em></p>
+                    <p>it becomes:</p>
+                    <p class="indent"><em><strong>Mrzewmsr$sj$Rsvqerh}$mw$sr$:$Nyri$5=88</strong></em></p>
+                    <p>
+                    <ul>
+                        <li>Which character in ciphertext (the coded version) represents a space in the plaintext?</li>
+                        <li>In this code, 1 becomes 5 and 4 becomes 8, clearly showing the shift of 4. What does 9
+                            become?</li>
+                    </ul>
+                    </p>
+                </div>
+                <p><a href="#hint-missing" data-toggle="collapse"
+                        title="What if your decrypted text is missing some letters?">What if your decrypted text is
+                        missing some letters?</a></p>
+                <div id="hint-missing" class="collapse">
+                    <p>If you copy your encrypted message with a method other than by using copy and paste (for example,
+                        by writing it by hand or typing it into a phone), some characters may disappear from your
+                        message. This is because some of the Unicode characters after 126 are printing characters that
+                        symbolize things like "delete." These characters won't get displayed in Snap<em>!</em>, so you
+                        can't copy them by hand, but if you use copy and paste, Snap<em>!</em> knows they are there. In
+                        Take It Further exercise A, you can develop a method of encryption that avoids this problem.</p>
+                </div>
+            </div>
+            <li>Now test your work. Agree with your partner on a shift value for the encryption. Then use your program
+                to encrypt a secret message and e-mail it to your partner. Then let your partner decrypt your message by
+                using the program to reverse the shift.</li>
+            <div class="endnote">
+                You can extract the encrypted messages from the Snap<em>!</em> interface by right-clicking on the
+                variable that holds the encrypted message and selecting the “Export” option which will download a text
+                file to your computer which then you can copy/paste.<br />
+                <img class="indent" src="/bjc-r/img/4-internet/img_CaesarCipher/Export.png" width="350"
+                    alt="export option" title="export option" />
+            </div>
+        </ol>
+    </div>
+    <div class="takeItFurther">
+        <ol type="A">
+            <li>Implement a version of the Caesar Cipher that not only shifts the characters but also wraps them around
+                the alphabet when the end of the alphabet is reached. You may wish to restrict your alphabet to the set
+                of printable characters given above in the Unicode table.</li>
+            <li>If you came across a long message encrypted in the Caesar Cipher but did not know the shift value, what
+                are some ways you might be able to break the system and decrypt the message? Discuss the weaknesses of a
+                Caesar Cipher and how it is prone to breaking.</li>
+            <li>Do some research on other types of ciphers used historically. Especially read about the Vigenere Cipher
+                which was used extensively in communicating sensitive information during World War 2.</li>
+            <li>Create your own encryption/decryption scheme and implement it in Snap<em>!</em>.</li>
+        </ol>
+    </div>
+
+</body>
+
 </html>
